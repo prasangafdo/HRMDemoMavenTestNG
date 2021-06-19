@@ -7,17 +7,46 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class VerifyLoginTest {
+public class VerifyLoginTest implements VerifyAdminFunctionalities{
 	
-	@Test
-	public void verifyLoginwithCorrectCredentials() {
+	private String Username = "Admin";
+	private String Password = "abcd";
+
+		static {
+			System.setProperty("webdriver.chrome.driver", "C:/Users/Prasanga Fernando/Documents/Eclipse/TestNG_PageTitle/chromedriver/chromedriver.exe");
+				}
+		 WebDriver driver = new ChromeDriver();
+		 
+		@Test(priority=2)
+		public void verifyLoginWithCorrectCredentials() {
+			Username  = "Admin";
+			Password = "admin123";//Entering correct credentials for a successful login
+			
+			// driver.get("https://opensource-demo.orangehrmlive.com/");
+			 driver.findElement(By.id("txtUsername")).sendKeys(Username);
+			 driver.findElement(By.id("txtPassword")).sendKeys(Password);	
+			 driver.findElement(By.name("Submit")).click();
+			 
+			String expected = "https://opensource-demo.orangehrmlive.com/index.php/dashboard";
+			String actual =driver.getCurrentUrl();
+			Assert.assertEquals(actual, expected);
+		}
 		
-	System.setProperty("webdriver.chrome.driver", "C:/Users/Prasanga Fernando/Documents/Eclipse/TestNG_PageTitle/chromedriver/chromedriver.exe");
-	WebDriver driver = new ChromeDriver();
-	driver.get("https://opensource-demo.orangehrmlive.com/");
-	//Assert.assertEquals("test", "test");
-	System.out.println("This is a sample test");
-	}
+		@Test(priority=1)
+		public void verifyLoginErrorMessage() {
+			 driver.get("https://opensource-demo.orangehrmlive.com/");
+			 driver.findElement(By.id("txtUsername")).sendKeys(Username);
+			 driver.findElement(By.id("txtPassword")).sendKeys(Password);	
+			 driver.findElement(By.name("Submit")).click();
+			 
+			String errorMessage = driver.findElement(By.id("spanMessage")).getText();			
+			Assert.assertEquals(errorMessage, "Invalid credentials");
+		}
+		
+		@AfterClass
+		public void closeBrowser() {
+			driver.close();
+		}
 	
 	
 	
