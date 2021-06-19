@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-06-19T07:53:09 IST" name="com.maven.testng.VerifyLoginTest" finished-at="2021-06-19T07:53:15 IST" duration-ms="5865">
+    <groups>
+    </groups>
+    <test started-at="2021-06-19T07:53:09 IST" name="Command line test" finished-at="2021-06-19T07:53:15 IST" duration-ms="5865">
+      <class name="com.maven.testng.VerifyLoginTest">
+        <test-method signature="verifyLoginwithCorrectCredentials()[pri:0, instance:com.maven.testng.VerifyLoginTest@2e3fc542]" started-at="2021-06-19T07:53:09 IST" name="verifyLoginwithCorrectCredentials" finished-at="2021-06-19T07:53:15 IST" duration-ms="5838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithCorrectCredentials -->
+      </class> <!-- com.maven.testng.VerifyLoginTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.maven.testng.VerifyLoginTest -->
+</testng-results>
