@@ -11,4 +11,5 @@ public interface VerifyAdminFunctionalities {
 
 	public void verifyLoginWithCorrectCredentials();
 	public void verifyLoginErrorMessage();
+	public void verifyAddUser();
 }

@@ -6,6 +6,8 @@
       <class name="com.maven.testng.VerifyLoginTest">
         <methods>
           <include name="verifyLoginErrorMessage"/>
+          <include name="closeBrowser"/>
+          <include name="verifyLoginWithCorrectCredentials"/>
         </methods>
       </class> <!-- com.maven.testng.VerifyLoginTest -->
     </classes>

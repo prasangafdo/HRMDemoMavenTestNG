@@ -5,17 +5,20 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class VerifyLoginTest implements VerifyAdminFunctionalities{
+public class VerifyLoginTest extends BackgroundWorker{
 	
 	private String Username = "Admin";
 	private String Password = "abcd";
-
-		static {
-			System.setProperty("webdriver.chrome.driver", "C:/Users/Prasanga Fernando/Documents/Eclipse/TestNG_PageTitle/chromedriver/chromedriver.exe");
-				}
-		 WebDriver driver = new ChromeDriver();
+	
+//	BackgroundWorker worker = new BackgroundWorker();
+//
+//		static {
+//			System.setProperty("webdriver.chrome.driver", "C:/Users/Prasanga Fernando/Documents/Eclipse/TestNG_PageTitle/chromedriver/chromedriver.exe");
+//				}
+//		 WebDriver driver = new ChromeDriver();
 		 
 		@Test(priority=2)
 		public void verifyLoginWithCorrectCredentials() {
@@ -32,9 +35,15 @@ public class VerifyLoginTest implements VerifyAdminFunctionalities{
 			Assert.assertEquals(actual, expected);
 		}
 		
+		@BeforeTest
+		public void  getURL() {
+			 driver.get("https://opensource-demo.orangehrmlive.com/"); //Setting initial URL
+		}
+	
+	
 		@Test(priority=1)
 		public void verifyLoginErrorMessage() {
-			 driver.get("https://opensource-demo.orangehrmlive.com/");
+			
 			 driver.findElement(By.id("txtUsername")).sendKeys(Username);
 			 driver.findElement(By.id("txtPassword")).sendKeys(Password);	
 			 driver.findElement(By.name("Submit")).click();
@@ -45,7 +54,7 @@ public class VerifyLoginTest implements VerifyAdminFunctionalities{
 		
 		@AfterClass
 		public void closeBrowser() {
-			driver.close();
+			//driver.close();
 		}
 	
 	
