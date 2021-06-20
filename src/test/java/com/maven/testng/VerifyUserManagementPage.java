@@ -2,6 +2,7 @@ package com.maven.testng;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Reporter;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -54,6 +55,7 @@ public class VerifyUserManagementPage extends BackgroundWorker{
 		driver.findElement(By.id("systemUser_password")).sendKeys(Password);
 		driver.findElement(By.id("systemUser_confirmPassword")).sendKeys(Password);
 		
+		
 		try {
 			Thread.sleep(2000);
 			//driver.findElement(By.name("btnSave")).click();
@@ -81,8 +83,11 @@ public class VerifyUserManagementPage extends BackgroundWorker{
 	public void  verifyAddUser() {
 		navigateToUserManagement();
 		navigateToAddUser();
+		setUserType("Admin");//Selecting admin from user role drop down
+		setUserStatus("Enabled");
+		setUser("Alice", "UserName", "Password");
+		//Reporter.log(getUserType());
 		
-		setUser("EmployeeName", "UserName", "Password");
 		addUser();
 	}
 	
