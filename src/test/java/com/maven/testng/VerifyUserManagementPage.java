@@ -80,12 +80,24 @@ public class VerifyUserManagementPage extends BackgroundWorker{
 	}
 	
 	@Test (priority = 1)
-	public void  verifyAddUser() {
+	public void  verifyAddUserAdmin() {
 		navigateToUserManagement();
 		navigateToAddUser();
 		setUserType("Admin");//Selecting admin from user role drop down
 		setUserStatus("Enabled");
 		setUser("Alice", "UserName", "Password");
+		//Reporter.log(getUserType());
+		
+		addUser();
+	}
+	
+	@Test (priority = 2)
+	public void  verifyAddUserESS() {
+		navigateToUserManagement();
+		navigateToAddUser();
+		setUserType("ESS");//Selecting admin from user role drop down
+		setUserStatus("Enabled");
+		setUser("Joko", "UserName", "Password");
 		//Reporter.log(getUserType());
 		
 		addUser();
