@@ -1,25 +1,15 @@
-/**
- * 
- */
 package com.maven.testng;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-/**
- * @author Prasanga Fernando
- * 
- * This class contains main funtionalities related to "Add job title" page
- *
- */
-public class VerifyJobTitlesPage extends BackgroundWorker {
+public class VerifyPayGrades extends BackgroundWorker{
 	
-
 	@Test
-	public void verifyAddUser() {
+	public void verifyAddPayGrades() {
 		// TODO Auto-generated method stub
 		navigateToUserManagement();
-		selectJobTitles();
+		selectPayGrades();
 		Assert.assertEquals("test", "test"); //dummy assert to verify the test
 	}
 
