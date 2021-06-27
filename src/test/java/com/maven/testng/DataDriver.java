@@ -6,6 +6,7 @@ package com.maven.testng;
 import java.io.File;
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -25,7 +26,7 @@ public class DataDriver {
 	String fileLocation= "C:/Users/Prasanga Fernando/Documents/Eclipse/HRMDemoMavenTestNG/Book1.xls";
 	File file = new File (fileLocation);
 			
-	@DataProvider(name = "extractedUser")
+	@DataProvider(name = "testdata")
 	public String[][] ExtractedUser() throws BiffException, IOException {
 		
 		Workbook wb = Workbook.getWorkbook(file);
@@ -46,7 +47,7 @@ public class DataDriver {
 
 	}
 	
-	@Test(dataProvider = "extractedUser")
+	@Test(dataProvider = "testdata")
 	public void ASest1(String name) {
 		Reporter.log(name);
 		//Reporter.log(data2);
@@ -58,5 +59,33 @@ public class DataDriver {
 //		Reporter.log(aaa);
 //		Reporter.log(password);
 //	}
+	
+	@DataProvider(name = "testdata1")
+	public String[][] extractedJobTitles() throws BiffException, IOException{
+		Workbook wb = Workbook.getWorkbook(file);
+		
+		Sheet sheet = wb.getSheet(1);
+		int rowsCount = sheet.getRows();
+		int columnsCount = sheet.getColumns();
+		
+		String[][] extractedData1 = new String [rowsCount][columnsCount];
+		
+		for(int i=0;i<rowsCount;i++) {
+			for(int j=0;j<columnsCount;j++) {
+				Cell cell = sheet.getCell(j,i);
+				extractedData1[i][j] =cell.getContents();
+			}
+		}
+		
+		
+		return extractedData1;
+		
+	}
+	
+	@Test(dataProvider ="testdata1")
+	public void zzz(String data1) {
+		Assert.assertEquals("a", "a");
+	}
+
 
 }
