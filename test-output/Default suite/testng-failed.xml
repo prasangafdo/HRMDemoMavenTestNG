@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.maven.testng.DataDriver">
+      <class name="com.maven.testng.VerifyPayGrades">
         <methods>
-          <include name="zzz"/>
+          <include name="verifyAddPayGrades"/>
         </methods>
-      </class> <!-- com.maven.testng.DataDriver -->
+      </class> <!-- com.maven.testng.VerifyPayGrades -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
