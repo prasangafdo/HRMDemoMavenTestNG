@@ -7,8 +7,9 @@
       This will run the first class and then will run the second class
        -->
      <class name="com.maven.testng.VerifyLoginTest"/>
-     <class name="com.maven.testng.VerifyUserManagementPageTest"/> 
+<!-- <class name="com.maven.testng.VerifyUserManagementPageTest"/>  -->     
      <class name="com.maven.testng.VerifyJobTitlesPage"/>
+      <class name="com.maven.testng.VerifyPayGrades"/>
    
       
     </classes>

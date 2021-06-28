@@ -6,6 +6,7 @@ package com.maven.testng;
 import java.io.File;
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -22,13 +23,21 @@ import jxl.read.biff.BiffException;
  */
 public class DataDriver {
 	
-	String fileLocation= "C:/Users/Prasanga Fernando/Documents/Eclipse/HRMDemoMavenTestNG/Book1.xls";
-	File file = new File (fileLocation);
+	
+	static Workbook wb;
+	
+	public static void getWorkbook() throws BiffException, IOException{
+		String fileLocation= "C:/Users/Prasanga Fernando/Documents/Eclipse/HRMDemoMavenTestNG/Book1.xls";
+		File file = new File (fileLocation);
+		wb = Workbook.getWorkbook(file);
+		
+	}
+	
+	
 			
-	@DataProvider(name = "extractedUser")
+	@DataProvider(name = "testdata")
 	public String[][] ExtractedUser() throws BiffException, IOException {
 		
-		Workbook wb = Workbook.getWorkbook(file);
 		Sheet sheet = wb.getSheet(0);
 		int rowsCount = sheet.getRows();
 		int columnsCount = sheet.getColumns();
@@ -46,17 +55,36 @@ public class DataDriver {
 
 	}
 	
-	@Test(dataProvider = "extractedUser")
+	@Test(dataProvider = "testdata")
 	public void ASest1(String name) {
 		Reporter.log(name);
 		//Reporter.log(data2);
 	}
 	
-//	@Test (dataProvider = "extractedUser")
-//	public void loginTest(String aaa) {
-//		
-//		Reporter.log(aaa);
-//		Reporter.log(password);
-//	}
+	
+	@DataProvider(name = "payGrades")
+	public String[][] extractedJobTitles() throws BiffException, IOException{
+		getWorkbook();
+		Sheet sheet = wb.getSheet(1);
+		int rowsCount = sheet.getRows();
+		int columnsCount = sheet.getColumns();
+		
+		String[][] extractedPayGrades = new String [rowsCount][columnsCount];
+		
+		for(int i=0;i<rowsCount;i++) {
+			for(int j=0;j<columnsCount;j++) {
+				Cell cell = sheet.getCell(j,i);
+				extractedPayGrades[i][j] =cell.getContents();
+			}
+		}
+		return extractedPayGrades;
+		
+	}
+	
+	@Test(dataProvider ="testdata1")
+	public void zzz(String data1) {
+		Assert.assertEquals("a", "a");
+	}
+
 
 }
