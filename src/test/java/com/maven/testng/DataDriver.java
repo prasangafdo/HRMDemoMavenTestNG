@@ -55,11 +55,11 @@ public class DataDriver {
 
 	}
 	
-	@Test(dataProvider = "testdata")
-	public void ASest1(String name) {
-		Reporter.log(name);
-		//Reporter.log(data2);
-	}
+//	@Test(dataProvider = "testdata")
+//	public void ASest1(String name) {
+//		Reporter.log(name);
+//		//Reporter.log(data2);
+//	}
 	
 	
 	@DataProvider(name = "payGrades")
@@ -81,10 +81,10 @@ public class DataDriver {
 		
 	}
 	
-	@Test(dataProvider ="testdata1")
-	public void zzz(String data1) {
-		Assert.assertEquals("a", "a");
-	}
+//	@Test(dataProvider ="testdata1")
+//	public void zzz(String data1) {
+//		Assert.assertEquals("a", "a");
+//	}
 
 
 }

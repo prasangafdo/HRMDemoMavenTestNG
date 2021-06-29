@@ -5,7 +5,7 @@
     <classes>
       <class name="com.maven.testng.VerifyPayGrades">
         <methods>
-          <include name="verifyAddPayGrades"/>
+          <include name="verifyAddPayGrades" invocation-numbers="0 1 2 3 4 5"/>
         </methods>
       </class> <!-- com.maven.testng.VerifyPayGrades -->
     </classes>

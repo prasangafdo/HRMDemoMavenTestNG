@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[aaaa]]>
+    </line>
+    <line>
+      <![CDATA[cccccc]]>
+    </line>
+    <line>
+      <![CDATA[bbbbbb]]>
+    </line>
+    <line>
+      <![CDATA[dfggdgd]]>
+    </line>
+    <line>
+      <![CDATA[rrrr]]>
+    </line>
+    <line>
+      <![CDATA[gsf]]>
+    </line>
   </reporter-output>
-  <suite started-at="2021-06-27T15:13:18 IST" name="Default suite" finished-at="2021-06-27T15:13:18 IST" duration-ms="138">
+  <suite started-at="2021-06-29T20:44:33 IST" name="Suite" finished-at="2021-06-29T20:45:14 IST" duration-ms="40877">
     <groups>
     </groups>
-    <test started-at="2021-06-27T15:13:18 IST" name="Default test" finished-at="2021-06-27T15:13:18 IST" duration-ms="138">
+    <test started-at="2021-06-29T20:44:33 IST" name="Test" finished-at="2021-06-29T20:45:14 IST" duration-ms="40877">
       <class name="com.maven.testng.VerifyPayGrades">
-        <test-method signature="verifyAddPayGrades(java.lang.String)[pri:0, instance:com.maven.testng.VerifyPayGrades@584f54e6]" started-at="2021-06-27T15:13:18 IST" name="verifyAddPayGrades" data-provider="payGrades" finished-at="2021-06-27T15:13:18 IST" duration-ms="5" status="PASS">
+        <test-method signature="verifyAddPayGrades(java.lang.String)[pri:0, instance:com.maven.testng.VerifyPayGrades@3243b914]" started-at="2021-06-29T20:44:51 IST" name="verifyAddPayGrades" data-provider="payGrades" finished-at="2021-06-29T20:44:56 IST" duration-ms="5556" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,9 +34,12 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[aaaa]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verifyAddPayGrades -->
-        <test-method signature="verifyAddPayGrades(java.lang.String)[pri:0, instance:com.maven.testng.VerifyPayGrades@584f54e6]" started-at="2021-06-27T15:13:18 IST" name="verifyAddPayGrades" data-provider="payGrades" finished-at="2021-06-27T15:13:18 IST" duration-ms="1" status="PASS">
+        <test-method signature="verifyAddPayGrades(java.lang.String)[pri:0, instance:com.maven.testng.VerifyPayGrades@3243b914]" started-at="2021-06-29T20:44:56 IST" name="verifyAddPayGrades" data-provider="payGrades" finished-at="2021-06-29T20:45:00 IST" duration-ms="4345" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,9 +48,12 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[cccccc]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verifyAddPayGrades -->
-        <test-method signature="verifyAddPayGrades(java.lang.String)[pri:0, instance:com.maven.testng.VerifyPayGrades@584f54e6]" started-at="2021-06-27T15:13:18 IST" name="verifyAddPayGrades" data-provider="payGrades" finished-at="2021-06-27T15:13:18 IST" duration-ms="1" status="PASS">
+        <test-method signature="verifyAddPayGrades(java.lang.String)[pri:0, instance:com.maven.testng.VerifyPayGrades@3243b914]" started-at="2021-06-29T20:45:00 IST" name="verifyAddPayGrades" data-provider="payGrades" finished-at="2021-06-29T20:45:04 IST" duration-ms="4073" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -38,9 +62,12 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[bbbbbb]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verifyAddPayGrades -->
-        <test-method signature="verifyAddPayGrades(java.lang.String)[pri:0, instance:com.maven.testng.VerifyPayGrades@584f54e6]" started-at="2021-06-27T15:13:18 IST" name="verifyAddPayGrades" data-provider="payGrades" finished-at="2021-06-27T15:13:18 IST" duration-ms="1" status="PASS">
+        <test-method signature="verifyAddPayGrades(java.lang.String)[pri:0, instance:com.maven.testng.VerifyPayGrades@3243b914]" started-at="2021-06-29T20:45:04 IST" name="verifyAddPayGrades" data-provider="payGrades" finished-at="2021-06-29T20:45:08 IST" duration-ms="3502" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,9 +76,12 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[dfggdgd]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verifyAddPayGrades -->
-        <test-method signature="verifyAddPayGrades(java.lang.String)[pri:0, instance:com.maven.testng.VerifyPayGrades@584f54e6]" started-at="2021-06-27T15:13:18 IST" name="verifyAddPayGrades" data-provider="payGrades" finished-at="2021-06-27T15:13:18 IST" duration-ms="1" status="PASS">
+        <test-method signature="verifyAddPayGrades(java.lang.String)[pri:0, instance:com.maven.testng.VerifyPayGrades@3243b914]" started-at="2021-06-29T20:45:08 IST" name="verifyAddPayGrades" data-provider="payGrades" finished-at="2021-06-29T20:45:12 IST" duration-ms="3722" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,9 +90,12 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[rrrr]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verifyAddPayGrades -->
-        <test-method signature="verifyAddPayGrades(java.lang.String)[pri:0, instance:com.maven.testng.VerifyPayGrades@584f54e6]" started-at="2021-06-27T15:13:18 IST" name="verifyAddPayGrades" data-provider="payGrades" finished-at="2021-06-27T15:13:18 IST" duration-ms="0" status="PASS">
+        <test-method signature="verifyAddPayGrades(java.lang.String)[pri:0, instance:com.maven.testng.VerifyPayGrades@3243b914]" started-at="2021-06-29T20:45:12 IST" name="verifyAddPayGrades" data-provider="payGrades" finished-at="2021-06-29T20:45:14 IST" duration-ms="2592" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -70,10 +103,100 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"*//div/div[@class='message success fadable']"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8DPVRQ3', ip: '192.168.8.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:3793}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 17d1c2372823985e1d47dad468a23480
+*** Element info: {Using=xpath, value=*//div/div[@class='message success fadable']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"*//div/div[@class='message success fadable']"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8DPVRQ3', ip: '192.168.8.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:3793}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 17d1c2372823985e1d47dad468a23480
+*** Element info: {Using=xpath, value=*//div/div[@class='message success fadable']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.maven.testng.VerifyPayGrades.verifyAddPayGrades(VerifyPayGrades.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
+            <line>
+              <![CDATA[gsf]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verifyAddPayGrades -->
       </class> <!-- com.maven.testng.VerifyPayGrades -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.maven.testng.VerifyLoginTest">
+        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@189aa67a]" started-at="2021-06-29T20:44:33 IST" name="getURL" finished-at="2021-06-29T20:44:44 IST" duration-ms="10327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURL -->
+        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@189aa67a]" started-at="2021-06-29T20:44:44 IST" name="verifyLoginErrorMessage" finished-at="2021-06-29T20:44:45 IST" duration-ms="1348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginErrorMessage -->
+        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@189aa67a]" started-at="2021-06-29T20:44:45 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-06-29T20:44:50 IST" duration-ms="5280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithCorrectCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@189aa67a]" started-at="2021-06-29T20:45:14 IST" name="closeBrowser" finished-at="2021-06-29T20:45:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.maven.testng.VerifyLoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
