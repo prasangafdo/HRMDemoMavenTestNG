@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-30T12:11:40 IST" name="Default suite" finished-at="2021-06-30T12:11:40 IST" duration-ms="124">
+  <suite started-at="2021-06-30T12:31:10 IST" name="Default suite" finished-at="2021-06-30T12:31:10 IST" duration-ms="124">
     <groups>
     </groups>
-    <test started-at="2021-06-30T12:11:40 IST" name="Default test" finished-at="2021-06-30T12:11:40 IST" duration-ms="124">
+    <test started-at="2021-06-30T12:31:10 IST" name="Default test" finished-at="2021-06-30T12:31:10 IST" duration-ms="124">
       <class name="com.maven.testng.VerifyUserManagementPage">
-        <test-method signature="test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.maven.testng.VerifyUserManagementPage@1e802ef9]" started-at="2021-06-30T12:11:40 IST" name="test" data-provider="userData1" finished-at="2021-06-30T12:11:40 IST" duration-ms="5" status="PASS">
+        <test-method signature="test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.maven.testng.VerifyUserManagementPage@d4342c2]" started-at="2021-06-30T12:31:10 IST" name="test" data-provider="userData" finished-at="2021-06-30T12:31:10 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -38,7 +38,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.maven.testng.VerifyUserManagementPage@1e802ef9]" started-at="2021-06-30T12:11:40 IST" name="test" data-provider="userData1" finished-at="2021-06-30T12:11:40 IST" duration-ms="1" status="PASS">
+        <test-method signature="test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.maven.testng.VerifyUserManagementPage@d4342c2]" started-at="2021-06-30T12:31:10 IST" name="test" data-provider="userData" finished-at="2021-06-30T12:31:10 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.maven.testng.VerifyUserManagementPage@1e802ef9]" started-at="2021-06-30T12:11:40 IST" name="test" data-provider="userData1" finished-at="2021-06-30T12:11:40 IST" duration-ms="0" status="PASS">
+        <test-method signature="test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.maven.testng.VerifyUserManagementPage@d4342c2]" started-at="2021-06-30T12:31:10 IST" name="test" data-provider="userData" finished-at="2021-06-30T12:31:10 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -100,7 +100,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.maven.testng.VerifyUserManagementPage@1e802ef9]" started-at="2021-06-30T12:11:40 IST" name="test" data-provider="userData1" finished-at="2021-06-30T12:11:40 IST" duration-ms="1" status="PASS">
+        <test-method signature="test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.maven.testng.VerifyUserManagementPage@d4342c2]" started-at="2021-06-30T12:31:10 IST" name="test" data-provider="userData" finished-at="2021-06-30T12:31:10 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -131,7 +131,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.maven.testng.VerifyUserManagementPage@1e802ef9]" started-at="2021-06-30T12:11:40 IST" name="test" data-provider="userData1" finished-at="2021-06-30T12:11:40 IST" duration-ms="0" status="PASS">
+        <test-method signature="test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.maven.testng.VerifyUserManagementPage@d4342c2]" started-at="2021-06-30T12:31:10 IST" name="test" data-provider="userData" finished-at="2021-06-30T12:31:10 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
