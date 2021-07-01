@@ -18,22 +18,25 @@ public class VerifyPayGrades extends BackgroundWorker{
 		DataDriver dataDriver = new DataDriver();
 	
 
+	
+		
 	@Test (dataProvider = "payGrades", dataProviderClass = DataDriver.class)//Calling data provider method in a different class
 	public void verifyAddPayGrades(String data) throws BiffException, IOException {
-	//	dataDriver.sheetNumber =1;
-		//dataDriver.getWorkbook();
-		//dataDriver.ExtractedUser();
-			//Reporter.log(data);
-		// TODO Auto-generated method stub
-		//navigateToUserManagement();
-		//selectPayGrades();
+
+		Reporter.log(data);
+		navigateToUserManagement();
+		selectPayGrades();
 		
 		
 
-		//driver.findElement(By.id("btnAdd")).click();	
-		//driver.findElement(By.id("payGrade_name")).sendKeys("AAA");
+		driver.findElement(By.id("btnAdd")).click();	
+		driver.findElement(By.id("payGrade_name")).sendKeys(data);
+		driver.findElement(By.id("btnSave")).click();
 		
-		//Assert.assertEquals("test", "test"); //dummy assert to verify the test
+		String actualResult = driver.findElement(By.xpath("*//div/div[@class='message success fadable']")).getText();
+		String expectedResult = "Successfully Saved";
+		
+		Assert.assertEquals(actualResult, expectedResult);
 	}
 
 }

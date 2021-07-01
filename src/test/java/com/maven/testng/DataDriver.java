@@ -33,8 +33,7 @@ public class DataDriver {
 		
 	}
 	
-	
-			
+		
 	@DataProvider(name = "testdata")
 	public String[][] ExtractedUser() throws BiffException, IOException {
 		
@@ -52,14 +51,13 @@ public class DataDriver {
 			}
 		}
 		return data;
-
 	}
 	
-	@Test(dataProvider = "testdata")
-	public void ASest1(String name) {
-		Reporter.log(name);
-		//Reporter.log(data2);
-	}
+//	@Test(dataProvider = "testdata")
+//	public void ASest1(String name) {
+//		Reporter.log(name);
+//		//Reporter.log(data2);
+//	}
 	
 	
 	@DataProvider(name = "payGrades")
@@ -81,10 +79,35 @@ public class DataDriver {
 		
 	}
 	
-	@Test(dataProvider ="testdata1")
-	public void zzz(String data1) {
-		Assert.assertEquals("a", "a");
+//	@Test(dataProvider ="testdata1")
+//	public void zzz(String data1) {
+//		Assert.assertEquals("a", "a");
+//	}
+	
+	@DataProvider(name ="userData1")
+	public Object[][] addUser() throws BiffException, IOException {
+		getWorkbook();
+		Sheet sheet = wb.getSheet(2);
+		int rowsCount = sheet.getRows();
+		int columnsCount = sheet.getColumns();
+		
+		String[][] userData = new String[rowsCount][columnsCount];
+		
+		for(int i=0;i<rowsCount;i++) {
+			for(int j=0;j<columnsCount;j++) {
+				Cell cell = sheet.getCell(j,i);
+				userData[i][j] = cell.getContents();
+			}
+		}
+		
+		return userData;
+		
 	}
-
+	
+	@Test(dataProvider="userData1")
+	public void test(String userData) {
+		Reporter.log(userData);
+		System.out.println(userData);
+	}
 
 }

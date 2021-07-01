@@ -8,7 +8,7 @@
        -->
      <class name="com.maven.testng.VerifyLoginTest"/>
 <!-- <class name="com.maven.testng.VerifyUserManagementPageTest"/>  -->     
-     <class name="com.maven.testng.VerifyJobTitlesPage"/>
+<!--      <class name="com.maven.testng.VerifyJobTitlesPage"/>  --> 
       <class name="com.maven.testng.VerifyPayGrades"/>
    
       

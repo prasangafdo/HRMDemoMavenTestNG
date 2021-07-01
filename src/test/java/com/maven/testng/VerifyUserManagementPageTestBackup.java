@@ -7,7 +7,7 @@ import org.testng.Reporter;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class VerifyUserManagementPageTest extends BackgroundWorker{
+public class VerifyUserManagementPageTestBackup extends BackgroundWorker{
 	
 	private String EmployeeName, Username, Password, userType, userStatus, successMessage;
 	
@@ -69,12 +69,12 @@ public class VerifyUserManagementPageTest extends BackgroundWorker{
 		
 	}
 	/*//Uncomment this only running this class
-	@BeforeTest
-	public void  getURL() {
-		VerifyLoginTest login =  new VerifyLoginTest();
-		login.getURL();
-		login.verifyLoginWithCorrectCredentials();
-	}
+	*	@BeforeTest
+	*	public void  getURL() {
+	*		VerifyLoginTest login =  new VerifyLoginTest();
+	*		login.getURL();
+	*		login.verifyLoginWithCorrectCredentials();
+	*	}
 	*/
 	@Test (priority = 1)
 	public void  verifyAddUserAdmin() {
