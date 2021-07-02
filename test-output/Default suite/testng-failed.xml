@@ -5,7 +5,7 @@
     <classes>
       <class name="com.maven.testng.VerifyJobTitlesPage">
         <methods>
-          <include name="verifyAddUser"/>
+          <include name="verifyAA"/>
         </methods>
       </class> <!-- com.maven.testng.VerifyJobTitlesPage -->
     </classes>

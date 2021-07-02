@@ -16,17 +16,20 @@ import org.testng.annotations.Test;
 public class VerifyJobTitlesPage extends BackgroundWorker {
 	
 
-	@Test
-	public void verifyAddUser() {
+	@Test(dataProvider="jobTitle", dataProviderClass = DataDriver.class)
+	public void verifyAA(String aaa, String bbb, String ccc) {
 		// TODO Auto-generated method stub
-		navigateToUserManagement();
-		selectJobTitles();
+		
+		//navigateToUserManagement();
+		//selectJobTitles();
 		//Assert.assertEquals("test", "test"); //dummy assert to verify the test
-		driver.findElement(By.xpath("//*/input[@name='btnAdd']")).click();
-		driver.findElement(By.id("jobTitle_jobTitle")).sendKeys("aaa");
-		driver.findElement(By.id("jobTitle_jobDescription")).sendKeys("aaa");
-		driver.findElement(By.id("jobTitle_note")).sendKeys("aaa");
-		driver.findElement(By.id("btnSave")).click();
+		
+		
+//		driver.findElement(By.xpath("//*/input[@name='btnAdd']")).click();
+//		driver.findElement(By.id("jobTitle_jobTitle")).sendKeys("aaa");
+//		driver.findElement(By.id("jobTitle_jobDescription")).sendKeys("aaa");
+//		driver.findElement(By.id("jobTitle_note")).sendKeys("aaa");
+//		driver.findElement(By.id("btnSave")).click();
 		
 		
 	}
