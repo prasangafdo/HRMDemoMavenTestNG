@@ -3,6 +3,7 @@
  */
 package com.maven.testng;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -20,7 +21,14 @@ public class VerifyJobTitlesPage extends BackgroundWorker {
 		// TODO Auto-generated method stub
 		navigateToUserManagement();
 		selectJobTitles();
-		Assert.assertEquals("test", "test"); //dummy assert to verify the test
+		//Assert.assertEquals("test", "test"); //dummy assert to verify the test
+		driver.findElement(By.xpath("//*/input[@name='btnAdd']")).click();
+		driver.findElement(By.id("jobTitle_jobTitle")).sendKeys("aaa");
+		driver.findElement(By.id("jobTitle_jobDescription")).sendKeys("aaa");
+		driver.findElement(By.id("jobTitle_note")).sendKeys("aaa");
+		driver.findElement(By.id("btnSave")).click();
+		
+		
 	}
 
 }

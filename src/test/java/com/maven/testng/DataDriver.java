@@ -84,7 +84,7 @@ public class DataDriver {
 //		Assert.assertEquals("a", "a");
 //	}
 	
-	@DataProvider(name ="userData1")
+	@DataProvider(name ="userData")
 	public Object[][] addUser() throws BiffException, IOException {
 		getWorkbook();
 		Sheet sheet = wb.getSheet(2);
@@ -104,10 +104,4 @@ public class DataDriver {
 		
 	}
 	
-	@Test(dataProvider="userData1")
-	public void test(String userData) {
-		Reporter.log(userData);
-		System.out.println(userData);
-	}
-
 }
