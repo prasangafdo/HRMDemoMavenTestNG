@@ -17,7 +17,7 @@ public class VerifyJobTitlesPage extends BackgroundWorker {
 	
 
 	@Test(dataProvider="jobTitle", dataProviderClass = DataDriver.class)
-	public void verifyAA(String jobTitle, String jobDescription, String jobNote) {
+	public void verifyAddJobTitle(String jobTitle, String jobDescription, String jobNote) {
 		// TODO Auto-generated method stub
 		
 		navigateToUserManagement();
@@ -37,5 +37,10 @@ public class VerifyJobTitlesPage extends BackgroundWorker {
 		Assert.assertEquals(actualMessage, expectedMessage);
 		
 	}
+	
+	public void verifyEditJobTitle(String existingJobName) {//Add other data here and convert this to a TestNG test case
+		
+	}
+	
 
 }
