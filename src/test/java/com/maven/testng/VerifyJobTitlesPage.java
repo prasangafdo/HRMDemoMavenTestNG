@@ -31,6 +31,10 @@ public class VerifyJobTitlesPage extends BackgroundWorker {
 		driver.findElement(By.id("jobTitle_note")).sendKeys(jobNote);
 		driver.findElement(By.id("btnSave")).click();
 		
+		String expectedMessage = "Successfully Saved";
+		String actualMessage = driver.findElement(By.xpath("//*/div[@class ='message success fadable']")).getText();
+		
+		Assert.assertEquals(actualMessage, expectedMessage);
 		
 	}
 

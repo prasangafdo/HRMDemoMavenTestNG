@@ -3,11 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.maven.testng.VerifyJobTitlesPage">
+      <class name="com.maven.testng.VerifyUserManagementPage">
         <methods>
-          <include name="verifyAddUser"/>
+          <include name="test" invocation-numbers="1 2 3"/>
+          <include name="navigate"/>
         </methods>
-      </class> <!-- com.maven.testng.VerifyJobTitlesPage -->
+      </class> <!-- com.maven.testng.VerifyUserManagementPage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -2,34 +2,65 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-23T21:57:29 IST" name="Suite" finished-at="2021-06-23T21:57:44 IST" duration-ms="14353">
+  <suite started-at="2021-07-03T19:25:37 IST" name="Suite" finished-at="2021-07-03T19:25:51 IST" duration-ms="14169">
     <groups>
     </groups>
-    <test started-at="2021-06-23T21:57:29 IST" name="Test" finished-at="2021-06-23T21:57:44 IST" duration-ms="14353">
+    <test started-at="2021-07-03T19:25:37 IST" name="Test" finished-at="2021-07-03T19:25:51 IST" duration-ms="14169">
       <class name="com.maven.testng.VerifyLoginTest">
-        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@3a5ecce3]" started-at="2021-06-23T21:57:29 IST" name="getURL" finished-at="2021-06-23T21:57:35 IST" duration-ms="5447" status="PASS">
+        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@7803bfd]" started-at="2021-07-03T19:25:37 IST" name="getURL" finished-at="2021-07-03T19:25:40 IST" duration-ms="3524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getURL -->
-        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@3a5ecce3]" started-at="2021-06-23T21:57:35 IST" name="verifyLoginErrorMessage" finished-at="2021-06-23T21:57:36 IST" duration-ms="1668" status="PASS">
+        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@7803bfd]" started-at="2021-07-03T19:25:40 IST" name="verifyLoginErrorMessage" finished-at="2021-07-03T19:25:42 IST" duration-ms="1470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginErrorMessage -->
-        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@3a5ecce3]" started-at="2021-06-23T21:57:36 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-06-23T21:57:41 IST" duration-ms="4480" status="PASS">
+        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@7803bfd]" started-at="2021-07-03T19:25:42 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-07-03T19:25:47 IST" duration-ms="4783" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithCorrectCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@3a5ecce3]" started-at="2021-06-23T21:57:44 IST" name="closeBrowser" finished-at="2021-06-23T21:57:44 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@7803bfd]" started-at="2021-07-03T19:25:51 IST" name="closeBrowser" finished-at="2021-07-03T19:25:51 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.maven.testng.VerifyLoginTest -->
-      <class name="com.maven.testng.VerifyJobTitlesPage">
-        <test-method signature="verifyAddUser()[pri:0, instance:com.maven.testng.VerifyJobTitlesPage@42bc14c1]" started-at="2021-06-23T21:57:41 IST" name="verifyAddUser" finished-at="2021-06-23T21:57:44 IST" duration-ms="2732" status="PASS">
+      <class name="com.maven.testng.VerifyUserManagementPage">
+        <test-method is-config="true" signature="navigate()[pri:0, instance:com.maven.testng.VerifyUserManagementPage@25aca718]" started-at="2021-07-03T19:25:47 IST" name="navigate" finished-at="2021-07-03T19:25:48 IST" duration-ms="1746" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddUser -->
-      </class> <!-- com.maven.testng.VerifyJobTitlesPage -->
+        </test-method> <!-- navigate -->
+        <test-method signature="test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.maven.testng.VerifyUserManagementPage@25aca718]" started-at="2021-07-03T19:25:48 IST" name="test" data-provider="userData" finished-at="2021-07-03T19:25:51 IST" duration-ms="2537" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Alice]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test name 01]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Enabled]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[TestPassword0X1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.maven.testng.VerifyUserManagementPage -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
