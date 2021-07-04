@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.maven.testng.VerifyJobTitlesPage" class="method navigator-link" hash-for-method="verifyAddUser">verifyAddUser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.maven.testng.VerifyUserManagementPage" class="method navigator-link" hash-for-method="test(Admin, Alice, Test name 01, Enabled, TestPassword0X1)">test(Admin, Alice, Test name 01, Enabled, TestPassword0X1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -132,21 +132,6 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.maven.testng.VerifyJobTitlesPage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyAddUser">
-                  </a> <!-- verifyAddUser -->
-                  <span class="method-name">verifyAddUser</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.maven.testng.VerifyLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -166,6 +151,22 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.maven.testng.VerifyUserManagementPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test(Admin, Alice, Test name 01, Enabled, TestPassword0X1)">
+                  </a> <!-- test(Admin, Alice, Test name 01, Enabled, TestPassword0X1) -->
+                  <span class="method-name">test</span>
+                  <span class="parameters">(Admin, Alice, Test name 01, Enabled, TestPassword0X1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -179,7 +180,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.maven.testng.VerifyLoginTest&quot;/&gt;
-      &lt;class name=&quot;com.maven.testng.VerifyJobTitlesPage&quot;/&gt;
+      &lt;class name=&quot;com.maven.testng.VerifyUserManagementPage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -223,15 +224,15 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyLoginWithCorrectCredentials')
 data.setCell(0, 2, 'com.maven.testng.VerifyLoginTest')
-data.setCell(0, 3, 4480);
+data.setCell(0, 3, 4783);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyAddUser')
-data.setCell(1, 2, 'com.maven.testng.VerifyJobTitlesPage')
-data.setCell(1, 3, 2732);
+data.setCell(1, 1, 'test')
+data.setCell(1, 2, 'com.maven.testng.VerifyUserManagementPage')
+data.setCell(1, 3, 2537);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyLoginErrorMessage')
 data.setCell(2, 2, 'com.maven.testng.VerifyLoginTest')
-data.setCell(2, 3, 1668);
+data.setCell(2, 3, 1470);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -269,25 +270,29 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginErrorMessage</span>
-                <span class="method-start">5465 ms</span>
+                <span class="method-start">3541 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithCorrectCredentials</span>
-                <span class="method-start">7136 ms</span>
+                <span class="method-start">5013 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.maven.testng.VerifyJobTitlesPage</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.maven.testng.VerifyUserManagementPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">navigate</span>
+                <span class="method-start">9796 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">verifyAddUser</span>
-                <span class="method-start">11617 ms</span>
+                <span class="method-name">test(Admin, Alice, Test name 01, Enabled, TestPassword0X1)</span>
+                <span class="method-start">11628 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.maven.testng.VerifyLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">14349 ms</span>
+                <span class="method-start">14166 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

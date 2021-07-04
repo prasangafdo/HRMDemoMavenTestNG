@@ -14,6 +14,8 @@ import org.testng.annotations.BeforeTest;
  * @author Prasanga Fernando
  *
  */
+
+@SuppressWarnings("unused")
 public class BackgroundWorker {
 	static {
 		System.setProperty("webdriver.chrome.driver", "C:/Users/Prasanga Fernando/Documents/Eclipse/TestNG_PageTitle/chromedriver/chromedriver.exe");
@@ -29,6 +31,7 @@ public class BackgroundWorker {
 //		}
 //	 
 	 public void navigateToUserManagement() {
+		 	driver.manage().window().maximize();//Maximizing the window
 			driver.findElement(By.id("menu_admin_viewAdminModule")).click();
 		}
 		public void navigateToAddUser() {
