@@ -39,7 +39,14 @@ public class VerifyJobTitlesPage extends BackgroundWorker {
 	}
 	
 	public void verifyEditJobTitle(String existingJobName) {//Add other data here and convert this to a TestNG test case
-		
+		/*
+		 * Get the existing jobtitle from the excel sheet
+		 * Get the new jobTitle from the excel sheet
+		 * Search by the existing job name and locate the element and click on it
+		 * Click on the edit button "btnSave"
+		 * Enter new data extracted from the excel sheet
+		 * Click on the save button
+		 */
 	}
 	
 

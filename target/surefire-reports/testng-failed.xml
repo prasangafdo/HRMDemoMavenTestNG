@@ -3,9 +3,16 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
+      <class name="com.maven.testng.VerifyLoginTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="getURL"/>
+          <include name="verifyLoginWithCorrectCredentials"/>
+        </methods>
+      </class> <!-- com.maven.testng.VerifyLoginTest -->
       <class name="com.maven.testng.VerifyUserManagementPage">
         <methods>
-          <include name="test" invocation-numbers="1 2 3 4"/>
+          <include name="addUser"/>
           <include name="navigate"/>
         </methods>
       </class> <!-- com.maven.testng.VerifyUserManagementPage -->
