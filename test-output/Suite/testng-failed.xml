@@ -5,8 +5,8 @@
     <classes>
       <class name="com.maven.testng.VerifyUserManagementPage">
         <methods>
-          <include name="test" invocation-numbers="1 2 3"/>
           <include name="navigate"/>
+          <include name="addUser" invocation-numbers="1 2 3 4"/>
         </methods>
       </class> <!-- com.maven.testng.VerifyUserManagementPage -->
     </classes>

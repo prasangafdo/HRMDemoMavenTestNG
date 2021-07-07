@@ -24,7 +24,7 @@ public class VerifyUserManagementPage extends BackgroundWorker{
 		navigateToUserManagement();
 	}
 	
-	@Test(dataProvider="userData", dataProviderClass = DataDriver.class)
+	@Test(priority = 1, dataProvider="userData", dataProviderClass = DataDriver.class)
 	public void addUser(String userRole, String employeeName, String username, String status, String password) {
 		driver.findElement(By.id("btnAdd")).click();
 		
@@ -61,5 +61,12 @@ public class VerifyUserManagementPage extends BackgroundWorker{
 		//Reporter.log(employeeName);
 //		System.out.println(userData);
 	}
+	
+//	@Test(priority=2, dataProvider="userData", dataProviderClass = DataDriver.class)
+//	public void searchByUsername(String userRole, String employeeName, String username, String status, String password) {
+//		driver.findElement(By.id("searchSystemUser_userName")).sendKeys(username);
+//		driver.findElement(By.id("searchBtn")).click();
+//		
+//	}
 
 }
