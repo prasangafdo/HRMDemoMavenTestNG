@@ -114,4 +114,23 @@ public class DataDriver {
 		
 	}
 	
+	@DataProvider(name = "extractedEditedJobTitles")
+	public Object[][] extractedEditedJobTitles() throws BiffException, IOException{
+		
+		getWorkbook();
+		Sheet sheet = wb.getSheet(5);
+		int columnsCount = sheet.getColumns();
+		int rowsCount = sheet.getRows();
+		
+		String[][]extractedEditedJobTitles = new String[rowsCount][columnsCount];
+		
+		for(int i=0;i<rowsCount;i++) {
+			for (int j=0;j<columnsCount;j++){
+				Cell cell = sheet.getCell(j,i);
+				extractedEditedJobTitles[i][j] = cell.getContents();
+			}
+		}
+		return extractedEditedJobTitles;
+	}
+	
 }

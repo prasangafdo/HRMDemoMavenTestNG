@@ -16,29 +16,30 @@ import org.testng.annotations.Test;
 public class VerifyJobTitlesPage extends BackgroundWorker {
 	
 
-	@Test(dataProvider="jobTitle", dataProviderClass = DataDriver.class)
-	public void verifyAddJobTitle(String jobTitle, String jobDescription, String jobNote) {
-		// TODO Auto-generated method stub
-		
-		navigateToUserManagement();
-		selectJobTitles();
-		//Assert.assertEquals("test", "test"); //dummy assert to verify the test
-		
-		
-		driver.findElement(By.xpath("//*/input[@name='btnAdd']")).click();
-		driver.findElement(By.id("jobTitle_jobTitle")).sendKeys(jobTitle);
-		driver.findElement(By.id("jobTitle_jobDescription")).sendKeys(jobDescription);
-		driver.findElement(By.id("jobTitle_note")).sendKeys(jobNote);
-		driver.findElement(By.id("btnSave")).click();
-		
-		String expectedMessage = "Successfully Saved";
-		String actualMessage = driver.findElement(By.xpath("//*/div[@class ='message success fadable']")).getText();
-		
-		Assert.assertEquals(actualMessage, expectedMessage);
-		
-	}
+//	@Test(dataProvider="jobTitle", dataProviderClass = DataDriver.class)
+//	public void verifyAddJobTitle(String jobTitle, String jobDescription, String jobNote) {
+//		// TODO Auto-generated method stub
+//		
+//		navigateToUserManagement();
+//		selectJobTitles();
+//		//Assert.assertEquals("test", "test"); //dummy assert to verify the test
+//		
+//		
+//		driver.findElement(By.xpath("//*/input[@name='btnAdd']")).click();
+//		driver.findElement(By.id("jobTitle_jobTitle")).sendKeys(jobTitle);
+//		driver.findElement(By.id("jobTitle_jobDescription")).sendKeys(jobDescription);
+//		driver.findElement(By.id("jobTitle_note")).sendKeys(jobNote);
+//		driver.findElement(By.id("btnSave")).click();
+//		
+//		String expectedMessage = "Successfully Saved";
+//		String actualMessage = driver.findElement(By.xpath("//*/div[@class ='message success fadable']")).getText();
+//		
+//		Assert.assertEquals(actualMessage, expectedMessage);
+//		
+//	}
 	
-	public void verifyEditJobTitle(String existingJobName) {//Add other data here and convert this to a TestNG test case
+	@Test(priority = 2, dataProvider="extractedEditedJobTitles", dataProviderClass = DataDriver.class)
+	public void verifyEditJobTitle(String existingJobName, String newJobName, String jobDescription, String jobTitleNote) {//Add other data here and convert this to a TestNG test case
 		/*
 		 * Get the existing jobtitle from the excel sheet
 		 * Get the new jobTitle from the excel sheet
