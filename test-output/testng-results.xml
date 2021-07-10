@@ -1,466 +1,360 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="3" failed="4" skipped="0">
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-07T19:22:26 IST" name="Suite" finished-at="2021-07-07T19:22:45 IST" duration-ms="18608">
+  <suite started-at="2021-07-10T16:36:29 IST" name="Suite" finished-at="2021-07-10T16:37:56 IST" duration-ms="86750">
     <groups>
     </groups>
-    <test started-at="2021-07-07T19:22:26 IST" name="Test" finished-at="2021-07-07T19:22:45 IST" duration-ms="18608">
+    <test started-at="2021-07-10T16:36:29 IST" name="Test" finished-at="2021-07-10T16:37:56 IST" duration-ms="86750">
       <class name="com.maven.testng.VerifyLoginTest">
-        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@73a2e526]" started-at="2021-07-07T19:22:26 IST" name="getURL" finished-at="2021-07-07T19:22:33 IST" duration-ms="6584" status="PASS">
+        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@2d96543c]" started-at="2021-07-10T16:36:29 IST" name="getURL" finished-at="2021-07-10T16:36:36 IST" duration-ms="7155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getURL -->
-        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@73a2e526]" started-at="2021-07-07T19:22:33 IST" name="verifyLoginErrorMessage" finished-at="2021-07-07T19:22:34 IST" duration-ms="1617" status="PASS">
+        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@2d96543c]" started-at="2021-07-10T16:36:36 IST" name="verifyLoginErrorMessage" finished-at="2021-07-10T16:36:38 IST" duration-ms="1652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginErrorMessage -->
-        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@73a2e526]" started-at="2021-07-07T19:22:34 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-07-07T19:22:40 IST" duration-ms="5629" status="PASS">
+        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@2d96543c]" started-at="2021-07-10T16:36:38 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-07-10T16:36:45 IST" duration-ms="6665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithCorrectCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@73a2e526]" started-at="2021-07-07T19:22:45 IST" name="closeBrowser" finished-at="2021-07-07T19:22:45 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@2d96543c]" started-at="2021-07-10T16:37:56 IST" name="closeBrowser" finished-at="2021-07-10T16:37:56 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.maven.testng.VerifyLoginTest -->
-      <class name="com.maven.testng.VerifyUserManagementPage">
-        <test-method is-config="true" signature="navigate()[pri:0, instance:com.maven.testng.VerifyUserManagementPage@7d64e326]" started-at="2021-07-07T19:22:40 IST" name="navigate" finished-at="2021-07-07T19:22:42 IST" duration-ms="1920" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigate -->
-        <test-method signature="addUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.maven.testng.VerifyUserManagementPage@7d64e326]" started-at="2021-07-07T19:22:42 IST" name="addUser" data-provider="userData" finished-at="2021-07-07T19:22:45 IST" duration-ms="2658" status="PASS">
+      <class name="com.maven.testng.VerifyJobTitlesPage">
+        <test-method signature="verifyAddJobTitle(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:36:45 IST" name="verifyAddJobTitle" data-provider="jobTitle" finished-at="2021-07-10T16:36:51 IST" duration-ms="6366" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Admin]]>
+                <![CDATA[Test Job Title 01 Admin]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Alice]]>
+                <![CDATA[Test Job Description 01]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Test name 01]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Enabled]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[TestPassword0X1]]>
+                <![CDATA[Test Job Title Note 01]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addUser -->
-        <test-method signature="addUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.maven.testng.VerifyUserManagementPage@7d64e326]" started-at="2021-07-07T19:22:45 IST" name="addUser" data-provider="userData" finished-at="2021-07-07T19:22:45 IST" duration-ms="20" status="FAIL">
+        </test-method> <!-- verifyAddJobTitle -->
+        <test-method signature="verifyAddJobTitle(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:36:51 IST" name="verifyAddJobTitle" data-provider="jobTitle" finished-at="2021-07-10T16:36:55 IST" duration-ms="3996" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ESS]]>
+                <![CDATA[Test Job Title 02 Carpenter]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Anthony Nolan]]>
+                <![CDATA[Test Job Description 02]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Test name 02]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Disabled]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[TestPassword0X2]]>
+                <![CDATA[Test Job Title Note 02]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#btnAdd"}
-  (Session info: chrome=91.0.4472.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-8DPVRQ3', ip: '192.168.8.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1933}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8159e2ede06def276ad94eb60db49633
-*** Element info: {Using=id, value=btnAdd}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#btnAdd"}
-  (Session info: chrome=91.0.4472.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-8DPVRQ3', ip: '192.168.8.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1933}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8159e2ede06def276ad94eb60db49633
-*** Element info: {Using=id, value=btnAdd}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.maven.testng.VerifyUserManagementPage.addUser(VerifyUserManagementPage.java:29)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addUser -->
-        <test-method signature="addUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.maven.testng.VerifyUserManagementPage@7d64e326]" started-at="2021-07-07T19:22:45 IST" name="addUser" data-provider="userData" finished-at="2021-07-07T19:22:45 IST" duration-ms="36" status="FAIL">
+        </test-method> <!-- verifyAddJobTitle -->
+        <test-method signature="verifyAddJobTitle(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:36:55 IST" name="verifyAddJobTitle" data-provider="jobTitle" finished-at="2021-07-10T16:36:59 IST" duration-ms="4171" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Admin]]>
+                <![CDATA[Test Job Title 03 Caption]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Cecil]]>
+                <![CDATA[Test Job Description 03]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Test name 03]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Enabled]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[TestPassword0X3]]>
+                <![CDATA[Test Job Title Note 03]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#btnAdd"}
-  (Session info: chrome=91.0.4472.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-8DPVRQ3', ip: '192.168.8.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1933}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8159e2ede06def276ad94eb60db49633
-*** Element info: {Using=id, value=btnAdd}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#btnAdd"}
-  (Session info: chrome=91.0.4472.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-8DPVRQ3', ip: '192.168.8.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1933}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8159e2ede06def276ad94eb60db49633
-*** Element info: {Using=id, value=btnAdd}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.maven.testng.VerifyUserManagementPage.addUser(VerifyUserManagementPage.java:29)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addUser -->
-        <test-method signature="addUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.maven.testng.VerifyUserManagementPage@7d64e326]" started-at="2021-07-07T19:22:45 IST" name="addUser" data-provider="userData" finished-at="2021-07-07T19:22:45 IST" duration-ms="14" status="FAIL">
+        </test-method> <!-- verifyAddJobTitle -->
+        <test-method signature="verifyAddJobTitle(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:36:59 IST" name="verifyAddJobTitle" data-provider="jobTitle" finished-at="2021-07-10T16:37:03 IST" duration-ms="3657" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ESS]]>
+                <![CDATA[Test Job Title 04 Pilot]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Charlie]]>
+                <![CDATA[Test Job Description 04]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Test name 04]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Disabled]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[TestPassword0X4]]>
+                <![CDATA[Test Job Title Note 04]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#btnAdd"}
-  (Session info: chrome=91.0.4472.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-8DPVRQ3', ip: '192.168.8.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1933}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8159e2ede06def276ad94eb60db49633
-*** Element info: {Using=id, value=btnAdd}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#btnAdd"}
-  (Session info: chrome=91.0.4472.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-8DPVRQ3', ip: '192.168.8.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1933}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8159e2ede06def276ad94eb60db49633
-*** Element info: {Using=id, value=btnAdd}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.maven.testng.VerifyUserManagementPage.addUser(VerifyUserManagementPage.java:29)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addUser -->
-        <test-method signature="addUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.maven.testng.VerifyUserManagementPage@7d64e326]" started-at="2021-07-07T19:22:45 IST" name="addUser" data-provider="userData" finished-at="2021-07-07T19:22:45 IST" duration-ms="15" status="FAIL">
+        </test-method> <!-- verifyAddJobTitle -->
+        <test-method signature="verifyAddJobTitle(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:03 IST" name="verifyAddJobTitle" data-provider="jobTitle" finished-at="2021-07-10T16:37:08 IST" duration-ms="4690" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Admin]]>
+                <![CDATA[Test Job Title 05 Nanny]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[David]]>
+                <![CDATA[Test Job Description 05]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Test name 05]]>
+                <![CDATA[Test Job Title Note 05]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddJobTitle -->
+        <test-method signature="verifyAddJobTitle(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:08 IST" name="verifyAddJobTitle" data-provider="jobTitle" finished-at="2021-07-10T16:37:13 IST" duration-ms="5155" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 06 Seamon]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Description 06]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Title Note 06]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddJobTitle -->
+        <test-method signature="verifyAddJobTitle(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:13 IST" name="verifyAddJobTitle" data-provider="jobTitle" finished-at="2021-07-10T16:37:18 IST" duration-ms="4840" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 07 Engineer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Description 07]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Title Note 07]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddJobTitle -->
+        <test-method signature="verifyEditJobTitle(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:18 IST" name="verifyEditJobTitle" data-provider="extractedEditedJobTitles" finished-at="2021-07-10T16:37:23 IST" duration-ms="4925" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 01 Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Title 01 Admin updated]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Description 01]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Enabled]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[TestPassword0X5]]>
+                <![CDATA[Test Job Title Note 01]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#btnAdd"}
-  (Session info: chrome=91.0.4472.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-8DPVRQ3', ip: '192.168.8.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1933}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8159e2ede06def276ad94eb60db49633
-*** Element info: {Using=id, value=btnAdd}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#btnAdd"}
-  (Session info: chrome=91.0.4472.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-8DPVRQ3', ip: '192.168.8.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1933}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8159e2ede06def276ad94eb60db49633
-*** Element info: {Using=id, value=btnAdd}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.maven.testng.VerifyUserManagementPage.addUser(VerifyUserManagementPage.java:29)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addUser -->
-      </class> <!-- com.maven.testng.VerifyUserManagementPage -->
+        </test-method> <!-- verifyEditJobTitle -->
+        <test-method signature="verifyEditJobTitle(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:23 IST" name="verifyEditJobTitle" data-provider="extractedEditedJobTitles" finished-at="2021-07-10T16:37:29 IST" duration-ms="6099" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 02 Carpenter]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Title 02 Carpenter updated]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Description 02]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test Job Title Note 02]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditJobTitle -->
+        <test-method signature="verifyEditJobTitle(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:29 IST" name="verifyEditJobTitle" data-provider="extractedEditedJobTitles" finished-at="2021-07-10T16:37:35 IST" duration-ms="5807" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 03 Caption]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Title 03 Caption updated]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Description 03]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test Job Title Note 03]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditJobTitle -->
+        <test-method signature="verifyEditJobTitle(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:35 IST" name="verifyEditJobTitle" data-provider="extractedEditedJobTitles" finished-at="2021-07-10T16:37:42 IST" duration-ms="7403" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 04 Pilot]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Title 04 Pilot updated]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Description 04]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test Job Title Note 04]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditJobTitle -->
+        <test-method signature="verifyEditJobTitle(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:42 IST" name="verifyEditJobTitle" data-provider="extractedEditedJobTitles" finished-at="2021-07-10T16:37:47 IST" duration-ms="5194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 05 Nanny]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Title 05 Nanny updated]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Description 05]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test Job Title Note 05]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditJobTitle -->
+        <test-method signature="verifyEditJobTitle(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:47 IST" name="verifyEditJobTitle" data-provider="extractedEditedJobTitles" finished-at="2021-07-10T16:37:52 IST" duration-ms="4469" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 06 Seamon]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Title 06 Seamon updated]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Description 06]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test Job Title Note 06]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditJobTitle -->
+        <test-method signature="verifyEditJobTitle(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:52 IST" name="verifyEditJobTitle" data-provider="extractedEditedJobTitles" finished-at="2021-07-10T16:37:56 IST" duration-ms="4350" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 07 Engineer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Title 07 Engineer updated]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Description 07]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test Job Title Note 07]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditJobTitle -->
+      </class> <!-- com.maven.testng.VerifyJobTitlesPage -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
