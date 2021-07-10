@@ -40,6 +40,13 @@ public class VerifyJobTitlesPage extends BackgroundWorker {
 	
 	@Test(priority = 2, dataProvider="extractedEditedJobTitles", dataProviderClass = DataDriver.class)
 	public void verifyEditJobTitle(String existingJobName, String newJobName, String jobDescription, String jobTitleNote) {//Add other data here and convert this to a TestNG test case
+		
+		navigateToUserManagement();
+		selectJobTitles();
+
+		driver.findElement(By.xpath("//*/tbody/tr/td/a[contains(text(),'"+existingJobName+"')]")).click();
+		driver.findElement(By.id("btnSave")).click();
+		
 		/*
 		 * Get the existing jobtitle from the excel sheet
 		 * Get the new jobTitle from the excel sheet
@@ -48,6 +55,7 @@ public class VerifyJobTitlesPage extends BackgroundWorker {
 		 * Enter new data extracted from the excel sheet
 		 * Click on the save button
 		 */
+
 	}
 	
 

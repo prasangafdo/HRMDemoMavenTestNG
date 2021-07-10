@@ -5,7 +5,7 @@
     <classes>
       <class name="com.maven.testng.VerifyJobTitlesPage">
         <methods>
-          <include name="verifyEditJobTitle"/>
+          <include name="verifyEditJobTitle" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.maven.testng.VerifyJobTitlesPage -->
     </classes>
