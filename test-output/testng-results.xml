@@ -1,35 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-10T16:28:39 IST" name="Suite" finished-at="2021-07-10T16:29:00 IST" duration-ms="20882">
+  <suite started-at="2021-07-10T16:36:29 IST" name="Suite" finished-at="2021-07-10T16:37:56 IST" duration-ms="86750">
     <groups>
     </groups>
-    <test started-at="2021-07-10T16:28:39 IST" name="Test" finished-at="2021-07-10T16:29:00 IST" duration-ms="20882">
+    <test started-at="2021-07-10T16:36:29 IST" name="Test" finished-at="2021-07-10T16:37:56 IST" duration-ms="86750">
       <class name="com.maven.testng.VerifyLoginTest">
-        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@1fdf1c5]" started-at="2021-07-10T16:28:39 IST" name="getURL" finished-at="2021-07-10T16:28:46 IST" duration-ms="6836" status="PASS">
+        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@2d96543c]" started-at="2021-07-10T16:36:29 IST" name="getURL" finished-at="2021-07-10T16:36:36 IST" duration-ms="7155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getURL -->
-        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@1fdf1c5]" started-at="2021-07-10T16:28:46 IST" name="verifyLoginErrorMessage" finished-at="2021-07-10T16:28:48 IST" duration-ms="1555" status="PASS">
+        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@2d96543c]" started-at="2021-07-10T16:36:36 IST" name="verifyLoginErrorMessage" finished-at="2021-07-10T16:36:38 IST" duration-ms="1652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginErrorMessage -->
-        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@1fdf1c5]" started-at="2021-07-10T16:28:48 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-07-10T16:28:54 IST" duration-ms="6179" status="PASS">
+        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@2d96543c]" started-at="2021-07-10T16:36:38 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-07-10T16:36:45 IST" duration-ms="6665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithCorrectCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@1fdf1c5]" started-at="2021-07-10T16:29:00 IST" name="closeBrowser" finished-at="2021-07-10T16:29:00 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@2d96543c]" started-at="2021-07-10T16:37:56 IST" name="closeBrowser" finished-at="2021-07-10T16:37:56 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.maven.testng.VerifyLoginTest -->
       <class name="com.maven.testng.VerifyJobTitlesPage">
-        <test-method signature="verifyEditJobTitle(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyJobTitlesPage@2d96543c]" started-at="2021-07-10T16:28:54 IST" name="verifyEditJobTitle" data-provider="extractedEditedJobTitles" finished-at="2021-07-10T16:29:00 IST" duration-ms="6194" status="PASS">
+        <test-method signature="verifyAddJobTitle(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:36:45 IST" name="verifyAddJobTitle" data-provider="jobTitle" finished-at="2021-07-10T16:36:51 IST" duration-ms="6366" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Test Ravi]]>
+                <![CDATA[Test Job Title 01 Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Description 01]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Title Note 01]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddJobTitle -->
+        <test-method signature="verifyAddJobTitle(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:36:51 IST" name="verifyAddJobTitle" data-provider="jobTitle" finished-at="2021-07-10T16:36:55 IST" duration-ms="3996" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 02 Carpenter]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Description 02]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Title Note 02]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddJobTitle -->
+        <test-method signature="verifyAddJobTitle(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:36:55 IST" name="verifyAddJobTitle" data-provider="jobTitle" finished-at="2021-07-10T16:36:59 IST" duration-ms="4171" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 03 Caption]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Description 03]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Title Note 03]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddJobTitle -->
+        <test-method signature="verifyAddJobTitle(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:36:59 IST" name="verifyAddJobTitle" data-provider="jobTitle" finished-at="2021-07-10T16:37:03 IST" duration-ms="3657" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 04 Pilot]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Description 04]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Title Note 04]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddJobTitle -->
+        <test-method signature="verifyAddJobTitle(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:03 IST" name="verifyAddJobTitle" data-provider="jobTitle" finished-at="2021-07-10T16:37:08 IST" duration-ms="4690" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 05 Nanny]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Description 05]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Title Note 05]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddJobTitle -->
+        <test-method signature="verifyAddJobTitle(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:08 IST" name="verifyAddJobTitle" data-provider="jobTitle" finished-at="2021-07-10T16:37:13 IST" duration-ms="5155" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 06 Seamon]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Description 06]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Title Note 06]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddJobTitle -->
+        <test-method signature="verifyAddJobTitle(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:13 IST" name="verifyAddJobTitle" data-provider="jobTitle" finished-at="2021-07-10T16:37:18 IST" duration-ms="4840" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 07 Engineer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Description 07]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Title Note 07]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddJobTitle -->
+        <test-method signature="verifyEditJobTitle(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:18 IST" name="verifyEditJobTitle" data-provider="extractedEditedJobTitles" finished-at="2021-07-10T16:37:23 IST" duration-ms="4925" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 01 Admin]]>
               </value>
             </param>
             <param index="1">
@@ -45,6 +192,162 @@
             <param index="3">
               <value>
                 <![CDATA[Test Job Title Note 01]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditJobTitle -->
+        <test-method signature="verifyEditJobTitle(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:23 IST" name="verifyEditJobTitle" data-provider="extractedEditedJobTitles" finished-at="2021-07-10T16:37:29 IST" duration-ms="6099" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 02 Carpenter]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Title 02 Carpenter updated]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Description 02]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test Job Title Note 02]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditJobTitle -->
+        <test-method signature="verifyEditJobTitle(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:29 IST" name="verifyEditJobTitle" data-provider="extractedEditedJobTitles" finished-at="2021-07-10T16:37:35 IST" duration-ms="5807" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 03 Caption]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Title 03 Caption updated]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Description 03]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test Job Title Note 03]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditJobTitle -->
+        <test-method signature="verifyEditJobTitle(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:35 IST" name="verifyEditJobTitle" data-provider="extractedEditedJobTitles" finished-at="2021-07-10T16:37:42 IST" duration-ms="7403" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 04 Pilot]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Title 04 Pilot updated]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Description 04]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test Job Title Note 04]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditJobTitle -->
+        <test-method signature="verifyEditJobTitle(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:42 IST" name="verifyEditJobTitle" data-provider="extractedEditedJobTitles" finished-at="2021-07-10T16:37:47 IST" duration-ms="5194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 05 Nanny]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Title 05 Nanny updated]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Description 05]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test Job Title Note 05]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditJobTitle -->
+        <test-method signature="verifyEditJobTitle(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:47 IST" name="verifyEditJobTitle" data-provider="extractedEditedJobTitles" finished-at="2021-07-10T16:37:52 IST" duration-ms="4469" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 06 Seamon]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Title 06 Seamon updated]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Description 06]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test Job Title Note 06]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditJobTitle -->
+        <test-method signature="verifyEditJobTitle(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyJobTitlesPage@73a2e526]" started-at="2021-07-10T16:37:52 IST" name="verifyEditJobTitle" data-provider="extractedEditedJobTitles" finished-at="2021-07-10T16:37:56 IST" duration-ms="4350" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Job Title 07 Engineer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Job Title 07 Engineer updated]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Job Description 07]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test Job Title Note 07]]>
               </value>
             </param>
           </params>
