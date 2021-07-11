@@ -9,72 +9,17 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">8,664</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">15,058</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.maven.testng.VerifyEmploymentStatus</td><td><a href="#m0">navigate</a></td><td rowspan="1">1625992318453</td><td rowspan="1">14</td></tr><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.maven.testng.VerifyLoginTest</td><td><a href="#m1">verifyLoginErrorMessage</a></td><td rowspan="1">1625992314476</td><td rowspan="1">1574</td></tr><tr class="failedeven"><td><a href="#m2">verifyLoginWithCorrectCredentials</a></td><td rowspan="1">1625992316071</td><td rowspan="1">2374</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.maven.testng.VerifyEmploymentStatus</td><td><a href="#m3">verifyAddEmploymentStatus</a></td><td rowspan="1">1625992318470</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.maven.testng.VerifyEmploymentStatus</td><td><a href="#m0">verifyAddEmploymentStatus</a></td><td rowspan="6">1626000333323</td><td rowspan="6">1</td></tr><tr class="passedeven"><td><a href="#m1">verifyAddEmploymentStatus</a></td></tr><tr class="passedeven"><td><a href="#m2">verifyAddEmploymentStatus</a></td></tr><tr class="passedeven"><td><a href="#m3">verifyAddEmploymentStatus</a></td></tr><tr class="passedeven"><td><a href="#m4">verifyAddEmploymentStatus</a></td></tr><tr class="passedeven"><td><a href="#m5">verifyAddEmploymentStatus</a></td></tr><tr class="passedodd"><td rowspan="2">com.maven.testng.VerifyLoginTest</td><td><a href="#m6">verifyLoginErrorMessage</a></td><td rowspan="1">1626000323291</td><td rowspan="1">1671</td></tr><tr class="passedodd"><td><a href="#m7">verifyLoginWithCorrectCredentials</a></td><td rowspan="1">1626000324971</td><td rowspan="1">5043</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.maven.testng.VerifyEmploymentStatus#navigate</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=91.0.4472.124)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-8DPVRQ3&apos;, ip: &apos;192.168.8.172&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:5170}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7c6f9dd4e7ff11e642ab1882bbdec8ab
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at com.maven.testng.BackgroundWorker.navigateToUserManagement(BackgroundWorker.java:34)
-	at com.maven.testng.VerifyEmploymentStatus.navigate(VerifyEmploymentStatus.java:11)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.maven.testng.VerifyLoginTest#verifyLoginErrorMessage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Invalid credentials] but found [无效的凭证]
-	at com.maven.testng.VerifyLoginTest.verifyLoginErrorMessage(VerifyLoginTest.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.maven.testng.VerifyLoginTest#verifyLoginWithCorrectCredentials</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=91.0.4472.124)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-8DPVRQ3&apos;, ip: &apos;192.168.8.172&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:5170}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7c6f9dd4e7ff11e642ab1882bbdec8ab
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:287)
-	at com.maven.testng.VerifyLoginTest.verifyLoginWithCorrectCredentials(VerifyLoginTest.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.maven.testng.VerifyEmploymentStatus#verifyAddEmploymentStatus</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=91.0.4472.124)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-8DPVRQ3&apos;, ip: &apos;192.168.8.172&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:5170}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7c6f9dd4e7ff11e642ab1882bbdec8ab
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at com.maven.testng.BackgroundWorker.navigateToUserManagement(BackgroundWorker.java:34)
-	at com.maven.testng.VerifyEmploymentStatus.navigate(VerifyEmploymentStatus.java:11)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.maven.testng.VerifyEmploymentStatus#verifyAddEmploymentStatus</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Test Employment Status 04</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.maven.testng.VerifyEmploymentStatus#verifyAddEmploymentStatus</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Test Employment Status 05</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.maven.testng.VerifyEmploymentStatus#verifyAddEmploymentStatus</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Test Employment Status 01</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.maven.testng.VerifyEmploymentStatus#verifyAddEmploymentStatus</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Test Employment Status 06</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.maven.testng.VerifyEmploymentStatus#verifyAddEmploymentStatus</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Test Employment Status 02</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.maven.testng.VerifyEmploymentStatus#verifyAddEmploymentStatus</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Test Employment Status 03</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.maven.testng.VerifyLoginTest#verifyLoginErrorMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.maven.testng.VerifyLoginTest#verifyLoginWithCorrectCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -12,9 +12,10 @@ public class VerifyEmploymentStatus extends BackgroundWorker{
 		selectEmpStatus();
 	}
 	
-	@Test(priority=1)
-	public void verifyAddEmploymentStatus() {
-		driver.findElement(By.id("btnAdd")).click();
+	@Test(priority=1, dataProvider="extractedEmploymentStatus", dataProviderClass=DataDriver.class)
+	public void verifyAddEmploymentStatus(String EmploymentStatus) {
+		System.out.println();
+	//	driver.findElement(By.id("btnAdd")).click();
 	}
 
 }

@@ -5,18 +5,9 @@
     <classes>
       <class name="com.maven.testng.VerifyEmploymentStatus">
         <methods>
-          <include name="navigate"/>
           <include name="verifyAddEmploymentStatus"/>
         </methods>
       </class> <!-- com.maven.testng.VerifyEmploymentStatus -->
-      <class name="com.maven.testng.VerifyLoginTest">
-        <methods>
-          <include name="getURL"/>
-          <include name="verifyLoginWithCorrectCredentials"/>
-          <include name="closeBrowser"/>
-          <include name="verifyLoginErrorMessage"/>
-        </methods>
-      </class> <!-- com.maven.testng.VerifyLoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

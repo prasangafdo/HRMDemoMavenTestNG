@@ -133,4 +133,23 @@ public class DataDriver {
 		return extractedEditedJobTitles;
 	}
 	
+	@DataProvider(name ="extractedEmploymentStatus")
+	public Object[][] extractedEmploymentStatus() throws BiffException, IOException{
+		getWorkbook();
+		Sheet sheet = wb.getSheet("AddEmploymentStatus");
+		int rowsCount = sheet.getRows();
+		int columnsCount = sheet.getColumns();
+		
+		String[][] extractedEmploymentStatus = new String[rowsCount][columnsCount];
+		
+		for(int i=0;i<rowsCount;i++) {
+			for(int j=0;j<columnsCount;j++) {
+				Cell cell = sheet.getCell(j,i);
+				extractedEmploymentStatus[i][j]= cell.getContents();
+			}
+		}
+		
+		return extractedEmploymentStatus;
+	}
+	
 }
