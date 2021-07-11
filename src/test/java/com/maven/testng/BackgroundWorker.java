@@ -78,5 +78,16 @@ public class BackgroundWorker {
 			setMouseOverOnJob();
 			driver.findElement(By.id("menu_admin_jobCategory")).click();
 		}
+		
+		String actualResult;
+		//Verification points
+		public void setSavedSuccessMessage() {
+			actualResult = driver.findElement(By.xpath("//*/form/div[@class='message success fadable']")).getText();
+		//	return actualResult;
+		}
+		
+		public String getSavedSuccessMessage() {
+			return this.actualResult;
+		}
 
 }

@@ -1,6 +1,7 @@
 package com.maven.testng;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -17,6 +18,13 @@ public class VerifyEmploymentStatus extends BackgroundWorker{
 		driver.findElement(By.id("btnAdd")).click();
 		driver.findElement(By.id("empStatus_name")).sendKeys(employmentStatus);
 		driver.findElement(By.id("btnSave")).click();
+		
+		//Verification point
+		//String actualResult = driver.findElement(By.xpath("*//div/div[@class='message success fadable']")).getText();
+		String expectedResult = "Successfully Saved";
+		
+		setSavedSuccessMessage();		
+		Assert.assertEquals(getSavedSuccessMessage(), expectedResult);
 	}
 
 }

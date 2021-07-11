@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-11T16:29:10 IST" name="Suite" finished-at="2021-07-11T16:29:35 IST" duration-ms="24701">
+  <suite started-at="2021-07-11T16:44:48 IST" name="Suite" finished-at="2021-07-11T16:45:08 IST" duration-ms="20559">
     <groups>
     </groups>
-    <test started-at="2021-07-11T16:29:10 IST" name="Test" finished-at="2021-07-11T16:29:35 IST" duration-ms="24701">
+    <test started-at="2021-07-11T16:44:48 IST" name="Test" finished-at="2021-07-11T16:45:08 IST" duration-ms="20559">
       <class name="com.maven.testng.VerifyLoginTest">
-        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@73a2e526]" started-at="2021-07-11T16:29:10 IST" name="getURL" finished-at="2021-07-11T16:29:16 IST" duration-ms="5677" status="PASS">
+        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@13f95696]" started-at="2021-07-11T16:44:48 IST" name="getURL" finished-at="2021-07-11T16:44:52 IST" duration-ms="4236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getURL -->
-        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@73a2e526]" started-at="2021-07-11T16:29:16 IST" name="verifyLoginErrorMessage" finished-at="2021-07-11T16:29:18 IST" duration-ms="1733" status="PASS">
+        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@13f95696]" started-at="2021-07-11T16:44:52 IST" name="verifyLoginErrorMessage" finished-at="2021-07-11T16:44:54 IST" duration-ms="1517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginErrorMessage -->
-        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@73a2e526]" started-at="2021-07-11T16:29:18 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-07-11T16:29:22 IST" duration-ms="4583" status="PASS">
+        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@13f95696]" started-at="2021-07-11T16:44:54 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-07-11T16:44:58 IST" duration-ms="4756" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithCorrectCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@73a2e526]" started-at="2021-07-11T16:29:35 IST" name="closeBrowser" finished-at="2021-07-11T16:29:35 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@13f95696]" started-at="2021-07-11T16:45:08 IST" name="closeBrowser" finished-at="2021-07-11T16:45:08 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.maven.testng.VerifyLoginTest -->
       <class name="com.maven.testng.VerifyEmploymentStatus">
-        <test-method is-config="true" signature="navigate()[pri:0, instance:com.maven.testng.VerifyEmploymentStatus@7d64e326]" started-at="2021-07-11T16:29:22 IST" name="navigate" finished-at="2021-07-11T16:29:26 IST" duration-ms="3344" status="PASS">
+        <test-method is-config="true" signature="navigate()[pri:0, instance:com.maven.testng.VerifyEmploymentStatus@cd1d761]" started-at="2021-07-11T16:44:58 IST" name="navigate" finished-at="2021-07-11T16:45:02 IST" duration-ms="3433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigate -->
-        <test-method signature="verifyAddEmploymentStatus(java.lang.String)[pri:1, instance:com.maven.testng.VerifyEmploymentStatus@7d64e326]" started-at="2021-07-11T16:29:26 IST" name="verifyAddEmploymentStatus" data-provider="extractedEmploymentStatus" finished-at="2021-07-11T16:29:27 IST" duration-ms="1338" status="PASS">
+        <test-method signature="verifyAddEmploymentStatus(java.lang.String)[pri:1, instance:com.maven.testng.VerifyEmploymentStatus@cd1d761]" started-at="2021-07-11T16:45:02 IST" name="verifyAddEmploymentStatus" data-provider="extractedEmploymentStatus" finished-at="2021-07-11T16:45:03 IST" duration-ms="1086" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddEmploymentStatus -->
-        <test-method signature="verifyAddEmploymentStatus(java.lang.String)[pri:1, instance:com.maven.testng.VerifyEmploymentStatus@7d64e326]" started-at="2021-07-11T16:29:27 IST" name="verifyAddEmploymentStatus" data-provider="extractedEmploymentStatus" finished-at="2021-07-11T16:29:29 IST" duration-ms="1440" status="PASS">
+        <test-method signature="verifyAddEmploymentStatus(java.lang.String)[pri:1, instance:com.maven.testng.VerifyEmploymentStatus@cd1d761]" started-at="2021-07-11T16:45:03 IST" name="verifyAddEmploymentStatus" data-provider="extractedEmploymentStatus" finished-at="2021-07-11T16:45:04 IST" duration-ms="1093" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddEmploymentStatus -->
-        <test-method signature="verifyAddEmploymentStatus(java.lang.String)[pri:1, instance:com.maven.testng.VerifyEmploymentStatus@7d64e326]" started-at="2021-07-11T16:29:29 IST" name="verifyAddEmploymentStatus" data-provider="extractedEmploymentStatus" finished-at="2021-07-11T16:29:30 IST" duration-ms="1528" status="PASS">
+        <test-method signature="verifyAddEmploymentStatus(java.lang.String)[pri:1, instance:com.maven.testng.VerifyEmploymentStatus@cd1d761]" started-at="2021-07-11T16:45:04 IST" name="verifyAddEmploymentStatus" data-provider="extractedEmploymentStatus" finished-at="2021-07-11T16:45:05 IST" duration-ms="1065" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,7 +62,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddEmploymentStatus -->
-        <test-method signature="verifyAddEmploymentStatus(java.lang.String)[pri:1, instance:com.maven.testng.VerifyEmploymentStatus@7d64e326]" started-at="2021-07-11T16:29:30 IST" name="verifyAddEmploymentStatus" data-provider="extractedEmploymentStatus" finished-at="2021-07-11T16:29:32 IST" duration-ms="1552" status="PASS">
+        <test-method signature="verifyAddEmploymentStatus(java.lang.String)[pri:1, instance:com.maven.testng.VerifyEmploymentStatus@cd1d761]" started-at="2021-07-11T16:45:05 IST" name="verifyAddEmploymentStatus" data-provider="extractedEmploymentStatus" finished-at="2021-07-11T16:45:06 IST" duration-ms="1101" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,7 +73,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddEmploymentStatus -->
-        <test-method signature="verifyAddEmploymentStatus(java.lang.String)[pri:1, instance:com.maven.testng.VerifyEmploymentStatus@7d64e326]" started-at="2021-07-11T16:29:32 IST" name="verifyAddEmploymentStatus" data-provider="extractedEmploymentStatus" finished-at="2021-07-11T16:29:34 IST" duration-ms="1591" status="PASS">
+        <test-method signature="verifyAddEmploymentStatus(java.lang.String)[pri:1, instance:com.maven.testng.VerifyEmploymentStatus@cd1d761]" started-at="2021-07-11T16:45:06 IST" name="verifyAddEmploymentStatus" data-provider="extractedEmploymentStatus" finished-at="2021-07-11T16:45:07 IST" duration-ms="1079" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -84,7 +84,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddEmploymentStatus -->
-        <test-method signature="verifyAddEmploymentStatus(java.lang.String)[pri:1, instance:com.maven.testng.VerifyEmploymentStatus@7d64e326]" started-at="2021-07-11T16:29:34 IST" name="verifyAddEmploymentStatus" data-provider="extractedEmploymentStatus" finished-at="2021-07-11T16:29:35 IST" duration-ms="1614" status="PASS">
+        <test-method signature="verifyAddEmploymentStatus(java.lang.String)[pri:1, instance:com.maven.testng.VerifyEmploymentStatus@cd1d761]" started-at="2021-07-11T16:45:07 IST" name="verifyAddEmploymentStatus" data-provider="extractedEmploymentStatus" finished-at="2021-07-11T16:45:08 IST" duration-ms="1084" status="PASS">
           <params>
             <param index="0">
               <value>
