@@ -9,7 +9,8 @@
    <!--   <class name="com.maven.testng.VerifyJobTitlesPage"/>     -->
     <!-- <class name="com.maven.testng.VerifyPayGrades"/> -->  
     <!--     <class name="com.maven.testng.VerifyEmploymentStatus"/> -->  
-       <class name="com.maven.testng.VerifyJobCategories"/>  
+      <!-- <class name="com.maven.testng.VerifyJobCategories"/> -->  
+       <class name="com.maven.testng.VerifyWorkShifts"/>
    
       
     </classes>
