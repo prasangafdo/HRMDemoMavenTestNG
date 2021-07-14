@@ -3,14 +3,14 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <!-- multiple class test execution with TestNG
-      This will run the first class and then will run the second class
-       -->
-     <class name="com.maven.testng.VerifyLoginTest"/>
+
+      <class name="com.maven.testng.VerifyLoginTest"/> 
 	<!--    <class name="com.maven.testng.VerifyUserManagementPage"/>     -->  
-    <class name="com.maven.testng.VerifyJobTitlesPage"/>  
+   <!--   <class name="com.maven.testng.VerifyJobTitlesPage"/>     -->
     <!-- <class name="com.maven.testng.VerifyPayGrades"/> -->  
-      
+    <!--     <class name="com.maven.testng.VerifyEmploymentStatus"/> -->  
+      <!-- <class name="com.maven.testng.VerifyJobCategories"/> -->  
+       <class name="com.maven.testng.VerifyWorkShifts"/>
    
       
     </classes>

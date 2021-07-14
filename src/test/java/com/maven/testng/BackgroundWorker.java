@@ -78,5 +78,27 @@ public class BackgroundWorker {
 			setMouseOverOnJob();
 			driver.findElement(By.id("menu_admin_jobCategory")).click();
 		}
+		
+		public void selectWorkShifts() {
+			setMouseOverOnJob();
+			driver.findElement(By.id("menu_admin_workShift")).click();
+		}
+		
+		public void closeBrowser() throws InterruptedException {
+			Thread.sleep(2000);
+			driver.close();
+		}
+		
+		
+		String actualResult;
+		//Verification points
+		public void setSavedSuccessMessage() {
+			actualResult = driver.findElement(By.xpath("//*/form/div[@class='message success fadable']")).getText();
+		//	return actualResult;
+		}
+		
+		public String getSavedSuccessMessage() {
+			return this.actualResult;
+		}
 
 }
