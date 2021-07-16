@@ -4,8 +4,8 @@ import org.testng.annotations.Test;
 
 public class TempClass {
 
-	@Test(dataProvider="extractedJobCategories", dataProviderClass=DataDriver.class)
-	public void test(String a) {
+	@Test(dataProvider="extractedWorkShifts", dataProviderClass=DataDriver.class)
+	public void test(String shiftName, String hoursFrom, String hoursTo, String employee) {
 		
 		
 	}
