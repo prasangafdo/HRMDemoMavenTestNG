@@ -5,7 +5,8 @@
     <classes>
       <class name="com.maven.testng.VerifyWorkShifts">
         <methods>
-          <include name="test1"/>
+          <include name="aaa"/>
+          <include name="test1" invocation-numbers="1"/>
           <include name="navigateToWorkShifts"/>
         </methods>
       </class> <!-- com.maven.testng.VerifyWorkShifts -->
