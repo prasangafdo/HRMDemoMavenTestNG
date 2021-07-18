@@ -18,7 +18,7 @@ public class VerifyWorkShifts extends BackgroundWorker{
 	public void test1(String shiftName, String hoursFrom, String hoursTo, String employee) {
 		driver.findElement(By.id("btnAdd")).click();
 		
-		//Hardcoding data for now just to verify the element locaters.
+		//Hard coding data for now just to verify the element locaters.
 		driver.findElement(By.id("workShift_name")).sendKeys(shiftName);
 		
 		//Selecting work hours

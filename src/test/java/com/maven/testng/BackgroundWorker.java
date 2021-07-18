@@ -83,13 +83,7 @@ public class BackgroundWorker {
 			setMouseOverOnJob();
 			driver.findElement(By.id("menu_admin_workShift")).click();
 		}
-		
-		public void closeBrowser() throws InterruptedException {
-			Thread.sleep(2000);
-			driver.close();
-		}
-		
-		
+				
 		String actualResult;
 		//Verification points
 		public void setSavedSuccessMessage() {
