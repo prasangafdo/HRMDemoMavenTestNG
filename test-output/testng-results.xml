@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-18T10:24:57 IST" name="Suite" finished-at="2021-07-18T10:25:34 IST" duration-ms="37763">
+  <suite started-at="2021-07-18T10:36:30 IST" name="Suite" finished-at="2021-07-18T10:36:56 IST" duration-ms="25253">
     <groups>
     </groups>
-    <test started-at="2021-07-18T10:24:57 IST" name="Test" finished-at="2021-07-18T10:25:34 IST" duration-ms="37763">
+    <test started-at="2021-07-18T10:36:30 IST" name="Test" finished-at="2021-07-18T10:36:56 IST" duration-ms="25253">
       <class name="com.maven.testng.VerifyLoginTest">
-        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@69653e16]" started-at="2021-07-18T10:24:57 IST" name="getURL" finished-at="2021-07-18T10:25:01 IST" duration-ms="4310" status="PASS">
+        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@68be8808]" started-at="2021-07-18T10:36:30 IST" name="getURL" finished-at="2021-07-18T10:36:35 IST" duration-ms="4624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getURL -->
-        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@69653e16]" started-at="2021-07-18T10:25:01 IST" name="verifyLoginErrorMessage" finished-at="2021-07-18T10:25:03 IST" duration-ms="1759" status="PASS">
+        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@68be8808]" started-at="2021-07-18T10:36:35 IST" name="verifyLoginErrorMessage" finished-at="2021-07-18T10:36:37 IST" duration-ms="1677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginErrorMessage -->
-        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@69653e16]" started-at="2021-07-18T10:25:03 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-07-18T10:25:08 IST" duration-ms="5350" status="PASS">
+        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@68be8808]" started-at="2021-07-18T10:36:37 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-07-18T10:36:42 IST" duration-ms="5551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithCorrectCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@69653e16]" started-at="2021-07-18T10:25:32 IST" name="closeBrowser" finished-at="2021-07-18T10:25:34 IST" duration-ms="2097" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@68be8808]" started-at="2021-07-18T10:36:53 IST" name="closeBrowser" finished-at="2021-07-18T10:36:56 IST" duration-ms="2057" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.maven.testng.VerifyLoginTest -->
       <class name="com.maven.testng.VerifyWorkShifts">
-        <test-method is-config="true" signature="navigateToWorkShifts()[pri:0, instance:com.maven.testng.VerifyWorkShifts@758705fa]" started-at="2021-07-18T10:25:08 IST" name="navigateToWorkShifts" finished-at="2021-07-18T10:25:11 IST" duration-ms="2835" status="PASS">
+        <test-method is-config="true" signature="navigateToWorkShifts()[pri:0, instance:com.maven.testng.VerifyWorkShifts@32193bea]" started-at="2021-07-18T10:36:42 IST" name="navigateToWorkShifts" finished-at="2021-07-18T10:36:45 IST" duration-ms="3250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToWorkShifts -->
-        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyWorkShifts@758705fa]" started-at="2021-07-18T10:25:11 IST" name="test1" data-provider="extractedWorkShifts" finished-at="2021-07-18T10:25:14 IST" duration-ms="2825" status="PASS">
+        <test-method signature="verifyAddWorkShifts(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyWorkShifts@32193bea]" started-at="2021-07-18T10:36:46 IST" name="verifyAddWorkShifts" data-provider="extractedWorkShifts" finished-at="2021-07-18T10:36:47 IST" duration-ms="1610" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,12 +54,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="aaa()[pri:0, instance:com.maven.testng.VerifyWorkShifts@758705fa]" started-at="2021-07-18T10:25:14 IST" name="aaa" finished-at="2021-07-18T10:25:16 IST" duration-ms="1941" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aaa -->
-        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyWorkShifts@758705fa]" started-at="2021-07-18T10:25:16 IST" name="test1" data-provider="extractedWorkShifts" finished-at="2021-07-18T10:25:18 IST" duration-ms="2373" status="PASS">
+        </test-method> <!-- verifyAddWorkShifts -->
+        <test-method signature="verifyAddWorkShifts(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyWorkShifts@32193bea]" started-at="2021-07-18T10:36:47 IST" name="verifyAddWorkShifts" data-provider="extractedWorkShifts" finished-at="2021-07-18T10:36:49 IST" duration-ms="1636" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -84,12 +80,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="aaa()[pri:0, instance:com.maven.testng.VerifyWorkShifts@758705fa]" started-at="2021-07-18T10:25:18 IST" name="aaa" finished-at="2021-07-18T10:25:20 IST" duration-ms="1853" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aaa -->
-        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyWorkShifts@758705fa]" started-at="2021-07-18T10:25:20 IST" name="test1" data-provider="extractedWorkShifts" finished-at="2021-07-18T10:25:22 IST" duration-ms="2308" status="PASS">
+        </test-method> <!-- verifyAddWorkShifts -->
+        <test-method signature="verifyAddWorkShifts(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyWorkShifts@32193bea]" started-at="2021-07-18T10:36:49 IST" name="verifyAddWorkShifts" data-provider="extractedWorkShifts" finished-at="2021-07-18T10:36:50 IST" duration-ms="1608" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -114,12 +106,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="aaa()[pri:0, instance:com.maven.testng.VerifyWorkShifts@758705fa]" started-at="2021-07-18T10:25:22 IST" name="aaa" finished-at="2021-07-18T10:25:24 IST" duration-ms="1880" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aaa -->
-        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyWorkShifts@758705fa]" started-at="2021-07-18T10:25:24 IST" name="test1" data-provider="extractedWorkShifts" finished-at="2021-07-18T10:25:26 IST" duration-ms="2287" status="PASS">
+        </test-method> <!-- verifyAddWorkShifts -->
+        <test-method signature="verifyAddWorkShifts(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyWorkShifts@32193bea]" started-at="2021-07-18T10:36:50 IST" name="verifyAddWorkShifts" data-provider="extractedWorkShifts" finished-at="2021-07-18T10:36:52 IST" duration-ms="1593" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -144,12 +132,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="aaa()[pri:0, instance:com.maven.testng.VerifyWorkShifts@758705fa]" started-at="2021-07-18T10:25:26 IST" name="aaa" finished-at="2021-07-18T10:25:28 IST" duration-ms="1819" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aaa -->
-        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyWorkShifts@758705fa]" started-at="2021-07-18T10:25:28 IST" name="test1" data-provider="extractedWorkShifts" finished-at="2021-07-18T10:25:30 IST" duration-ms="2190" status="PASS">
+        </test-method> <!-- verifyAddWorkShifts -->
+        <test-method signature="verifyAddWorkShifts(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyWorkShifts@32193bea]" started-at="2021-07-18T10:36:52 IST" name="verifyAddWorkShifts" data-provider="extractedWorkShifts" finished-at="2021-07-18T10:36:53 IST" duration-ms="1532" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -174,11 +158,7 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="aaa()[pri:0, instance:com.maven.testng.VerifyWorkShifts@758705fa]" started-at="2021-07-18T10:25:30 IST" name="aaa" finished-at="2021-07-18T10:25:32 IST" duration-ms="1807" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aaa -->
+        </test-method> <!-- verifyAddWorkShifts -->
       </class> <!-- com.maven.testng.VerifyWorkShifts -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

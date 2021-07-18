@@ -2,6 +2,7 @@ package com.maven.testng;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -15,10 +16,10 @@ public class VerifyWorkShifts extends BackgroundWorker{
 	}
 	
 	@Test(dataProvider="extractedWorkShifts", dataProviderClass=DataDriver.class)
-	public void test1(String shiftName, String hoursFrom, String hoursTo, String employee) {
+	public void verifyAddWorkShifts(String shiftName, String hoursFrom, String hoursTo, String employee) {
 		driver.findElement(By.id("btnAdd")).click();
 		
-		//Hard coding data for now just to verify the element locaters.
+		//Hard coding data for now just to verify the element locators.
 		driver.findElement(By.id("workShift_name")).sendKeys(shiftName);
 		
 		//Selecting work hours
@@ -33,18 +34,11 @@ public class VerifyWorkShifts extends BackgroundWorker{
 		
 		driver.findElement(By.xpath("//*/a[@id='btnAssignEmployee']")).click();
 		
+		driver.findElement(By.id("btnSave")).click();
+
+		setSavedSuccessMessage();
+		Assert.assertEquals(getSavedSuccessMessage(), getExpectedSavedMessage());		
 		
-		///////////
-		navigateToUserManagement();
-		selectWorkShifts();
-		
-		
-	}
-	
-	@AfterMethod
-	public void aaa() {
-		navigateToUserManagement();
-		selectWorkShifts();
 	}
 	
 	
