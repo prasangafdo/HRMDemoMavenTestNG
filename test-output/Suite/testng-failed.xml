@@ -3,14 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.maven.testng.VerifyLoginTest">
+      <class name="com.maven.testng.VerifyWorkShifts">
         <methods>
-          <include name="getURL"/>
-          <include name="verifyLoginWithCorrectCredentials"/>
-          <include name="closeBrowser"/>
-          <include name="verifyLoginErrorMessage"/>
+          <include name="aaa"/>
+          <include name="test1" invocation-numbers="1 2 3 4"/>
+          <include name="navigateToWorkShifts"/>
         </methods>
-      </class> <!-- com.maven.testng.VerifyLoginTest -->
+      </class> <!-- com.maven.testng.VerifyWorkShifts -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

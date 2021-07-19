@@ -169,4 +169,25 @@ public class DataDriver {
 		}
 		return extractedJobCategories;
 	}
+	
+	@DataProvider(name = "extractedWorkShifts")
+	public Object [][] extractedWorkShifts() throws BiffException, IOException {
+		getWorkbook();
+		Sheet sheet = wb.getSheet("AddWorkShifts");
+		int rowsCount = sheet.getRows();
+		int columnsCount = sheet.getColumns();
+		
+		String[][] extractedWorkShifts = new String[rowsCount-1][columnsCount];
+		
+		for(int i=1;i<rowsCount;i++) {
+			for(int j=0;j<columnsCount;j++) {
+				Cell cell = sheet.getCell(j,i);
+				extractedWorkShifts[i-1][j]= cell.getContents();
+			}
+		}
+		return extractedWorkShifts;
+	}
+	
+	
+	
 }

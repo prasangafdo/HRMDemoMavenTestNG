@@ -83,14 +83,9 @@ public class BackgroundWorker {
 			setMouseOverOnJob();
 			driver.findElement(By.id("menu_admin_workShift")).click();
 		}
-		
-		public void closeBrowser() throws InterruptedException {
-			Thread.sleep(2000);
-			driver.close();
-		}
-		
-		
+				
 		String actualResult;
+		String expectedSavedMessage = "Successfully Saved";
 		//Verification points
 		public void setSavedSuccessMessage() {
 			actualResult = driver.findElement(By.xpath("//*/form/div[@class='message success fadable']")).getText();
@@ -99,6 +94,10 @@ public class BackgroundWorker {
 		
 		public String getSavedSuccessMessage() {
 			return this.actualResult;
+		}
+		
+		public String getExpectedSavedMessage() {
+			return this.expectedSavedMessage;
 		}
 
 }
