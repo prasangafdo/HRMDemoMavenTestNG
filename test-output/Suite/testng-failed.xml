@@ -3,13 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.maven.testng.VerifyWorkShifts">
+      <class name="com.maven.testng.VerifyOrganizationLocations">
         <methods>
-          <include name="aaa"/>
-          <include name="test1" invocation-numbers="1 2 3 4"/>
-          <include name="navigateToWorkShifts"/>
+          <include name="verifyAddLocationOnlyWithMandatoryData"/>
+          <include name="navigateToOrganizationLocations"/>
         </methods>
-      </class> <!-- com.maven.testng.VerifyWorkShifts -->
+      </class> <!-- com.maven.testng.VerifyOrganizationLocations -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

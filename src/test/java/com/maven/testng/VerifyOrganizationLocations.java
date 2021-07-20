@@ -1,15 +1,46 @@
 package com.maven.testng;
 
-public class VerifyOrganizationLocations {
-/*
- * To locate the parent element we can use below syntax
- * 
- */
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class VerifyOrganizationLocations extends BackgroundWorker{
+
+
+	//To locate the parent element we can use below syntax
 	String aa = "//*/td/a[text()='Canadian Regional HQ']/../../td/input";
 	
-	//Add button = btnAdd
+	@BeforeClass
+	public void navigateToOrganizationLocations() {
+		selectLocations();
+		
+	}
 	
-	//Send keys = location_name
+	@Test
+	public void verifyAddLocationOnlyWithMandatoryData() {
+		//Add button = btnAdd
+		
+		//Send keys = location_name
+		
+		//Select = location_country
 	
-	//Select = location_country
+		/*driver.findElement(By.id("btnAdd")).click();
+		driver.findElement(By.id("location_name")).sendKeys("Test_Location0001");
+		
+		Select selectCountry = new Select(driver.findElement(By.id("location_country")));
+		selectCountry.deselectByVisibleText("Sri Lanka");
+		
+		driver.findElement(By.id("btnSave")).click();
+		
+		setSavedSuccessMessage();
+		Assert.assertEquals(getSavedSuccessMessage(), getExpectedSavedMessage());*/
+		Wait();
+	}
+	
+	public void verifyAddLocationWithAllDataFields() {
+		
+	}
+	
 }
