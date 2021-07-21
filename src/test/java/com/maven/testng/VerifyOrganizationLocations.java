@@ -18,7 +18,7 @@ public class VerifyOrganizationLocations extends BackgroundWorker{
 		
 	}
 	
-	@Test
+	@Test(priority=1)
 	public void verifyAddLocationOnlyWithMandatoryData() {
 		//Add button = btnAdd
 		
@@ -26,19 +26,20 @@ public class VerifyOrganizationLocations extends BackgroundWorker{
 		
 		//Select = location_country
 	
-		/*driver.findElement(By.id("btnAdd")).click();
+		driver.findElement(By.id("btnAdd")).click();
 		driver.findElement(By.id("location_name")).sendKeys("Test_Location0001");
 		
 		Select selectCountry = new Select(driver.findElement(By.id("location_country")));
-		selectCountry.deselectByVisibleText("Sri Lanka");
+		selectCountry.selectByVisibleText("Sri Lanka");
 		
 		driver.findElement(By.id("btnSave")).click();
 		
 		setSavedSuccessMessage();
-		Assert.assertEquals(getSavedSuccessMessage(), getExpectedSavedMessage());*/
-		Wait();
+		Assert.assertEquals(getSavedSuccessMessage(), getExpectedSavedMessage());
+
 	}
 	
+	@Test(priority=2)
 	public void verifyAddLocationWithAllDataFields() {
 		
 	}
