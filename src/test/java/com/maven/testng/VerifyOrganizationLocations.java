@@ -34,14 +34,26 @@ public class VerifyOrganizationLocations extends BackgroundWorker{
 		
 		driver.findElement(By.id("btnSave")).click();
 		
-		setSavedSuccessMessage();
+		setSavedSuccessMessage(); //Locating the saved message using xpath in background worker class
 		Assert.assertEquals(getSavedSuccessMessage(), getExpectedSavedMessage());
 
 	}
 	
 	@Test(priority=2)
 	public void verifyAddLocationWithAllDataFields() {
-		
+		/*
+		 * Locate below elements and send keys
+		 * State/Province - location_province
+			City - location_city
+			Address - location_address
+			Zip/Postal Code - location_zipCode
+			Phone - location_phone
+			Fax - location_fax
+			Notes - location_notes
+			
+			Click on save button
+			Add a verification point
+		 */
 	}
-	
+
 }
