@@ -18,7 +18,7 @@ public class VerifyOrganizationLocations extends BackgroundWorker{
 		
 	}
 	
-	@Test(priority=1)
+	//@Test(priority=1)
 	public void verifyAddLocationOnlyWithMandatoryData() {
 		//Add button = btnAdd
 		
@@ -41,6 +41,22 @@ public class VerifyOrganizationLocations extends BackgroundWorker{
 	
 	@Test(priority=2)
 	public void verifyAddLocationWithAllDataFields() {
+		
+		driver.findElement(By.id("btnAdd")).click();
+		driver.findElement(By.id("location_name")).sendKeys("Test_Location0002 with All data");
+		
+		Select selectCountry = new Select(driver.findElement(By.id("location_country")));
+		selectCountry.selectByVisibleText("Sri Lanka");
+		
+		driver.findElement(By.id("location_province")).sendKeys("Test_Province002");
+		driver.findElement(By.id("location_city")).sendKeys("Test_City Kandy");
+		driver.findElement(By.id("location_address")).sendKeys("Test_Address 121, ABC Road, Kandy");
+		driver.findElement(By.id("location_zipCode")).sendKeys("2354231");
+		driver.findElement(By.id("location_phone")).sendKeys("0112345432");
+		driver.findElement(By.id("location_fax")).sendKeys("0112345436");
+		driver.findElement(By.id("location_notes")).sendKeys("Test_Note002 this is a test note");
+		
+		
 		/*
 		 * Locate below elements and send keys
 		 * State/Province - location_province
