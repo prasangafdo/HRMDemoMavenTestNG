@@ -56,20 +56,10 @@ public class VerifyOrganizationLocations extends BackgroundWorker{
 		driver.findElement(By.id("location_fax")).sendKeys("0112345436");
 		driver.findElement(By.id("location_notes")).sendKeys("Test_Note002 this is a test note");
 		
-		
-		/*
-		 * Locate below elements and send keys
-		 * State/Province - location_province
-			City - location_city
-			Address - location_address
-			Zip/Postal Code - location_zipCode
-			Phone - location_phone
-			Fax - location_fax
-			Notes - location_notes
-			
-			Click on save button
-			Add a verification point
-		 */
+		driver.findElement(By.id("btnSave")).click();
+		setSavedSuccessMessage(); //Locating the saved message using xpath in background worker class
+		Assert.assertEquals(getSavedSuccessMessage(), getExpectedSavedMessage());
+
 	}
 
 }
