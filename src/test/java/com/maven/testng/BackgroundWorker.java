@@ -83,6 +83,22 @@ public class BackgroundWorker {
 			setMouseOverOnJob();
 			driver.findElement(By.id("menu_admin_workShift")).click();
 		}
+		
+		public void mouseOverOnOrganization() {
+			navigateToUserManagement();
+			WebElement element = driver.findElement(By.id("menu_admin_Organization"));
+			Actions hoverOnOrganizations = new Actions(driver);
+			hoverOnOrganizations.moveToElement(element).perform();
+		}
+		
+		public void selectLocations() {
+			mouseOverOnOrganization();
+			driver.findElement(By.id("menu_admin_viewLocations")).click();
+		}
+		
+		
+		
+		//=====================Verification Messages=============================//
 				
 		String actualResult;
 		String expectedSavedMessage = "Successfully Saved";

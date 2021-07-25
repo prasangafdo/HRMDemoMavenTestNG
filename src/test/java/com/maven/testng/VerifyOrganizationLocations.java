@@ -1,15 +1,61 @@
 package com.maven.testng;
 
-public class VerifyOrganizationLocations {
-/*
- * To locate the parent element we can use below syntax
- * 
- */
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class VerifyOrganizationLocations extends BackgroundWorker{
+
+
+	//To locate the parent element we can use below syntax
 	String aa = "//*/td/a[text()='Canadian Regional HQ']/../../td/input";
 	
-	//Add button = btnAdd
+	@BeforeClass
+	public void navigateToOrganizationLocations() {
+		selectLocations();
+		
+	}
 	
-	//Send keys = location_name
+	@Test(priority=1)
+	public void verifyAddLocationOnlyWithMandatoryData() {
+		//Since data driven testing for these elements are covered in "verifyAddLocationWithAllDataFields" method,not using data driven testing with this method
 	
-	//Select = location_country
+		driver.findElement(By.id("btnAdd")).click();
+		driver.findElement(By.id("location_name")).sendKeys("Test_Location0001");
+		
+		Select selectCountry = new Select(driver.findElement(By.id("location_country")));
+		selectCountry.selectByVisibleText("Sri Lanka");
+		
+		driver.findElement(By.id("btnSave")).click();
+		
+		setSavedSuccessMessage(); //Locating the saved message using xpath in background worker class
+		Assert.assertEquals(getSavedSuccessMessage(), getExpectedSavedMessage());
+
+	}
+	
+	@Test(priority=2, dataProvider ="extractedOrganizationLocations", dataProviderClass = DataDriver.class)
+	public void verifyAddLocationWithAllDataFields(String a, String b, String c, String d, String e, String f, String g, String h) {
+		
+		driver.findElement(By.id("btnAdd")).click();
+		driver.findElement(By.id("location_name")).sendKeys("Test_Location0002 with All data");
+		
+		Select selectCountry = new Select(driver.findElement(By.id("location_country")));
+		selectCountry.selectByVisibleText("Sri Lanka");
+		
+		driver.findElement(By.id("location_province")).sendKeys("Test_Province002");
+		driver.findElement(By.id("location_city")).sendKeys("Test_City Kandy");
+		driver.findElement(By.id("location_address")).sendKeys("Test_Address 121, ABC Road, Kandy");
+		driver.findElement(By.id("location_zipCode")).sendKeys("2354231");
+		driver.findElement(By.id("location_phone")).sendKeys("0112345432");
+		driver.findElement(By.id("location_fax")).sendKeys("0112345436");
+		driver.findElement(By.id("location_notes")).sendKeys("Test_Note002 this is a test note");
+		
+//		driver.findElement(By.id("btnSave")).click();
+//		setSavedSuccessMessage(); //Locating the saved message using xpath in background worker class
+//		Assert.assertEquals(getSavedSuccessMessage(), getExpectedSavedMessage());
+
+	}
+
 }
