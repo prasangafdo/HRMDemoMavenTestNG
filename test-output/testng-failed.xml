@@ -5,7 +5,7 @@
     <classes>
       <class name="com.maven.testng.VerifyOrganizationLocations">
         <methods>
-          <include name="verifyAddLocationOnlyWithMandatoryData"/>
+          <include name="verifyAddLocationWithAllDataFields" invocation-numbers="1 2 3 4 5"/>
           <include name="navigateToOrganizationLocations"/>
         </methods>
       </class> <!-- com.maven.testng.VerifyOrganizationLocations -->

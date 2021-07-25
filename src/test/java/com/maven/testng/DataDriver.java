@@ -188,9 +188,23 @@ public class DataDriver {
 		return extractedWorkShifts;
 	}
 	
-	
-	public Object[][] extractedOrganizationLocations(){
-		return null;
+	@DataProvider(name ="extractedOrganizationLocations")
+	public Object[][] extractedOrganizationLocations() throws BiffException, IOException{
+		
+		getWorkbook();
+		Sheet sheet = wb.getSheet("AddOrganizationLocations");
+		int rowsCount = sheet.getRows();
+		int columnsCount = sheet.getColumns();
+		
+		String[][] extractedOrganizationLocations = new String[rowsCount][columnsCount];
+		
+		for(int i=0;i<rowsCount;i++) {
+			for(int j=0;j<columnsCount;j++) {
+				Cell cell =sheet.getCell(j,i);
+				extractedOrganizationLocations[i][j] = cell.getContents();
+			}
+		}
+		return extractedOrganizationLocations;
 		
 	}
 }

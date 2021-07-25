@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">9 methods, 5 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.maven.testng.VerifyOrganizationLocations" class="method navigator-link" hash-for-method="verifyAddLocationWithAllDataFields(Test Location 003, Canada, Waterloo, Test Address 003, 56894, 0112354331, 0112350092, TestNote 003)">verifyAddLocationWithAllDataFields(Test Location 003, Canada, Waterloo, Test Address 003, 56894, 0112354331, 0112350092, TestNote 003)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.maven.testng.VerifyOrganizationLocations" class="method navigator-link" hash-for-method="verifyAddLocationWithAllDataFields(Test Location 005, India, Mumbai, Test Address 005, 11321, 0112354333, 0112350094, TestNote 005)">verifyAddLocationWithAllDataFields(Test Location 005, India, Mumbai, Test Address 005, 11321, 0112354333, 0112350094, TestNote 005)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.maven.testng.VerifyOrganizationLocations" class="method navigator-link" hash-for-method="verifyAddLocationWithAllDataFields(Test Location 002, Bahamas, Test City 002, Test Address 002, 34226, 0112354330, 0112350091, TestNote...)">verifyAddLocationWithAllDataFields(Test Location 002, Bahamas, Test City 002, Test Address 002, 34226, 0112354330, 0112350091, TestNote...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.maven.testng.VerifyOrganizationLocations" class="method navigator-link" hash-for-method="verifyAddLocationWithAllDataFields(Test Location 004, Belize, Test City 004, Test Address 004, 64312, 0112354332, 0112350093, TestNote ...)">verifyAddLocationWithAllDataFields(Test Location 004, Belize, Test City 004, Test Address 004, 64312, 0112354332, 0112350093, TestNote ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.maven.testng.VerifyOrganizationLocations" class="method navigator-link" hash-for-method="verifyAddLocationWithAllDataFields(Test Location 001, Sri Lanka, Colombo, Test Address 001, 11558, 0112354329, 0112350090, TestNote 001)">verifyAddLocationWithAllDataFields(Test Location 001, Sri Lanka, Colombo, Test Address 001, 11558, 0112354329, 0112350090, TestNote 001)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +138,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.maven.testng.VerifyOrganizationLocations" class="method navigator-link" hash-for-method="verifyAddLocationWithAllDataFields">verifyAddLocationWithAllDataFields</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.maven.testng.VerifyOrganizationLocations" class="method navigator-link" hash-for-method="verifyAddLocationOnlyWithMandatoryData">verifyAddLocationOnlyWithMandatoryData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.maven.testng.VerifyOrganizationLocations" class="method navigator-link" hash-for-method="verifyAddLocationWithAllDataFields(location name, Country, City, Address, Zip Code, Phone, Fax, Notes)">verifyAddLocationWithAllDataFields(location name, Country, City, Address, Zip Code, Phone, Fax, Notes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -129,6 +168,169 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.maven.testng.VerifyOrganizationLocations</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddLocationWithAllDataFields(Test Location 003, Canada, Waterloo, Test Address 003, 56894, 0112354331, 0112350092, TestNote 003)">
+                  </a> <!-- verifyAddLocationWithAllDataFields(Test Location 003, Canada, Waterloo, Test Address 003, 56894, 0112354331, 0112350092, TestNote 003) -->
+                  <span class="method-name">verifyAddLocationWithAllDataFields</span>
+                  <span class="parameters">(Test Location 003, Canada, Waterloo, Test Address 003, 56894, 0112354331, 0112350092, TestNote 003)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btnAdd&quot;}
+  (Session info: chrome=91.0.4472.164)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-8DPVRQ3&apos;, ip: &apos;192.168.8.172&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.164, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:13141}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 648699388a65771dd57ddbc6ff0aeddc
+*** Element info: {Using=id, value=btnAdd}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.maven.testng.VerifyOrganizationLocations.verifyAddLocationWithAllDataFields(VerifyOrganizationLocations.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddLocationWithAllDataFields(Test Location 005, India, Mumbai, Test Address 005, 11321, 0112354333, 0112350094, TestNote 005)">
+                  </a> <!-- verifyAddLocationWithAllDataFields(Test Location 005, India, Mumbai, Test Address 005, 11321, 0112354333, 0112350094, TestNote 005) -->
+                  <span class="method-name">verifyAddLocationWithAllDataFields</span>
+                  <span class="parameters">(Test Location 005, India, Mumbai, Test Address 005, 11321, 0112354333, 0112350094, TestNote 005)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btnAdd&quot;}
+  (Session info: chrome=91.0.4472.164)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-8DPVRQ3&apos;, ip: &apos;192.168.8.172&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.164, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:13141}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 648699388a65771dd57ddbc6ff0aeddc
+*** Element info: {Using=id, value=btnAdd}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.maven.testng.VerifyOrganizationLocations.verifyAddLocationWithAllDataFields(VerifyOrganizationLocations.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddLocationWithAllDataFields(Test Location 002, Bahamas, Test City 002, Test Address 002, 34226, 0112354330, 0112350091, TestNote...)">
+                  </a> <!-- verifyAddLocationWithAllDataFields(Test Location 002, Bahamas, Test City 002, Test Address 002, 34226, 0112354330, 0112350091, TestNote...) -->
+                  <span class="method-name">verifyAddLocationWithAllDataFields</span>
+                  <span class="parameters">(Test Location 002, Bahamas, Test City 002, Test Address 002, 34226, 0112354330, 0112350091, TestNote 002)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btnAdd&quot;}
+  (Session info: chrome=91.0.4472.164)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-8DPVRQ3&apos;, ip: &apos;192.168.8.172&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.164, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:13141}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 648699388a65771dd57ddbc6ff0aeddc
+*** Element info: {Using=id, value=btnAdd}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.maven.testng.VerifyOrganizationLocations.verifyAddLocationWithAllDataFields(VerifyOrganizationLocations.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddLocationWithAllDataFields(Test Location 004, Belize, Test City 004, Test Address 004, 64312, 0112354332, 0112350093, TestNote ...)">
+                  </a> <!-- verifyAddLocationWithAllDataFields(Test Location 004, Belize, Test City 004, Test Address 004, 64312, 0112354332, 0112350093, TestNote ...) -->
+                  <span class="method-name">verifyAddLocationWithAllDataFields</span>
+                  <span class="parameters">(Test Location 004, Belize, Test City 004, Test Address 004, 64312, 0112354332, 0112350093, TestNote 004)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btnAdd&quot;}
+  (Session info: chrome=91.0.4472.164)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-8DPVRQ3&apos;, ip: &apos;192.168.8.172&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.164, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:13141}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 648699388a65771dd57ddbc6ff0aeddc
+*** Element info: {Using=id, value=btnAdd}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.maven.testng.VerifyOrganizationLocations.verifyAddLocationWithAllDataFields(VerifyOrganizationLocations.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddLocationWithAllDataFields(Test Location 001, Sri Lanka, Colombo, Test Address 001, 11558, 0112354329, 0112350090, TestNote 001)">
+                  </a> <!-- verifyAddLocationWithAllDataFields(Test Location 001, Sri Lanka, Colombo, Test Address 001, 11558, 0112354329, 0112350090, TestNote 001) -->
+                  <span class="method-name">verifyAddLocationWithAllDataFields</span>
+                  <span class="parameters">(Test Location 001, Sri Lanka, Colombo, Test Address 001, 11558, 0112354329, 0112350090, TestNote 001)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btnAdd&quot;}
+  (Session info: chrome=91.0.4472.164)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-8DPVRQ3&apos;, ip: &apos;192.168.8.172&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.164, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:13141}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 648699388a65771dd57ddbc6ff0aeddc
+*** Element info: {Using=id, value=btnAdd}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.maven.testng.VerifyOrganizationLocations.verifyAddLocationWithAllDataFields(VerifyOrganizationLocations.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -137,9 +339,17 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyAddLocationWithAllDataFields">
-                  </a> <!-- verifyAddLocationWithAllDataFields -->
+                  <a name="verifyAddLocationOnlyWithMandatoryData">
+                  </a> <!-- verifyAddLocationOnlyWithMandatoryData -->
+                  <span class="method-name">verifyAddLocationOnlyWithMandatoryData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddLocationWithAllDataFields(location name, Country, City, Address, Zip Code, Phone, Fax, Notes)">
+                  </a> <!-- verifyAddLocationWithAllDataFields(location name, Country, City, Address, Zip Code, Phone, Fax, Notes) -->
                   <span class="method-name">verifyAddLocationWithAllDataFields</span>
+                  <span class="parameters">(location name, Country, City, Address, Zip Code, Phone, Fax, Notes)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -219,24 +429,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyLoginWithCorrectCredentials')
 data.setCell(0, 2, 'com.maven.testng.VerifyLoginTest')
-data.setCell(0, 3, 4710);
+data.setCell(0, 3, 5080);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyAddLocationWithAllDataFields')
+data.setCell(1, 1, 'verifyAddLocationOnlyWithMandatoryData')
 data.setCell(1, 2, 'com.maven.testng.VerifyOrganizationLocations')
-data.setCell(1, 3, 2550);
+data.setCell(1, 3, 2522);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyLoginErrorMessage')
 data.setCell(2, 2, 'com.maven.testng.VerifyLoginTest')
-data.setCell(2, 3, 1279);
+data.setCell(2, 3, 1680);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyAddLocationWithAllDataFields')
+data.setCell(3, 2, 'com.maven.testng.VerifyOrganizationLocations')
+data.setCell(3, 3, 1295);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyAddLocationWithAllDataFields')
+data.setCell(4, 2, 'com.maven.testng.VerifyOrganizationLocations')
+data.setCell(4, 3, 28);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyAddLocationWithAllDataFields')
+data.setCell(5, 2, 'com.maven.testng.VerifyOrganizationLocations')
+data.setCell(5, 3, 26);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyAddLocationWithAllDataFields')
+data.setCell(6, 2, 'com.maven.testng.VerifyOrganizationLocations')
+data.setCell(6, 3, 24);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyAddLocationWithAllDataFields')
+data.setCell(7, 2, 'com.maven.testng.VerifyOrganizationLocations')
+data.setCell(7, 3, 15);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyAddLocationWithAllDataFields')
+data.setCell(8, 2, 'com.maven.testng.VerifyOrganizationLocations')
+data.setCell(8, 3, 15);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -269,29 +503,63 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginErrorMessage</span>
-                <span class="method-start">4507 ms</span>
+                <span class="method-start">4901 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithCorrectCredentials</span>
-                <span class="method-start">5788 ms</span>
+                <span class="method-start">6585 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.maven.testng.VerifyOrganizationLocations</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">navigateToOrganizationLocations</span>
-                <span class="method-start">10499 ms</span>
+                <span class="method-start">11666 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">verifyAddLocationWithAllDataFields</span>
-                <span class="method-start">13309 ms</span>
+                <span class="method-name">verifyAddLocationOnlyWithMandatoryData</span>
+                <span class="method-start">14710 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAddLocationWithAllDataFields(location name, Country, City, Address, Zip Code, Phone, Fax, Notes)</span>
+                <span class="method-start">17319 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAddLocationWithAllDataFields(Test Location 001, Sri Lanka, Colombo, Test Address 001, 11558, 0112354329, 0112350090, TestNote 001)</span>
+                <span class="method-start">18615 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAddLocationWithAllDataFields(Test Location 002, Bahamas, Test City 002, Test Address 002, 34226, 0112354330, 0112350091, TestNote...)</span>
+                <span class="method-start">18645 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAddLocationWithAllDataFields(Test Location 003, Canada, Waterloo, Test Address 003, 56894, 0112354331, 0112350092, TestNote 003)</span>
+                <span class="method-start">18674 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAddLocationWithAllDataFields(Test Location 004, Belize, Test City 004, Test Address 004, 64312, 0112354332, 0112350093, TestNote ...)</span>
+                <span class="method-start">18699 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAddLocationWithAllDataFields(Test Location 005, India, Mumbai, Test Address 005, 11321, 0112354333, 0112350094, TestNote 005)</span>
+                <span class="method-start">18715 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.maven.testng.VerifyLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">15859 ms</span>
+                <span class="method-start">18731 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
