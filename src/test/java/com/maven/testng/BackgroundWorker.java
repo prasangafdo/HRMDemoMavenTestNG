@@ -88,6 +88,7 @@ public class BackgroundWorker {
 			navigateToUserManagement();
 			WebElement element = driver.findElement(By.id("menu_admin_Organization"));
 			Actions hoverOnOrganizations = new Actions(driver);
+			Wait();//Waiting a few seconds to sync up with browser loading speed
 			hoverOnOrganizations.moveToElement(element).perform();
 		}
 		

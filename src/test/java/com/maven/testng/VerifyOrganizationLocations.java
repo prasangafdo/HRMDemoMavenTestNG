@@ -18,7 +18,7 @@ public class VerifyOrganizationLocations extends BackgroundWorker{
 		
 	}
 	
-	@Test(priority=1)
+	//@Test(priority=1)
 	public void verifyAddLocationOnlyWithMandatoryData() {
 		//Since data driven testing for these elements are covered in "verifyAddLocationWithAllDataFields" method,not using data driven testing with this method
 	
@@ -52,9 +52,9 @@ public class VerifyOrganizationLocations extends BackgroundWorker{
 		driver.findElement(By.id("location_fax")).sendKeys("0112345436");
 		driver.findElement(By.id("location_notes")).sendKeys("Test_Note002 this is a test note");
 		
-//		driver.findElement(By.id("btnSave")).click();
-//		setSavedSuccessMessage(); //Locating the saved message using xpath in background worker class
-//		Assert.assertEquals(getSavedSuccessMessage(), getExpectedSavedMessage());
+		driver.findElement(By.id("btnSave")).click();
+		setSavedSuccessMessage(); //Locating the saved message using xpath in background worker class
+		Assert.assertEquals(getSavedSuccessMessage(), getExpectedSavedMessage());
 
 	}
 
