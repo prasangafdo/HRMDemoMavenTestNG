@@ -189,5 +189,8 @@ public class DataDriver {
 	}
 	
 	
-	
+	public Object[][] extractedOrganizationLocations(){
+		return null;
+		
+	}
 }

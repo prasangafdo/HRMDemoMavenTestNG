@@ -18,13 +18,9 @@ public class VerifyOrganizationLocations extends BackgroundWorker{
 		
 	}
 	
-	//@Test(priority=1)
+	@Test(priority=1)
 	public void verifyAddLocationOnlyWithMandatoryData() {
-		//Add button = btnAdd
-		
-		//Send keys = location_name
-		
-		//Select = location_country
+		//Since data driven testing for these elements are covered in "verifyAddLocationWithAllDataFields" method,not using data driven testing with this method
 	
 		driver.findElement(By.id("btnAdd")).click();
 		driver.findElement(By.id("location_name")).sendKeys("Test_Location0001");
