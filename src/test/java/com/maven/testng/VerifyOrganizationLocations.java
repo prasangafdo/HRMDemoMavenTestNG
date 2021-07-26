@@ -52,9 +52,9 @@ public class VerifyOrganizationLocations extends BackgroundWorker{
 		driver.findElement(By.id("location_fax")).sendKeys("0112345436");
 		driver.findElement(By.id("location_notes")).sendKeys("Test_Note002 this is a test note");
 		
-		driver.findElement(By.id("btnSave")).click();
-		setSavedSuccessMessage(); //Locating the saved message using xpath in background worker class
-		Assert.assertEquals(getSavedSuccessMessage(), getExpectedSavedMessage());
+//		driver.findElement(By.id("btnSave")).click();
+//		setSavedSuccessMessage(); //Locating the saved message using xpath in background worker class
+//		Assert.assertEquals(getSavedSuccessMessage(), getExpectedSavedMessage());
 
 	}
 
