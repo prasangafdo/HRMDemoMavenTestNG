@@ -1,294 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-26T19:49:01 IST" name="Suite" finished-at="2021-07-26T19:49:34 IST" duration-ms="32654">
+  <suite started-at="2021-07-27T08:05:56 IST" name="Suite" finished-at="2021-07-27T08:06:13 IST" duration-ms="17033">
     <groups>
     </groups>
-    <test started-at="2021-07-26T19:49:01 IST" name="Test" finished-at="2021-07-26T19:49:34 IST" duration-ms="32654">
+    <test started-at="2021-07-27T08:05:56 IST" name="Test" finished-at="2021-07-27T08:06:13 IST" duration-ms="17033">
       <class name="com.maven.testng.VerifyLoginTest">
-        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@69653e16]" started-at="2021-07-26T19:49:01 IST" name="getURL" finished-at="2021-07-26T19:49:06 IST" duration-ms="4641" status="PASS">
+        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@32193bea]" started-at="2021-07-27T08:05:56 IST" name="getURL" finished-at="2021-07-27T08:06:01 IST" duration-ms="4489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getURL -->
-        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@69653e16]" started-at="2021-07-26T19:49:06 IST" name="verifyLoginErrorMessage" finished-at="2021-07-26T19:49:07 IST" duration-ms="1648" status="PASS">
+        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@32193bea]" started-at="2021-07-27T08:06:01 IST" name="verifyLoginErrorMessage" finished-at="2021-07-27T08:06:02 IST" duration-ms="1717" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginErrorMessage -->
-        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@69653e16]" started-at="2021-07-26T19:49:07 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-07-26T19:49:12 IST" duration-ms="4839" status="PASS">
+        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@32193bea]" started-at="2021-07-27T08:06:02 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-07-27T08:06:08 IST" duration-ms="5542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithCorrectCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@69653e16]" started-at="2021-07-26T19:49:32 IST" name="closeBrowser" finished-at="2021-07-26T19:49:34 IST" duration-ms="2068" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@32193bea]" started-at="2021-07-27T08:06:11 IST" name="closeBrowser" finished-at="2021-07-27T08:06:13 IST" duration-ms="2075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.maven.testng.VerifyLoginTest -->
-      <class name="com.maven.testng.VerifyOrganizationLocations">
-        <test-method is-config="true" signature="navigateToOrganizationLocations()[pri:0, instance:com.maven.testng.VerifyOrganizationLocations@758705fa]" started-at="2021-07-26T19:49:12 IST" name="navigateToOrganizationLocations" finished-at="2021-07-26T19:49:17 IST" duration-ms="5060" status="PASS">
+      <class name="com.maven.testng.VerifyQualificationSkills">
+        <test-method signature="aaa()[pri:0, instance:com.maven.testng.VerifyQualificationSkills@6b8d96d9]" started-at="2021-07-27T08:06:08 IST" name="aaa" finished-at="2021-07-27T08:06:11 IST" duration-ms="3188" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToOrganizationLocations -->
-        <test-method signature="verifyAddLocationOnlyWithMandatoryData()[pri:1, instance:com.maven.testng.VerifyOrganizationLocations@758705fa]" started-at="2021-07-26T19:49:17 IST" name="verifyAddLocationOnlyWithMandatoryData" finished-at="2021-07-26T19:49:19 IST" duration-ms="2258" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddLocationOnlyWithMandatoryData -->
-        <test-method signature="verifyAddLocationWithAllDataFields(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyOrganizationLocations@758705fa]" started-at="2021-07-26T19:49:19 IST" name="verifyAddLocationWithAllDataFields" data-provider="extractedOrganizationLocations" finished-at="2021-07-26T19:49:22 IST" duration-ms="2319" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Test Location 001]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Sri Lanka]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Colombo]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Bambalapitiya]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Test Address 001]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[11558]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[0112354329]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[0112350090]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[TestNote 001]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddLocationWithAllDataFields -->
-        <test-method signature="verifyAddLocationWithAllDataFields(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyOrganizationLocations@758705fa]" started-at="2021-07-26T19:49:22 IST" name="verifyAddLocationWithAllDataFields" data-provider="extractedOrganizationLocations" finished-at="2021-07-26T19:49:24 IST" duration-ms="2404" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Test Location 002]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Bahamas]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Bahamas State]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Test City 002]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Test Address 002]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[34226]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[0112354330]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[0112350091]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[TestNote 002]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddLocationWithAllDataFields -->
-        <test-method signature="verifyAddLocationWithAllDataFields(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyOrganizationLocations@758705fa]" started-at="2021-07-26T19:49:24 IST" name="verifyAddLocationWithAllDataFields" data-provider="extractedOrganizationLocations" finished-at="2021-07-26T19:49:27 IST" duration-ms="2375" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Test Location 003]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Canada]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[British Columbia]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Waterloo]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Test Address 003]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[56894]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[0112354331]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[0112350092]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[TestNote 003]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddLocationWithAllDataFields -->
-        <test-method signature="verifyAddLocationWithAllDataFields(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyOrganizationLocations@758705fa]" started-at="2021-07-26T19:49:27 IST" name="verifyAddLocationWithAllDataFields" data-provider="extractedOrganizationLocations" finished-at="2021-07-26T19:49:29 IST" duration-ms="2308" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Test Location 004]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Belize]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Belize State]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Test City 004]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Test Address 004]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[64312]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[0112354332]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[0112350093]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[TestNote 004]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddLocationWithAllDataFields -->
-        <test-method signature="verifyAddLocationWithAllDataFields(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.maven.testng.VerifyOrganizationLocations@758705fa]" started-at="2021-07-26T19:49:29 IST" name="verifyAddLocationWithAllDataFields" data-provider="extractedOrganizationLocations" finished-at="2021-07-26T19:49:32 IST" duration-ms="2621" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Test Location 005]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[India]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Maharashta]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Mumbai]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Test Address 005]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[11321]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[0112354333]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[0112350094]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[TestNote 005]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddLocationWithAllDataFields -->
-      </class> <!-- com.maven.testng.VerifyOrganizationLocations -->
+        </test-method> <!-- aaa -->
+      </class> <!-- com.maven.testng.VerifyQualificationSkills -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

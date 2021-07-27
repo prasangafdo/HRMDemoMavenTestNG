@@ -22,14 +22,7 @@ public class BackgroundWorker {
 			}
 	
 	  static WebDriver driver = new ChromeDriver();
-	  
-	  
-	 
-//		@BeforeTest
-//		public void  getURL() {
-//			 driver.get("https://opensource-demo.orangehrmlive.com/"); //Setting initial URL
-//		}
-//	 
+
 	 public void navigateToUserManagement() {
 		 	driver.manage().window().maximize();//Maximizing the window
 			driver.findElement(By.id("menu_admin_viewAdminModule")).click();
@@ -96,6 +89,18 @@ public class BackgroundWorker {
 			mouseOverOnOrganization();
 			driver.findElement(By.id("menu_admin_viewLocations")).click();
 		}
+		
+		public void mouseOverOnQualifications() {
+			navigateToUserManagement();
+			Actions action = new Actions(driver);
+			action.moveToElement(driver.findElement(By.xpath("//div[@id='mainMenu']/ul/li/ul/li/a[@id='menu_admin_Qualifications']"))).build().perform();
+		}
+		
+		public void selectSkills() {
+			mouseOverOnQualifications();
+			driver.findElement(By.id("menu_admin_viewSkills")).click();
+		}
+		
 		
 		
 		

@@ -11,7 +11,8 @@
     <!--     <class name="com.maven.testng.VerifyEmploymentStatus"/> -->  
       <!-- <class name="com.maven.testng.VerifyJobCategories"/> -->  
  	  <!-- <class name="com.maven.testng.VerifyWorkShifts"/> -->    
-       <class name ="com.maven.testng.VerifyOrganizationLocations" />
+    <!--   <class name ="com.maven.testng.VerifyOrganizationLocations" /> -->  
+       <class name="com.maven.testng.VerifyQualificationSkills"/>
    
       
     </classes>
