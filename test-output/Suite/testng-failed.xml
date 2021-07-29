@@ -3,13 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.maven.testng.VerifyOrganizationLocations">
+      <class name="com.maven.testng.VerifyQualificationSkills">
         <methods>
-          <include name="verifyAddLocationWithAllDataFields" invocation-numbers="0 1 2 3 4"/>
-          <include name="verifyAddLocationOnlyWithMandatoryData"/>
-          <include name="navigateToOrganizationLocations"/>
+          <include name="navigateToSkills"/>
+          <include name="verifyAddSkill" invocation-numbers="1 2 3 4 5"/>
         </methods>
-      </class> <!-- com.maven.testng.VerifyOrganizationLocations -->
+      </class> <!-- com.maven.testng.VerifyQualificationSkills -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

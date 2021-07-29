@@ -218,12 +218,12 @@ public class DataDriver {
 		int rowsCount = sheet.getRows();
 		int columnsCount = sheet.getColumns();
 		
-		String [][] extractedQualificationSkills = new String[rowsCount][columnsCount];
+		String [][] extractedQualificationSkills = new String[rowsCount-1][columnsCount];
 		
-		for(int i=0;i<rowsCount;i++) {
+		for(int i=1;i<rowsCount;i++) {
 			for(int j=0;j<columnsCount;j++) {
 				Cell cell = sheet.getCell(j,i);
-				extractedQualificationSkills[i][j] = cell.getContents();
+				extractedQualificationSkills[i-1][j] = cell.getContents();
 			}
 		}
 		

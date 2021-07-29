@@ -1,29 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-29T13:40:03 IST" name="Default suite" finished-at="2021-07-29T13:40:03 IST" duration-ms="188">
+  <suite started-at="2021-07-29T13:53:41 IST" name="Suite" finished-at="2021-07-29T13:54:02 IST" duration-ms="21226">
     <groups>
     </groups>
-    <test started-at="2021-07-29T13:40:03 IST" name="Default test" finished-at="2021-07-29T13:40:03 IST" duration-ms="188">
-      <class name="com.maven.testng.VerifyQualificationSkills">
-        <test-method signature="dd(java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyQualificationSkills@5023bb8b]" started-at="2021-07-29T13:40:03 IST" name="dd" data-provider="extractedQualificationSkills" finished-at="2021-07-29T13:40:03 IST" duration-ms="7" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Skill Name]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Skill Description]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2021-07-29T13:53:41 IST" name="Test" finished-at="2021-07-29T13:54:02 IST" duration-ms="21226">
+      <class name="com.maven.testng.VerifyLoginTest">
+        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@758705fa]" started-at="2021-07-29T13:53:41 IST" name="getURL" finished-at="2021-07-29T13:53:46 IST" duration-ms="4752" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dd -->
-        <test-method signature="dd(java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyQualificationSkills@5023bb8b]" started-at="2021-07-29T13:40:03 IST" name="dd" data-provider="extractedQualificationSkills" finished-at="2021-07-29T13:40:03 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- getURL -->
+        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@758705fa]" started-at="2021-07-29T13:53:46 IST" name="verifyLoginErrorMessage" finished-at="2021-07-29T13:53:47 IST" duration-ms="1494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginErrorMessage -->
+        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@758705fa]" started-at="2021-07-29T13:53:47 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-07-29T13:53:52 IST" duration-ms="4404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithCorrectCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@758705fa]" started-at="2021-07-29T13:54:00 IST" name="closeBrowser" finished-at="2021-07-29T13:54:02 IST" duration-ms="2069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.maven.testng.VerifyLoginTest -->
+      <class name="com.maven.testng.VerifyQualificationSkills">
+        <test-method is-config="true" signature="navigateToSkills()[pri:0, instance:com.maven.testng.VerifyQualificationSkills@ebaa6cb]" started-at="2021-07-29T13:53:52 IST" name="navigateToSkills" finished-at="2021-07-29T13:53:55 IST" duration-ms="3165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToSkills -->
+        <test-method signature="verifyAddSkill(java.lang.String, java.lang.String)[pri:1, instance:com.maven.testng.VerifyQualificationSkills@ebaa6cb]" started-at="2021-07-29T13:53:55 IST" name="verifyAddSkill" data-provider="extractedQualificationSkills" finished-at="2021-07-29T13:53:56 IST" duration-ms="1061" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -38,8 +44,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dd -->
-        <test-method signature="dd(java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyQualificationSkills@5023bb8b]" started-at="2021-07-29T13:40:03 IST" name="dd" data-provider="extractedQualificationSkills" finished-at="2021-07-29T13:40:03 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyAddSkill -->
+        <test-method signature="verifyAddSkill(java.lang.String, java.lang.String)[pri:1, instance:com.maven.testng.VerifyQualificationSkills@ebaa6cb]" started-at="2021-07-29T13:53:56 IST" name="verifyAddSkill" data-provider="extractedQualificationSkills" finished-at="2021-07-29T13:53:57 IST" duration-ms="1014" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,8 +60,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dd -->
-        <test-method signature="dd(java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyQualificationSkills@5023bb8b]" started-at="2021-07-29T13:40:03 IST" name="dd" data-provider="extractedQualificationSkills" finished-at="2021-07-29T13:40:03 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyAddSkill -->
+        <test-method signature="verifyAddSkill(java.lang.String, java.lang.String)[pri:1, instance:com.maven.testng.VerifyQualificationSkills@ebaa6cb]" started-at="2021-07-29T13:53:57 IST" name="verifyAddSkill" data-provider="extractedQualificationSkills" finished-at="2021-07-29T13:53:58 IST" duration-ms="1006" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -70,8 +76,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dd -->
-        <test-method signature="dd(java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyQualificationSkills@5023bb8b]" started-at="2021-07-29T13:40:03 IST" name="dd" data-provider="extractedQualificationSkills" finished-at="2021-07-29T13:40:03 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyAddSkill -->
+        <test-method signature="verifyAddSkill(java.lang.String, java.lang.String)[pri:1, instance:com.maven.testng.VerifyQualificationSkills@ebaa6cb]" started-at="2021-07-29T13:53:58 IST" name="verifyAddSkill" data-provider="extractedQualificationSkills" finished-at="2021-07-29T13:53:59 IST" duration-ms="999" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,8 +92,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dd -->
-        <test-method signature="dd(java.lang.String, java.lang.String)[pri:0, instance:com.maven.testng.VerifyQualificationSkills@5023bb8b]" started-at="2021-07-29T13:40:03 IST" name="dd" data-provider="extractedQualificationSkills" finished-at="2021-07-29T13:40:03 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyAddSkill -->
+        <test-method signature="verifyAddSkill(java.lang.String, java.lang.String)[pri:1, instance:com.maven.testng.VerifyQualificationSkills@ebaa6cb]" started-at="2021-07-29T13:53:59 IST" name="verifyAddSkill" data-provider="extractedQualificationSkills" finished-at="2021-07-29T13:54:00 IST" duration-ms="1135" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -102,8 +108,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dd -->
+        </test-method> <!-- verifyAddSkill -->
       </class> <!-- com.maven.testng.VerifyQualificationSkills -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
