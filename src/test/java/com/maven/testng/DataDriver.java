@@ -207,4 +207,27 @@ public class DataDriver {
 		return extractedOrganizationLocations;
 		
 	}
+	
+	
+	
+	@DataProvider(name = "extractedQualificationSkills")
+	public Object[][]extractedQualificationSkills() throws BiffException, IOException{
+		
+		getWorkbook();
+		Sheet sheet = wb.getSheet("AddQualificationSkills");
+		int rowsCount = sheet.getRows();
+		int columnsCount = sheet.getColumns();
+		
+		String [][] extractedQualificationSkills = new String[rowsCount][columnsCount];
+		
+		for(int i=0;i<rowsCount;i++) {
+			for(int j=0;j<columnsCount;j++) {
+				Cell cell = sheet.getCell(j,i);
+				extractedQualificationSkills[i][j] = cell.getContents();
+			}
+		}
+		
+		return extractedQualificationSkills;
+	}
+	
 }
