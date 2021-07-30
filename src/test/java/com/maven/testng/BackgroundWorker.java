@@ -101,6 +101,10 @@ public class BackgroundWorker {
 			driver.findElement(By.id("menu_admin_viewSkills")).click();
 		}
 		
+		public void selectEducation() {
+			mouseOverOnQualifications();
+			driver.findElement(By.id("menu_admin_viewEducation")).click();
+		}
 		
 		
 		

@@ -7,9 +7,16 @@ import org.testng.annotations.Test;
 public class VerifyQualificationEducation extends BackgroundWorker{
 
 	@BeforeClass
-	public void navigateToSkills() {
-		selectSkills();
+	public void navigateToEducation() {
+		selectEducation();
 	}
+	
+	@Test
+	public void aaa() {//Rename the method name later
+		driver.findElement(By.id("btnAdd")).click();
+		
+	}
+	
 //	@Test
 //	public void verifyAddSkill() {
 //		
@@ -20,12 +27,12 @@ public class VerifyQualificationEducation extends BackgroundWorker{
 //		driver.findElement(By.id("btnSave")).click();
 //	}
 //	
-	@Test(priority = 1, dataProvider ="extractedQualificationSkills", dataProviderClass = DataDriver.class)
-	public void verifyAddSkill(String skill, String description) {
-		driver.findElement(By.id("btnAdd")).click();
-		
-		driver.findElement(By.id("skill_name")).sendKeys(skill);
-		driver.findElement(By.id("skill_description")).sendKeys(description);
-		driver.findElement(By.id("btnSave")).click();
-	}
+//	@Test(priority = 1, dataProvider ="extractedQualificationSkills", dataProviderClass = DataDriver.class)
+//	public void verifyAddSkill(String skill, String description) {
+//		driver.findElement(By.id("btnAdd")).click();
+//		
+//		driver.findElement(By.id("skill_name")).sendKeys(skill);
+//		driver.findElement(By.id("skill_description")).sendKeys(description);
+//		driver.findElement(By.id("btnSave")).click();
+//	}
 }
