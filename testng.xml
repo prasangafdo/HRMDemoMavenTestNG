@@ -12,7 +12,7 @@
       <!-- <class name="com.maven.testng.VerifyJobCategories"/> -->  
  	  <!-- <class name="com.maven.testng.VerifyWorkShifts"/> -->    
     <!--   <class name ="com.maven.testng.VerifyOrganizationLocations" /> -->  
-       <!--<class name="com.maven.testng.VerifyQualificationSkills"/> -->
+       <class name="com.maven.testng.VerifyQualificationSkills"/> 
        
        <class name="com.maven.testng.VerifyQualificationEducation"/>
    

@@ -3,19 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.maven.testng.VerifyQualificationEducation">
+      <class name="com.maven.testng.VerifyQualificationSkills">
         <methods>
-          <include name="navigateToEducation"/>
-          <include name="verifyAddEducation"/>
+          <include name="navigateToSkills"/>
+          <include name="verifyAddSkill" invocation-numbers="0 1 2 3 4"/>
         </methods>
-      </class> <!-- com.maven.testng.VerifyQualificationEducation -->
-      <class name="com.maven.testng.VerifyLoginTest">
-        <methods>
-          <include name="getURL"/>
-          <include name="verifyLoginWithCorrectCredentials"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.maven.testng.VerifyLoginTest -->
+      </class> <!-- com.maven.testng.VerifyQualificationSkills -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

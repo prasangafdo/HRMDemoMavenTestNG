@@ -114,7 +114,7 @@ public class BackgroundWorker {
 		String expectedSavedMessage = "Successfully Saved";
 		//Verification points
 		public void setActualSavedSuccessMessage() {
-			actualResult = driver.findElement(By.xpath("//*/form/div[@class='message success fadable']")).getText();
+			actualResult = driver.findElement(By.xpath("//*/div[@class='message success fadable']")).getText(); //Changed from //*/form/div[@class='message success fadable'] due to locating issue un Skills page.
 		//	return actualResult;
 		}
 		
