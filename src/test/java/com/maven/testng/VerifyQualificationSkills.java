@@ -19,4 +19,6 @@ public class VerifyQualificationSkills extends BackgroundWorker{
 		driver.findElement(By.id("skill_description")).sendKeys(description);
 		driver.findElement(By.id("btnSave")).click();
 	}
+	
+	
 }

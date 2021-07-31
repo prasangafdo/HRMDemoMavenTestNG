@@ -11,9 +11,11 @@ public class VerifyQualificationEducation extends BackgroundWorker{
 		selectEducation();
 	}
 	
-	@Test
-	public void aaa() {//Rename the method name later
+	@Test()
+	public void verifyAddEducation() {//Rename the method name later
 		driver.findElement(By.id("btnAdd")).click();
+		driver.findElement(By.id("education_name")).sendKeys("11");
+		driver.findElement(By.id("btnSave")).click();
 		
 	}
 	
