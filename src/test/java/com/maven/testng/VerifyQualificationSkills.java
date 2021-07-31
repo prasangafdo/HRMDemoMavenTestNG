@@ -1,6 +1,7 @@
 package com.maven.testng;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -18,6 +19,10 @@ public class VerifyQualificationSkills extends BackgroundWorker{
 		driver.findElement(By.id("skill_name")).sendKeys(skill);
 		driver.findElement(By.id("skill_description")).sendKeys(description);
 		driver.findElement(By.id("btnSave")).click();
+		
+		setActualSavedSuccessMessage();
+		Assert.assertEquals(getActualSavedSuccessMessage(), getExpectedSavedMessage());
+		
 	}
 	
 	
