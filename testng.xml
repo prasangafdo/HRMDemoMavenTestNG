@@ -17,7 +17,7 @@
      <!--   <class name="com.maven.testng.VerifyQualificationSkills"/> 
         <class name="com.maven.testng.VerifyQualificationEducation"/>  --> 
         
-       <class name ="com.maven.testng.VerifyQualificationLicense"/>
+       <class name ="com.maven.testng.VerifyQualificationLicenses"/>
    
       
     </classes>

@@ -1,125 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-01T11:17:47 IST" name="Suite" finished-at="2021-08-01T11:18:12 IST" duration-ms="25763">
+  <suite started-at="2021-08-02T12:23:02 IST" name="Suite" finished-at="2021-08-02T12:23:18 IST" duration-ms="16332">
     <groups>
     </groups>
-    <test started-at="2021-08-01T11:17:47 IST" name="Test" finished-at="2021-08-01T11:18:12 IST" duration-ms="25763">
-      <class name="com.maven.testng.VerifyQualificationSkills">
-        <test-method is-config="true" signature="navigateToSkills()[pri:0, instance:com.maven.testng.VerifyQualificationSkills@5fe1ce85]" started-at="2021-08-01T11:17:57 IST" name="navigateToSkills" finished-at="2021-08-01T11:18:00 IST" duration-ms="2907" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToSkills -->
-        <test-method signature="verifyAddSkill(java.lang.String, java.lang.String)[pri:1, instance:com.maven.testng.VerifyQualificationSkills@5fe1ce85]" started-at="2021-08-01T11:18:00 IST" name="verifyAddSkill" data-provider="extractedQualificationSkills" finished-at="2021-08-01T11:18:02 IST" duration-ms="1452" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TestSkill0001]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test Skill Description 0001]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddSkill -->
-        <test-method signature="verifyAddSkill(java.lang.String, java.lang.String)[pri:1, instance:com.maven.testng.VerifyQualificationSkills@5fe1ce85]" started-at="2021-08-01T11:18:02 IST" name="verifyAddSkill" data-provider="extractedQualificationSkills" finished-at="2021-08-01T11:18:03 IST" duration-ms="1187" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TestSkill0002]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test Skill Description 0002]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddSkill -->
-        <test-method signature="verifyAddSkill(java.lang.String, java.lang.String)[pri:1, instance:com.maven.testng.VerifyQualificationSkills@5fe1ce85]" started-at="2021-08-01T11:18:03 IST" name="verifyAddSkill" data-provider="extractedQualificationSkills" finished-at="2021-08-01T11:18:04 IST" duration-ms="1427" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TestSkill0003]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test Skill Description 0003]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddSkill -->
-        <test-method signature="verifyAddSkill(java.lang.String, java.lang.String)[pri:1, instance:com.maven.testng.VerifyQualificationSkills@5fe1ce85]" started-at="2021-08-01T11:18:04 IST" name="verifyAddSkill" data-provider="extractedQualificationSkills" finished-at="2021-08-01T11:18:06 IST" duration-ms="1323" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TestSkill0004]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test Skill Description 0004]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddSkill -->
-        <test-method signature="verifyAddSkill(java.lang.String, java.lang.String)[pri:1, instance:com.maven.testng.VerifyQualificationSkills@5fe1ce85]" started-at="2021-08-01T11:18:06 IST" name="verifyAddSkill" data-provider="extractedQualificationSkills" finished-at="2021-08-01T11:18:07 IST" duration-ms="1323" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TestSkill0005]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test Skill Description 0005]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddSkill -->
-      </class> <!-- com.maven.testng.VerifyQualificationSkills -->
+    <test started-at="2021-08-02T12:23:02 IST" name="Test" finished-at="2021-08-02T12:23:18 IST" duration-ms="16332">
       <class name="com.maven.testng.VerifyLoginTest">
-        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@436bc36]" started-at="2021-08-01T11:17:47 IST" name="getURL" finished-at="2021-08-01T11:17:51 IST" duration-ms="3900" status="PASS">
+        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@69653e16]" started-at="2021-08-02T12:23:02 IST" name="getURL" finished-at="2021-08-02T12:23:06 IST" duration-ms="4368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getURL -->
-        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@436bc36]" started-at="2021-08-01T11:17:51 IST" name="verifyLoginErrorMessage" finished-at="2021-08-01T11:17:52 IST" duration-ms="1581" status="PASS">
+        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@69653e16]" started-at="2021-08-02T12:23:06 IST" name="verifyLoginErrorMessage" finished-at="2021-08-02T12:23:08 IST" duration-ms="1633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginErrorMessage -->
-        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@436bc36]" started-at="2021-08-01T11:17:52 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-08-01T11:17:57 IST" duration-ms="5245" status="PASS">
+        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@69653e16]" started-at="2021-08-02T12:23:08 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-08-02T12:23:12 IST" duration-ms="4808" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithCorrectCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@436bc36]" started-at="2021-08-01T11:18:10 IST" name="closeBrowser" finished-at="2021-08-01T11:18:12 IST" duration-ms="2092" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@69653e16]" started-at="2021-08-02T12:23:16 IST" name="closeBrowser" finished-at="2021-08-02T12:23:18 IST" duration-ms="2062" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.maven.testng.VerifyLoginTest -->
-      <class name="com.maven.testng.VerifyQualificationEducation">
-        <test-method is-config="true" signature="navigateToEducation()[pri:0, instance:com.maven.testng.VerifyQualificationEducation@604c5de8]" started-at="2021-08-01T11:18:07 IST" name="navigateToEducation" finished-at="2021-08-01T11:18:09 IST" duration-ms="2056" status="PASS">
+      <class name="com.maven.testng.VerifyQualificationLicenses">
+        <test-method signature="aaa()[pri:0, instance:com.maven.testng.VerifyQualificationLicenses@758705fa]" started-at="2021-08-02T12:23:12 IST" name="aaa" finished-at="2021-08-02T12:23:16 IST" duration-ms="3432" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToEducation -->
-        <test-method signature="AddEducation()[pri:0, instance:com.maven.testng.VerifyQualificationEducation@604c5de8]" started-at="2021-08-01T11:18:09 IST" name="AddEducation" finished-at="2021-08-01T11:18:10 IST" duration-ms="1145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddEducation -->
-      </class> <!-- com.maven.testng.VerifyQualificationEducation -->
+        </test-method> <!-- aaa -->
+      </class> <!-- com.maven.testng.VerifyQualificationLicenses -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
