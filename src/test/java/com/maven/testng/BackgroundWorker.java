@@ -105,7 +105,10 @@ public class BackgroundWorker {
 			mouseOverOnQualifications();
 			driver.findElement(By.id("menu_admin_viewEducation")).click();
 		}
-		
+		public void selectLicense() {
+			mouseOverOnQualifications();
+			driver.findElement(By.id("menu_admin_viewLicenses")).click();
+		}		
 		
 		
 		//=====================Verification Messages=============================//

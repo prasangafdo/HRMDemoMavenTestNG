@@ -1,5 +1,13 @@
 package com.maven.testng;
 
-public class VerifyQualificationLicenses {
+import org.testng.annotations.Test;
+
+public class VerifyQualificationLicenses extends BackgroundWorker{
+	
+	@Test
+	public void aaa() {
+		selectLicense();
+	}
+	
 
 }
