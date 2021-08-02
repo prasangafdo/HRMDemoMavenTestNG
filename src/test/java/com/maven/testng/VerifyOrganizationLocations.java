@@ -23,38 +23,38 @@ public class VerifyOrganizationLocations extends BackgroundWorker{
 		//Since data driven testing for these elements are covered in "verifyAddLocationWithAllDataFields" method,not using data driven testing with this method
 	
 		driver.findElement(By.id("btnAdd")).click();
-		driver.findElement(By.id("location_name")).sendKeys("Test_Location0001");
+		driver.findElement(By.id("location_name")).sendKeys("Test_Location0001X");
 		
 		Select selectCountry = new Select(driver.findElement(By.id("location_country")));
 		selectCountry.selectByVisibleText("Sri Lanka");
 		
 		driver.findElement(By.id("btnSave")).click();
 		
-		setSavedSuccessMessage(); //Locating the saved message using xpath in background worker class
-		Assert.assertEquals(getSavedSuccessMessage(), getExpectedSavedMessage());
+		setActualSavedSuccessMessage(); //Locating the saved message using xpath in background worker class
+		Assert.assertEquals(getActualSavedSuccessMessage(), getExpectedSavedMessage());
 
 	}
 	
 	@Test(priority=2, dataProvider ="extractedOrganizationLocations", dataProviderClass = DataDriver.class)
-	public void verifyAddLocationWithAllDataFields(String a, String b, String c, String d, String e, String f, String g, String h) {
+	public void verifyAddLocationWithAllDataFields(String locationName, String country, String state, String city, String address, String zipCode, String phone, String fax, String notes) {
 		
 		driver.findElement(By.id("btnAdd")).click();
-		driver.findElement(By.id("location_name")).sendKeys("Test_Location0002 with All data");
+		driver.findElement(By.id("location_name")).sendKeys(locationName);
 		
 		Select selectCountry = new Select(driver.findElement(By.id("location_country")));
-		selectCountry.selectByVisibleText("Sri Lanka");
+		selectCountry.selectByVisibleText(country);
 		
-		driver.findElement(By.id("location_province")).sendKeys("Test_Province002");
-		driver.findElement(By.id("location_city")).sendKeys("Test_City Kandy");
-		driver.findElement(By.id("location_address")).sendKeys("Test_Address 121, ABC Road, Kandy");
-		driver.findElement(By.id("location_zipCode")).sendKeys("2354231");
-		driver.findElement(By.id("location_phone")).sendKeys("0112345432");
-		driver.findElement(By.id("location_fax")).sendKeys("0112345436");
-		driver.findElement(By.id("location_notes")).sendKeys("Test_Note002 this is a test note");
+		driver.findElement(By.id("location_province")).sendKeys(state);
+		driver.findElement(By.id("location_city")).sendKeys(address);
+		driver.findElement(By.id("location_address")).sendKeys(address);
+		driver.findElement(By.id("location_zipCode")).sendKeys(zipCode);
+		driver.findElement(By.id("location_phone")).sendKeys(phone);
+		driver.findElement(By.id("location_fax")).sendKeys(fax);
+		driver.findElement(By.id("location_notes")).sendKeys(notes);
 		
-//		driver.findElement(By.id("btnSave")).click();
-//		setSavedSuccessMessage(); //Locating the saved message using xpath in background worker class
-//		Assert.assertEquals(getSavedSuccessMessage(), getExpectedSavedMessage());
+		driver.findElement(By.id("btnSave")).click();
+		setActualSavedSuccessMessage(); //Locating the saved message using xpath in background worker class
+		Assert.assertEquals(getActualSavedSuccessMessage(), getExpectedSavedMessage());
 
 	}
 

@@ -22,14 +22,7 @@ public class BackgroundWorker {
 			}
 	
 	  static WebDriver driver = new ChromeDriver();
-	  
-	  
-	 
-//		@BeforeTest
-//		public void  getURL() {
-//			 driver.get("https://opensource-demo.orangehrmlive.com/"); //Setting initial URL
-//		}
-//	 
+
 	 public void navigateToUserManagement() {
 		 	driver.manage().window().maximize();//Maximizing the window
 			driver.findElement(By.id("menu_admin_viewAdminModule")).click();
@@ -88,6 +81,7 @@ public class BackgroundWorker {
 			navigateToUserManagement();
 			WebElement element = driver.findElement(By.id("menu_admin_Organization"));
 			Actions hoverOnOrganizations = new Actions(driver);
+			Wait();//Waiting a few seconds to sync up with browser loading speed
 			hoverOnOrganizations.moveToElement(element).perform();
 		}
 		
@@ -96,6 +90,25 @@ public class BackgroundWorker {
 			driver.findElement(By.id("menu_admin_viewLocations")).click();
 		}
 		
+		public void mouseOverOnQualifications() {
+			navigateToUserManagement();
+			Actions action = new Actions(driver);
+			action.moveToElement(driver.findElement(By.xpath("//div[@id='mainMenu']/ul/li/ul/li/a[@id='menu_admin_Qualifications']"))).build().perform();
+		}
+		
+		public void selectSkills() {
+			mouseOverOnQualifications();
+			driver.findElement(By.id("menu_admin_viewSkills")).click();
+		}
+		
+		public void selectEducation() {
+			mouseOverOnQualifications();
+			driver.findElement(By.id("menu_admin_viewEducation")).click();
+		}
+		public void selectLicense() {
+			mouseOverOnQualifications();
+			driver.findElement(By.id("menu_admin_viewLicenses")).click();
+		}		
 		
 		
 		//=====================Verification Messages=============================//
@@ -103,12 +116,12 @@ public class BackgroundWorker {
 		String actualResult;
 		String expectedSavedMessage = "Successfully Saved";
 		//Verification points
-		public void setSavedSuccessMessage() {
-			actualResult = driver.findElement(By.xpath("//*/form/div[@class='message success fadable']")).getText();
+		public void setActualSavedSuccessMessage() {
+			actualResult = driver.findElement(By.xpath("//*/div[@class='message success fadable']")).getText(); //Changed from //*/form/div[@class='message success fadable'] due to locating issue un Skills page.
 		//	return actualResult;
 		}
 		
-		public String getSavedSuccessMessage() {
+		public String getActualSavedSuccessMessage() {
 			return this.actualResult;
 		}
 		

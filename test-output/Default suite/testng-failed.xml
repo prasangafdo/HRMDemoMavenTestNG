@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.maven.testng.VerifyWorkShifts">
+      <class name="com.maven.testng.VerifyQualificationSkills">
         <methods>
-          <include name="aaa"/>
-          <include name="test1"/>
-          <include name="navigateToWorkShifts"/>
+          <include name="dd"/>
         </methods>
-      </class> <!-- com.maven.testng.VerifyWorkShifts -->
+      </class> <!-- com.maven.testng.VerifyQualificationSkills -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
