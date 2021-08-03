@@ -2,33 +2,37 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-02T12:23:02 IST" name="Suite" finished-at="2021-08-02T12:23:18 IST" duration-ms="16332">
+  <suite started-at="2021-08-03T13:59:23 IST" name="Suite" finished-at="2021-08-03T13:59:39 IST" duration-ms="16176">
     <groups>
     </groups>
-    <test started-at="2021-08-02T12:23:02 IST" name="Test" finished-at="2021-08-02T12:23:18 IST" duration-ms="16332">
+    <test started-at="2021-08-03T13:59:23 IST" name="Test" finished-at="2021-08-03T13:59:39 IST" duration-ms="16176">
       <class name="com.maven.testng.VerifyLoginTest">
-        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@69653e16]" started-at="2021-08-02T12:23:02 IST" name="getURL" finished-at="2021-08-02T12:23:06 IST" duration-ms="4368" status="PASS">
+        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@ebaa6cb]" started-at="2021-08-03T13:59:23 IST" name="getURL" finished-at="2021-08-03T13:59:27 IST" duration-ms="3745" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getURL -->
-        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@69653e16]" started-at="2021-08-02T12:23:06 IST" name="verifyLoginErrorMessage" finished-at="2021-08-02T12:23:08 IST" duration-ms="1633" status="PASS">
+        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@ebaa6cb]" started-at="2021-08-03T13:59:27 IST" name="verifyLoginErrorMessage" finished-at="2021-08-03T13:59:28 IST" duration-ms="1603" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginErrorMessage -->
-        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@69653e16]" started-at="2021-08-02T12:23:08 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-08-02T12:23:12 IST" duration-ms="4808" status="PASS">
+        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@ebaa6cb]" started-at="2021-08-03T13:59:28 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-08-03T13:59:33 IST" duration-ms="4498" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithCorrectCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@69653e16]" started-at="2021-08-02T12:23:16 IST" name="closeBrowser" finished-at="2021-08-02T12:23:18 IST" duration-ms="2062" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@ebaa6cb]" started-at="2021-08-03T13:59:37 IST" name="closeBrowser" finished-at="2021-08-03T13:59:39 IST" duration-ms="2079" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.maven.testng.VerifyLoginTest -->
       <class name="com.maven.testng.VerifyQualificationLicenses">
-        <test-method signature="aaa()[pri:0, instance:com.maven.testng.VerifyQualificationLicenses@758705fa]" started-at="2021-08-02T12:23:12 IST" name="aaa" finished-at="2021-08-02T12:23:16 IST" duration-ms="3432" status="PASS">
+        <test-method is-config="true" signature="navigateToLicenses()[pri:0, instance:com.maven.testng.VerifyQualificationLicenses@906d29b]" started-at="2021-08-03T13:59:33 IST" name="navigateToLicenses" finished-at="2021-08-03T13:59:36 IST" duration-ms="3236" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aaa -->
+        </test-method> <!-- navigateToLicenses -->
+        <test-method signature="VerifyAddLicense()[pri:0, instance:com.maven.testng.VerifyQualificationLicenses@906d29b]" started-at="2021-08-03T13:59:36 IST" name="VerifyAddLicense" finished-at="2021-08-03T13:59:37 IST" duration-ms="984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAddLicense -->
       </class> <!-- com.maven.testng.VerifyQualificationLicenses -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
