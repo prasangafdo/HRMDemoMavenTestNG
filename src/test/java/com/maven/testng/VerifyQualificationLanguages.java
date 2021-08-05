@@ -1,5 +1,11 @@
 package com.maven.testng;
 
-public class VerifyQualificationLanguages {
+import org.testng.annotations.Test;
 
+public class VerifyQualificationLanguages extends BackgroundWorker{
+
+	@Test
+	public void navigate() {
+		selectLanguages();
+	}
 }
