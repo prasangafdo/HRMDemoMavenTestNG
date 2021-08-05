@@ -108,7 +108,11 @@ public class BackgroundWorker {
 		public void selectLicense() {
 			mouseOverOnQualifications();
 			driver.findElement(By.id("menu_admin_viewLicenses")).click();
-		}		
+		}	
+		public void selectLanguages() {
+			mouseOverOnQualifications();
+			driver.findElement(By.id("menu_admin_viewLanguages")).click();
+		}	
 		
 		
 		//=====================Verification Messages=============================//
