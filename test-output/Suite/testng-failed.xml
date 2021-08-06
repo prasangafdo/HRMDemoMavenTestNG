@@ -3,12 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.maven.testng.VerifyQualificationLicenses">
+      <class name="com.maven.testng.VerifyLoginTest">
         <methods>
-          <include name="VerifyAddLicense"/>
-          <include name="navigateToLicenses"/>
+          <include name="getURL"/>
+          <include name="closeBrowser"/>
+          <include name="verifyLoginErrorMessage"/>
         </methods>
-      </class> <!-- com.maven.testng.VerifyQualificationLicenses -->
+      </class> <!-- com.maven.testng.VerifyLoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
