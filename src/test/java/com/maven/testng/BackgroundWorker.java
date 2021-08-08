@@ -113,6 +113,11 @@ public class BackgroundWorker {
 			mouseOverOnQualifications();
 			driver.findElement(By.id("menu_admin_viewLanguages")).click();
 		}	
+		public void selectMemberships() {
+			mouseOverOnQualifications();
+			driver.findElement(By.id("menu_admin_membership")).click();
+		}	
+		
 		
 		
 		//=====================Verification Messages=============================//
