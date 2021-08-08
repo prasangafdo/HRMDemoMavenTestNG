@@ -2,38 +2,34 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-07T20:15:18 IST" name="Suite" finished-at="2021-08-07T20:15:34 IST" duration-ms="16521">
+  <suite started-at="2021-08-08T10:29:14 IST" name="Suite" finished-at="2021-08-08T10:29:30 IST" duration-ms="15609">
     <groups>
     </groups>
-    <test started-at="2021-08-07T20:15:18 IST" name="Test" finished-at="2021-08-07T20:15:34 IST" duration-ms="16521">
+    <test started-at="2021-08-08T10:29:14 IST" name="Test" finished-at="2021-08-08T10:29:30 IST" duration-ms="15609">
       <class name="com.maven.testng.VerifyLoginTest">
-        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@906d29b]" started-at="2021-08-07T20:15:18 IST" name="getURL" finished-at="2021-08-07T20:15:22 IST" duration-ms="4283" status="PASS">
+        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@ebaa6cb]" started-at="2021-08-08T10:29:14 IST" name="getURL" finished-at="2021-08-08T10:29:19 IST" duration-ms="4537" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getURL -->
-        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@906d29b]" started-at="2021-08-07T20:15:22 IST" name="verifyLoginErrorMessage" finished-at="2021-08-07T20:15:23 IST" duration-ms="1272" status="PASS">
+        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@ebaa6cb]" started-at="2021-08-08T10:29:19 IST" name="verifyLoginErrorMessage" finished-at="2021-08-08T10:29:20 IST" duration-ms="1358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginErrorMessage -->
-        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@906d29b]" started-at="2021-08-07T20:15:23 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-08-07T20:15:28 IST" duration-ms="4810" status="PASS">
+        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@ebaa6cb]" started-at="2021-08-08T10:29:20 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-08-08T10:29:25 IST" duration-ms="4689" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithCorrectCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@906d29b]" started-at="2021-08-07T20:15:32 IST" name="closeBrowser" finished-at="2021-08-07T20:15:34 IST" duration-ms="2116" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@ebaa6cb]" started-at="2021-08-08T10:29:28 IST" name="closeBrowser" finished-at="2021-08-08T10:29:30 IST" duration-ms="2078" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.maven.testng.VerifyLoginTest -->
-      <class name="com.maven.testng.VerifyQualificationLanguages">
-        <test-method is-config="true" signature="navigate()[pri:0, instance:com.maven.testng.VerifyQualificationLanguages@49d3c823]" started-at="2021-08-07T20:15:28 IST" name="navigate" finished-at="2021-08-07T20:15:31 IST" duration-ms="2984" status="PASS">
+      <class name="com.maven.testng.VerifyQualificationMemberships">
+        <test-method signature="VerifyAddMemberships()[pri:0, instance:com.maven.testng.VerifyQualificationMemberships@906d29b]" started-at="2021-08-08T10:29:25 IST" name="VerifyAddMemberships" finished-at="2021-08-08T10:29:28 IST" duration-ms="2915" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigate -->
-        <test-method signature="VerifyAddLanguage()[pri:0, instance:com.maven.testng.VerifyQualificationLanguages@49d3c823]" started-at="2021-08-07T20:15:31 IST" name="VerifyAddLanguage" finished-at="2021-08-07T20:15:32 IST" duration-ms="1028" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyAddLanguage -->
-      </class> <!-- com.maven.testng.VerifyQualificationLanguages -->
+        </test-method> <!-- VerifyAddMemberships -->
+      </class> <!-- com.maven.testng.VerifyQualificationMemberships -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -16,10 +16,10 @@
     
      <!--   <class name="com.maven.testng.VerifyQualificationSkills"/> 
         <class name="com.maven.testng.VerifyQualificationEducation"/>  
-       <class name ="com.maven.testng.VerifyQualificationLicenses"/>-->
-       
-       <class name ="com.maven.testng.VerifyQualificationLanguages"/>
+       <class name ="com.maven.testng.VerifyQualificationLicenses"/>
+       <class name ="com.maven.testng.VerifyQualificationLanguages"/>-->
    
+ 	  <class name ="com.maven.testng.VerifyQualificationMemberships"/>
       
     </classes>
   </test> <!-- Test -->
