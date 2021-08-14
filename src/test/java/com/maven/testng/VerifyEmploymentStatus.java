@@ -21,10 +21,10 @@ public class VerifyEmploymentStatus extends BackgroundWorker{
 		
 		//Verification point
 		//String actualResult = driver.findElement(By.xpath("*//div/div[@class='message success fadable']")).getText();
-		String expectedResult = "Successfully Saved";
+	//	String expectedResult = "Successfully Saved";
 		
-		setSavedSuccessMessage();		
-		Assert.assertEquals(getSavedSuccessMessage(), expectedResult);
+		setActualSavedSuccessMessage();
+		Assert.assertEquals(getActualSavedSuccessMessage(), getExpectedSavedMessage());
 	}
 
 }

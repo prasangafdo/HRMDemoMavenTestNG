@@ -36,8 +36,8 @@ public class VerifyWorkShifts extends BackgroundWorker{
 		
 		driver.findElement(By.id("btnSave")).click();
 
-		setSavedSuccessMessage();
-		Assert.assertEquals(getSavedSuccessMessage(), getExpectedSavedMessage());		
+		setActualSavedSuccessMessage();
+		Assert.assertEquals(getActualSavedSuccessMessage(), getExpectedSavedMessage());		
 		
 	}
 	

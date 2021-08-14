@@ -10,15 +10,16 @@
     <!-- <class name="com.maven.testng.VerifyPayGrades"/> -->  
     <!--     <class name="com.maven.testng.VerifyEmploymentStatus"/> -->  
       <!-- <class name="com.maven.testng.VerifyJobCategories"/> -->  
- 	  <!-- <class name="com.maven.testng.VerifyWorkShifts"/> -->    
+ 	  <class name="com.maven.testng.VerifyWorkShifts"/>    
     <!--   <class name ="com.maven.testng.VerifyOrganizationLocations" /> -->  
     
     
      <!--   <class name="com.maven.testng.VerifyQualificationSkills"/> 
-        <class name="com.maven.testng.VerifyQualificationEducation"/>  --> 
-        
-       <class name ="com.maven.testng.VerifyQualificationLicenses"/>
+        <class name="com.maven.testng.VerifyQualificationEducation"/>  
+       <class name ="com.maven.testng.VerifyQualificationLicenses"/>	
+       <class name ="com.maven.testng.VerifyQualificationLanguages"/>
    
+ 	  <class name ="com.maven.testng.VerifyQualificationMemberships"/>-->
       
     </classes>
   </test> <!-- Test -->
