@@ -45,15 +45,12 @@ public class VerifyUserManagementPage extends BackgroundWorker{
 		driver.findElement(By.id("systemUser_password")).sendKeys(password);
 		driver.findElement(By.id("systemUser_confirmPassword")).sendKeys(password);
 		
-		
-
 		Wait();
-			driver.findElement(By.id("btnSave")).click();
-			Wait();
-			//Verify the url = expected = https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers
-			
-			setActualSavedSuccessMessage();
-			Assert.assertEquals(getActualSavedSuccessMessage(), getExpectedSavedMessage());		
+		driver.findElement(By.id("btnSave")).click();
+		Wait();
+		//Verify the url = expected = https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers
+		setActualSavedSuccessMessage();
+		Assert.assertEquals(getActualSavedSuccessMessage(), getExpectedSavedMessage());		
 
 		
 		//Reporter.log(employeeName);
