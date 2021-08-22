@@ -16,7 +16,7 @@ import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
 
-@SuppressWarnings("unused")
+//@SuppressWarnings("unused")
 public class VerifyUserManagementPage extends BackgroundWorker{
 
 	@BeforeClass
@@ -32,14 +32,10 @@ public class VerifyUserManagementPage extends BackgroundWorker{
 		ddlUserRole.selectByVisibleText(userRole);
 		
 		driver.findElement(By.id("systemUser_employeeName_empName")).sendKeys(employeeName);
-		
-		try{
-			Thread.sleep(500);
-			driver.findElement(By.xpath("//*/ul/li[@class='ac_even ac_over']")).click();
-		}
-		catch (Exception e) {
-			System.out.println(e);
-		}
+		Wait();
+		driver.findElement(By.xpath("//*/ul/li[@class='ac_even ac_over']")).click();
+			
+		//}
 		
 		driver.findElement(By.id("systemUser_userName")).sendKeys(username);
 		
@@ -50,13 +46,15 @@ public class VerifyUserManagementPage extends BackgroundWorker{
 		driver.findElement(By.id("systemUser_confirmPassword")).sendKeys(password);
 		
 		
-		try{
-			Thread.sleep(500);
-			driver.findElement(By.name("btnSave")).click();
-		}
-		catch (Exception e) {
-			System.out.println(e);
-		}
+
+		Wait();
+			driver.findElement(By.id("btnSave")).click();
+			Wait();
+			//Verify the url = expected = https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers
+			
+			setActualSavedSuccessMessage();
+			Assert.assertEquals(getActualSavedSuccessMessage(), getExpectedSavedMessage());		
+
 		
 		//Reporter.log(employeeName);
 //		System.out.println(userData);
