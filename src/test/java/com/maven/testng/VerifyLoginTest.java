@@ -56,7 +56,7 @@ public class VerifyLoginTest extends BackgroundWorker{
 	@AfterTest
 	public void closeBrowser() throws InterruptedException {
 		Thread.sleep(2000);
-		driver.close();
+	//	driver.close();
 	
 
 	}
