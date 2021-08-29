@@ -21,7 +21,7 @@ public class BackgroundWorker {
 		System.setProperty("webdriver.chrome.driver", "C:/Users/Prasanga Fernando/Documents/Eclipse/TestNG_PageTitle/chromedriver/chromedriver.exe");
 			}
 	
-	  static WebDriver driver = new ChromeDriver();
+	 protected static WebDriver driver = new ChromeDriver(); //Changed to protected to access from other packages
 
 	 public void navigateToUserManagement() {
 		 	driver.manage().window().maximize();//Maximizing the window
