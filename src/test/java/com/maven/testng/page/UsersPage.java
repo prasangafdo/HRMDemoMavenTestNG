@@ -7,11 +7,16 @@ import com.maven.testng.BackgroundWorker;
 
 public class UsersPage extends BackgroundWorker{
 	
-	private static By txtsearchSystemUser_userName = By.id("btnAdd"); //Search text field
-	private static By btnsearchBtn = By.id("btnAdd"); //Search button
+	private static By txtSearchUsername = By.id("btnAdd"); //Search text field
+	private static By btnsearch = By.id("btnAdd"); //Search button
 	
-	public void setTextInElementWithID(String elementID, String value) {
-		
+//	public void setTextInElementWithID(String elementID, String value) {
+//		driver.findElement(By.id(elementID)).sendKeys(value);
+//		//sleep
+//	}
+	public void searchByUsername(String username) {//More parameters will be added later
+		driver.findElement(txtSearchUsername).sendKeys(username);
+		driver.findElement(btnsearch).click();
 	}
 
 }
