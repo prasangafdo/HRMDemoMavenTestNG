@@ -7,8 +7,8 @@ import com.maven.testng.BackgroundWorker;
 
 public class UsersPage extends BackgroundWorker{
 	
-	private static By txtSearchUsername = By.id("btnAdd"); //Search text field
-	private static By btnsearch = By.id("btnAdd"); //Search button
+	private static By txtSearchUsername = By.id("searchSystemUser_userName"); //Search text field
+	private static By btnsearch = By.id("searchBtn"); //Search button
 	
 //	public void setTextInElementWithID(String elementID, String value) {
 //		driver.findElement(By.id(elementID)).sendKeys(value);

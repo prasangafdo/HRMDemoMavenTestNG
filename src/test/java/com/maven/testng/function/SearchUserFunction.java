@@ -8,7 +8,7 @@ public class SearchUserFunction extends BackgroundWorker{
 	static UsersPage usersPage = new UsersPage();
 
 	public void searchWithUsernameAndAllUserTypes() {
-		usersPage.searchByUsername("aaaa"); //Data is hardcoded for now
+		usersPage.searchByUsername("Cassidy.Hope"); //Data is hardcoded for now
 	}
 	public void searchWithUsernameAndAdminUserType() {
 		
