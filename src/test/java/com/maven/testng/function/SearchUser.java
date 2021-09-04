@@ -3,12 +3,12 @@ package com.maven.testng.function;
 import com.maven.testng.BackgroundWorker;
 import com.maven.testng.page.UsersPage;
 
-public class SearchUserFunction extends BackgroundWorker{
+public class SearchUser extends BackgroundWorker{
 	
-	static UsersPage usersPage = new UsersPage();
+	static UsersPage users = new UsersPage();
 
 	public void searchWithUsernameAndAllUserTypes() {
-		usersPage.searchByUsername("Cassidy.Hope"); //Data is hardcoded for now
+		users.searchByUsername("Cassidy.Hope"); //Data is hardcoded for now
 	}
 	public void searchWithUsernameAndAdminUserType() {
 		
