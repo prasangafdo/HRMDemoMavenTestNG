@@ -16,9 +16,10 @@ public class UserManagementUserSearchTest extends BackgroundWorker{
 		SoftAssert softAssert = new SoftAssert();
 		//softAssert.
 		navigateToUserManagement();
-		searchUserFunction.searchAllUsersByUsername();
-		searchUserFunction.searchAdminUsersByUsername();
-		searchUserFunction.searchESSUsersByUsername();
+//		searchUserFunction.searchAllUsersByUsername();
+//		searchUserFunction.searchAdminUsersByUsername();
+//		searchUserFunction.searchESSUsersByUsername();
+		searchUserFunction.searchAllUsersByEmployeeName();
 		
 	}
 

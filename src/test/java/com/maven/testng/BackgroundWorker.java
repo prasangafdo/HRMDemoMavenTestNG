@@ -31,7 +31,7 @@ public class BackgroundWorker {
 		
 		@AfterTest
 		public void closeBrowser() {
-			sleep();
+			sleep(500);
 			driver.close();
 		}
 	 
@@ -46,9 +46,9 @@ public class BackgroundWorker {
 		
 
 		
-		public void sleep() {
+		public void sleep(int miliSeconds) {
 			try {
-				Thread.sleep(2000);
+				Thread.sleep(miliSeconds);
 				System.out.println("Waiting 2 seconds...");
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
@@ -94,7 +94,7 @@ public class BackgroundWorker {
 			navigateToUserManagement();
 			WebElement element = driver.findElement(By.id("menu_admin_Organization"));
 			Actions hoverOnOrganizations = new Actions(driver);
-			sleep();//Waiting a few seconds to sync up with browser loading speed
+			sleep(1000);//Waiting a few seconds to sync up with browser loading speed
 			hoverOnOrganizations.moveToElement(element).perform();
 		}
 		

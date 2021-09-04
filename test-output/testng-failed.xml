@@ -7,6 +7,7 @@
         <methods>
           <include name="getURL"/>
           <include name="verifyUserManagementSearch"/>
+          <include name="closeBrowser"/>
         </methods>
       </class> <!-- com.maven.testng.tests.UserManagementUserSearchTest -->
     </classes>

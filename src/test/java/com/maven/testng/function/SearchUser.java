@@ -16,5 +16,8 @@ public class SearchUser{
 	public void searchESSUsersByUsername() {
 		users.searchESSUserByUsername("Garry.White");
 	}
+	public void searchAllUsersByEmployeeName() {
+		users.searchByEmployeeName("Cecil");
+	}
 	
 }
