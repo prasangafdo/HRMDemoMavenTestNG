@@ -2,6 +2,7 @@ package com.maven.testng.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import com.maven.testng.BackgroundWorker;
 
@@ -21,19 +22,25 @@ public class UsersPage extends BackgroundWorker{
 		driver.findElement(txtSearchUsername).sendKeys(username);
 		driver.findElement(btnsearch).click();
 	}
-	public void searchAdminUserByUsername(String username) {//More parameters will be added later
+	public void searchAdminUserByUsername(String username) {
+		driver.findElement(txtSearchUsername).clear();
 		driver.findElement(txtSearchUsername).sendKeys(username);
+		Select select = new Select(driver.findElement(drpDwnUserRole));
+		select.selectByVisibleText("Admin");
 		driver.findElement(btnsearch).click();
 	}
-	public void searchESSUserByUsername(String username) {//More parameters will be added later
+	public void searchESSUserByUsername(String username) {
+		driver.findElement(txtSearchUsername).clear();
 		driver.findElement(txtSearchUsername).sendKeys(username);
+		Select select = new Select(driver.findElement(drpDwnUserRole));
+		select.selectByVisibleText("ESS");
 		driver.findElement(btnsearch).click();
 	}
-	public void searchByEmployeeName(String employeeName) {//More parameters will be added later
+	public void searchByEmployeeName(String employeeName) {
 		driver.findElement(txtSearchUsername).sendKeys(employeeName);
 		driver.findElement(btnsearch).click();
 	}
-	public void searchByStatus(String status) {//More parameters will be added later
+	public void searchByStatus(String status) {
 		driver.findElement(txtSearchUsername).sendKeys(status);
 		driver.findElement(btnsearch).click();
 	}

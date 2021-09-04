@@ -36,12 +36,6 @@ public class VerifyLoginTest extends BackgroundWorker{
 		Assert.assertEquals(actual, expected);
 	}
 
-	@BeforeTest
-	public void  getURL() {
-		driver.get("https://opensource-demo.orangehrmlive.com/"); //Setting initial URL
-	}
-
-
 	@Test(priority=1)
 	public void verifyLoginErrorMessage() {
 
@@ -53,13 +47,13 @@ public class VerifyLoginTest extends BackgroundWorker{
 		Assert.assertEquals(errorMessage, "Invalid credentials");
 	}
 
-	@AfterTest
-	public void closeBrowser() throws InterruptedException {
-		Thread.sleep(2000);
-	//	driver.close();
-	
-
-	}
+//	@AfterTest
+//	public void closeBrowser() throws InterruptedException {
+//		Thread.sleep(2000);
+//	//	driver.close();
+//	
+//
+//	}
 
 
 

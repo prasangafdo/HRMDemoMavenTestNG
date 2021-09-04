@@ -2,20 +2,23 @@ package com.maven.testng.tests;
 
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import com.maven.testng.function.SearchUserFunction;
+
+import com.maven.testng.function.SearchUser;
 
 import com.maven.testng.BackgroundWorker;
 
 public class UserManagementUserSearchTest extends BackgroundWorker{
 	
-	SearchUserFunction searchUserFunction = new SearchUserFunction();
+	SearchUser searchUserFunction = new SearchUser();
 	
 	@Test
 	public void verifyUserManagementSearch() {
 		SoftAssert softAssert = new SoftAssert();
 		//softAssert.
 		navigateToUserManagement();
-		searchUserFunction.searchWithUsernameAndAllUserTypes();
+		searchUserFunction.searchAllUsersByUsername();
+		searchUserFunction.searchAdminUsersByUsername();
+		searchUserFunction.searchESSUsersByUsername();
 		
 	}
 
