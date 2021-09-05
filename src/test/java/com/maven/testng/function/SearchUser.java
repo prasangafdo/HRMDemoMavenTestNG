@@ -6,6 +6,7 @@ public class SearchUser{
 	
 	static UsersPage users = new UsersPage();
 
+	//Search user
 	public void searchAllUsersByUsername() {
 		users.searchByUsername("Cassidy.Hopea"); //Data is hardcoded for now
 		//return users.isSearchResultCheckboxDisplayed();
@@ -35,10 +36,25 @@ public class SearchUser{
 	public void searchUsersInDisabledStatus() {
 		users.searchByStatus("Disabled");
 	}
-	
+
 //	public boolean isEmployeeDropDownDisplayed() {
 //		return users.elementIsPresent();
 //	}
 	
+	//End search user
 	
+	//Add user
+	public void createAdminUserInEnabledStatus() {
+		
+	}
+	public void createAdminUserInDisabledStatus() {
+		
+	}	
+	public void createESSUserInEnabledStatus() {
+		
+	}
+	public void createESSUserInDisabledStatus() {
+		
+	}		
+	//End add user
 }

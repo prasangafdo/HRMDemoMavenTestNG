@@ -9,7 +9,7 @@ import com.maven.testng.function.SearchUser;
 
 import com.maven.testng.BackgroundWorker;
 
-public class UserManagementUserSearchTest extends BackgroundWorker{
+public class UserManagemenSearchUserTest extends BackgroundWorker{
 	
 	SearchUser searchUserFunction = new SearchUser();
 
