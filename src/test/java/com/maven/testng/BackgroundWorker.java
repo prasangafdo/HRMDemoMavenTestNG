@@ -19,7 +19,7 @@ import org.testng.annotations.BeforeTest;
 //@SuppressWarnings("unused")
 public class BackgroundWorker {
 	static {
-		System.setProperty("webdriver.chrome.driver", "C:/Users/Prasanga Fernando/Documents/Eclipse/TestNG_PageTitle/chromedriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./webdriver/chromedriver/chromedriver.exe");
 			}
 	
 	 protected static WebDriver driver = new ChromeDriver(); //Changed to protected to access from other packages

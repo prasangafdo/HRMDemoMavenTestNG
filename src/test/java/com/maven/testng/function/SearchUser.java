@@ -19,5 +19,8 @@ public class SearchUser{
 	public void searchAllUsersByEmployeeName() {
 		users.searchByEmployeeName("Cecil");
 	}
+	public boolean isSearchResultDisplayed() {
+		return users.isSearchResultDisplayed();
+	}
 	
 }
