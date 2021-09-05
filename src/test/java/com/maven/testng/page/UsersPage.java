@@ -60,7 +60,6 @@ public class UsersPage extends BackgroundWorker{
 	}
 	
 	public boolean isSearchResultCheckboxDisplayed() {
-		
 		return driver.findElement(lblSearchResult).isDisplayed();
 		//String aaa = driver.findElement(lblSearchResult).getText();
 	}

@@ -43,9 +43,9 @@ public class UserManagementUserSearchTest extends BackgroundWorker{
 		navigateToUserManagement();
 		//searchUserFunction.searchAllUsersByUsername();
 	//	Reporter.log("verifyuserCanSearch");
-		//searchUserFunction.searchAllUsersByUsername();
+		searchUserFunction.searchAllUsersByUsername();
 		try{
-			softAssert.assertTrue(searchUserFunction.searchAllUsersByUsername());
+			softAssert.assertTrue(searchUserFunction.isSearchResultCheckboxDisplayed());
 		}
 		catch(Exception e) {
 			softAssert.assertTrue(searchUserFunction.isNoRecordsFoundMessageDisplayed());
@@ -58,20 +58,24 @@ public class UserManagementUserSearchTest extends BackgroundWorker{
 	}
 	
 	
-/*	@Test(priority=2)
+	@Test(priority=2)
 	public void verifyuserCanSearchESSUsersByUsername() {
 		SoftAssert softAssert = new SoftAssert();
 		navigateToUserManagement();
 	//	searchUserFunction.searchAdminUsersByUsername();
 		searchUserFunction.searchESSUsersByUsername();		
-		softAssert.assertTrue(searchUserFunction.isSearchResultDisplayed());
-	//	searchUserFunction.searchAdminUsersByUsername();
-
-		Reporter.log("AAA");
+		try{
+			softAssert.assertTrue(searchUserFunction.isSearchResultCheckboxDisplayed());
+		}
+		catch(Exception e) {
+			softAssert.assertTrue(searchUserFunction.isNoRecordsFoundMessageDisplayed());
+			Reporter.log("No records found");
+		}
 		softAssert.assertAll();
 	}
 	
-	*/
+	
+	
 	
 //	@Test
 //	public void assertTest() {
