@@ -75,11 +75,23 @@ public class UserManagementUserSearchTest extends BackgroundWorker{
 	}
 	
 	@Test(priority=3)
-	public void verifyuserCanSearchsearchAllUsersByEmployeeName() {
+	public void verifyuserCanSearchAllUsersByEmployeeName() {
 		SoftAssert softAssert = new SoftAssert();
 		navigateToUserManagement();
 		searchUserFunction.searchAllUsersByEmployeeName();		
 		softAssert.assertTrue(searchUserFunction.isSearchResultCheckboxDisplayed());
+		softAssert.assertAll();
+	}	
+	
+	@Test(priority=3)
+	public void verifyuserCanSearchUsersByStatus() {
+		SoftAssert softAssert = new SoftAssert();
+		navigateToUserManagement();
+		searchUserFunction.searchUsersInEnabledStatus();
+		softAssert.assertTrue(searchUserFunction.isSearchResultCheckboxDisplayed());
+		searchUserFunction.searchUsersInDisabledStatus();
+		softAssert.assertTrue(searchUserFunction.isSearchResultCheckboxDisplayed());
+		Reporter.log("UsersByStatus");
 		softAssert.assertAll();
 	}	
 

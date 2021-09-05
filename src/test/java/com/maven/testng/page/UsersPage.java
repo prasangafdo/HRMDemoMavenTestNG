@@ -33,7 +33,8 @@ public class UsersPage extends BackgroundWorker{
 		driver.findElement(btnsearch).click();
 	}
 	public void searchAdminUserByUsername(String username) {
-		driver.findElement(txtSearchUsername).clear();
+	//	driver.findElement(txtSearchUsername).clear();
+		clearAllValues();
 		driver.findElement(txtSearchUsername).sendKeys(username);
 		Select select = new Select(driver.findElement(drpDwnUserRole));
 		select.selectByVisibleText("Admin");
@@ -47,7 +48,8 @@ public class UsersPage extends BackgroundWorker{
 		driver.findElement(btnsearch).click();
 	}
 	public void searchByEmployeeName(String employeeName) {
-		driver.findElement(txtSearchUsername).clear();
+	//	driver.findElement(txtSearchUsername).clear();
+		clearAllValue();
 		driver.findElement(txtEmployeeName).sendKeys(employeeName);
 
 		WebElement elementdrpDwnEmployeeName; //Explicit wait
@@ -67,9 +69,11 @@ public class UsersPage extends BackgroundWorker{
 		return driver.findElement(lblSearchResult).isDisplayed();
 		//String aaa = driver.findElement(lblSearchResult).getText();
 	}
-	
 	public boolean getNoRecordssFoundMessage() {
 		return driver.findElement(lblNoRecordsFound).isDisplayed();
+	}
+	public void clearAllValues() {
+		driver.findElement(txtSearchUsername).clear();
 	}
 	
 //	public boolean elementIsPresent() {
