@@ -11,14 +11,14 @@ public class SearchUser{
 		//return users.isSearchResultCheckboxDisplayed();
 	}
 	public void searchAdminUsersByUsername() {
-		users.searchAdminUserByUsername("Linda.Anderson");
+		users.searchAdminUserByUsername("Test Alice 0001");	//Linda.Anderson
 	}
 	public void searchESSUsersByUsername() {
-		users.searchESSUserByUsername("Garry.White");
+		users.searchESSUserByUsername("maricamp"); //Garry.White
 		
 	}
 	public void searchAllUsersByEmployeeName() {
-		users.searchByEmployeeName("Pakada");
+		users.searchByEmployeeName("Alice");
 	}
 //	public boolean isSearchResultDisplayed() {
 //		return users.isSearchResultDisplayed();

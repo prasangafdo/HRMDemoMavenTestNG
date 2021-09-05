@@ -24,7 +24,7 @@ public class UsersPage extends BackgroundWorker{
 	
 //	private static String expectedSearchResult;
 	
-	private static WebDriverWait wait= new WebDriverWait(driver, 20); //Explicit wait object creation
+	private static WebDriverWait wait= new WebDriverWait(driver, 10); //Explicit wait object creation
 
 	
 
@@ -49,7 +49,7 @@ public class UsersPage extends BackgroundWorker{
 	}
 	public void searchByEmployeeName(String employeeName) {
 	//	driver.findElement(txtSearchUsername).clear();
-		clearAllValue();
+		clearAllValues();
 		driver.findElement(txtEmployeeName).sendKeys(employeeName);
 
 		WebElement elementdrpDwnEmployeeName; //Explicit wait
@@ -59,7 +59,7 @@ public class UsersPage extends BackgroundWorker{
 		driver.findElement(btnsearch).click();
 	}
 	public void searchByStatus(String status) {
-		driver.findElement(txtSearchUsername).sendKeys(status);
+		clearAllValues();
 		Select selectStatus = new Select(driver.findElement(drpDwnStatus));
 		selectStatus.selectByVisibleText(status);
 		driver.findElement(btnsearch).click();
@@ -74,6 +74,9 @@ public class UsersPage extends BackgroundWorker{
 	}
 	public void clearAllValues() {
 		driver.findElement(txtSearchUsername).clear();
+		driver.findElement(txtEmployeeName).clear();
+		Select selectUserRole = new Select(driver.findElement(drpDwnUserRole));
+		selectUserRole.selectByIndex(0);
 	}
 	
 //	public boolean elementIsPresent() {

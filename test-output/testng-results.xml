@@ -4,59 +4,82 @@
     <line>
       <![CDATA[No records found]]>
     </line>
-    <line>
-      <![CDATA[No records found]]>
-    </line>
   </reporter-output>
-  <suite started-at="2021-09-05T17:35:39 IST" name="Suite" finished-at="2021-09-05T17:36:18 IST" duration-ms="39615">
+  <suite started-at="2021-09-05T18:14:05 IST" name="Suite" finished-at="2021-09-05T18:14:26 IST" duration-ms="21324">
     <groups>
     </groups>
-    <test started-at="2021-09-05T17:35:39 IST" name="Test" finished-at="2021-09-05T17:36:18 IST" duration-ms="39615">
+    <test started-at="2021-09-05T18:14:05 IST" name="Test" finished-at="2021-09-05T18:14:26 IST" duration-ms="21324">
       <class name="com.maven.testng.VerifyLoginTest">
-        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@5b202a3a]" started-at="2021-09-05T17:35:39 IST" name="getURL" finished-at="2021-09-05T17:35:43 IST" duration-ms="4341" status="PASS">
+        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.VerifyLoginTest@5b202a3a]" started-at="2021-09-05T18:14:05 IST" name="getURL" finished-at="2021-09-05T18:14:10 IST" duration-ms="4849" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getURL -->
-        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@5b202a3a]" started-at="2021-09-05T17:35:43 IST" name="verifyLoginErrorMessage" finished-at="2021-09-05T17:35:44 IST" duration-ms="1397" status="PASS">
+        <test-method signature="verifyLoginErrorMessage()[pri:1, instance:com.maven.testng.VerifyLoginTest@5b202a3a]" started-at="2021-09-05T18:14:10 IST" name="verifyLoginErrorMessage" finished-at="2021-09-05T18:14:11 IST" duration-ms="1392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginErrorMessage -->
-        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@5b202a3a]" started-at="2021-09-05T17:35:44 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-09-05T17:35:49 IST" duration-ms="5088" status="PASS">
+        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.VerifyLoginTest@5b202a3a]" started-at="2021-09-05T18:14:11 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-09-05T18:14:16 IST" duration-ms="5291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithCorrectCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@5b202a3a]" started-at="2021-09-05T17:36:18 IST" name="closeBrowser" finished-at="2021-09-05T17:36:18 IST" duration-ms="563" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.maven.testng.VerifyLoginTest@5b202a3a]" started-at="2021-09-05T18:14:26 IST" name="closeBrowser" finished-at="2021-09-05T18:14:26 IST" duration-ms="565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.maven.testng.VerifyLoginTest -->
       <class name="com.maven.testng.tests.UserManagementUserSearchTest">
-        <test-method signature="verifyuserCanSearchAllUsersByUsername()[pri:1, instance:com.maven.testng.tests.UserManagementUserSearchTest@10b9db7b]" started-at="2021-09-05T17:35:49 IST" name="verifyuserCanSearchAllUsersByUsername" finished-at="2021-09-05T17:35:52 IST" duration-ms="2713" status="PASS">
+        <test-method signature="verifyuserCanSearchAllUsersByUsername()[pri:1, instance:com.maven.testng.tests.UserManagementUserSearchTest@10b9db7b]" started-at="2021-09-05T18:14:16 IST" name="verifyuserCanSearchAllUsersByUsername" finished-at="2021-09-05T18:14:19 IST" duration-ms="2847" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[No records found]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyuserCanSearchAllUsersByUsername -->
-        <test-method signature="verifyuserCanSearchESSUsersByUsername()[pri:2, instance:com.maven.testng.tests.UserManagementUserSearchTest@10b9db7b]" started-at="2021-09-05T17:35:52 IST" name="verifyuserCanSearchESSUsersByUsername" finished-at="2021-09-05T17:35:54 IST" duration-ms="1971" status="PASS">
+        <test-method signature="verifyuserCanSearchESSUsersByUsername()[pri:2, instance:com.maven.testng.tests.UserManagementUserSearchTest@10b9db7b]" started-at="2021-09-05T18:14:19 IST" name="verifyuserCanSearchESSUsersByUsername" finished-at="2021-09-05T18:14:21 IST" duration-ms="1959" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[No records found]]>
-            </line>
           </reporter-output>
         </test-method> <!-- verifyuserCanSearchESSUsersByUsername -->
-        <test-method signature="verifyuserCanSearchAllUsersByEmployeeName()[pri:3, instance:com.maven.testng.tests.UserManagementUserSearchTest@10b9db7b]" started-at="2021-09-05T17:35:54 IST" name="verifyuserCanSearchAllUsersByEmployeeName" finished-at="2021-09-05T17:36:16 IST" duration-ms="21501" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="verifyuserCanSearchAllUsersByEmployeeName()[pri:3, instance:com.maven.testng.tests.UserManagementUserSearchTest@10b9db7b]" started-at="2021-09-05T18:14:21 IST" name="verifyuserCanSearchAllUsersByEmployeeName" finished-at="2021-09-05T18:14:24 IST" duration-ms="2218" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //ul/li[@class='ac_even ac_over'] (tried for 20 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='chkSelectRow[]']"}
+  (Session info: chrome=93.0.4577.63)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8DPVRQ3', ip: '192.168.8.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:14002}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ab8e016610238d7f7d7eb7b85254b8c3
+*** Element info: {Using=name, value=chkSelectRow[]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //ul/li[@class='ac_even ac_over'] (tried for 20 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at com.maven.testng.page.UsersPage.searchByEmployeeName(UsersPage.java:54)
-at com.maven.testng.function.SearchUser.searchAllUsersByEmployeeName(SearchUser.java:21)
-at com.maven.testng.tests.UserManagementUserSearchTest.verifyuserCanSearchAllUsersByEmployeeName(UserManagementUserSearchTest.java:81)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='chkSelectRow[]']"}
+  (Session info: chrome=93.0.4577.63)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8DPVRQ3', ip: '192.168.8.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:14002}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ab8e016610238d7f7d7eb7b85254b8c3
+*** Element info: {Using=name, value=chkSelectRow[]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.maven.testng.page.UsersPage.isSearchResultCheckboxDisplayed(UsersPage.java:69)
+at com.maven.testng.function.SearchUser.isSearchResultCheckboxDisplayed(SearchUser.java:30)
+at com.maven.testng.tests.UserManagementUserSearchTest.verifyuserCanSearchAllUsersByEmployeeName(UserManagementUserSearchTest.java:82)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -85,40 +108,13 @@ at org.testng.TestNG.run(TestNG.java:1037)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//ul/li[@class='ac_even ac_over']"}
-  (Session info: chrome=93.0.4577.63)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-8DPVRQ3', ip: '192.168.8.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:5818}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ef5c7ea3db9732e1db154118f6e69130
-*** Element info: {Using=xpath, value=//ul/li[@class='ac_even ac_over']}
-at jdk.internal.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 31 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyuserCanSearchAllUsersByEmployeeName -->
-        <test-method signature="verifyuserCanSearchUsersByStatus()[pri:3, instance:com.maven.testng.tests.UserManagementUserSearchTest@10b9db7b]" started-at="2021-09-05T17:36:16 IST" name="verifyuserCanSearchUsersByStatus" finished-at="2021-09-05T17:36:18 IST" duration-ms="2006" status="FAIL">
+        <test-method signature="verifyuserCanSearchUsersByStatus()[pri:3, instance:com.maven.testng.tests.UserManagementUserSearchTest@10b9db7b]" started-at="2021-09-05T18:14:24 IST" name="verifyuserCanSearchUsersByStatus" finished-at="2021-09-05T18:14:26 IST" duration-ms="2168" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='chkSelectRow[]']"}
@@ -127,8 +123,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-8DPVRQ3', ip: '192.168.8.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:5818}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ef5c7ea3db9732e1db154118f6e69130
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:14002}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ab8e016610238d7f7d7eb7b85254b8c3
 *** Element info: {Using=name, value=chkSelectRow[]}]]>
             </message>
             <full-stacktrace>
@@ -138,10 +134,11 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-8DPVRQ3', ip: '192.168.8.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:5818}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ef5c7ea3db9732e1db154118f6e69130
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:14002}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ab8e016610238d7f7d7eb7b85254b8c3
 *** Element info: {Using=name, value=chkSelectRow[]}
-at jdk.internal.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
@@ -155,7 +152,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
 at org.openqa.selenium.By$ByName.findElement(By.java:284)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.maven.testng.page.UsersPage.isSearchResultCheckboxDisplayed(UsersPage.java:67)
+at com.maven.testng.page.UsersPage.isSearchResultCheckboxDisplayed(UsersPage.java:69)
 at com.maven.testng.function.SearchUser.isSearchResultCheckboxDisplayed(SearchUser.java:30)
 at com.maven.testng.tests.UserManagementUserSearchTest.verifyuserCanSearchUsersByStatus(UserManagementUserSearchTest.java:91)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
