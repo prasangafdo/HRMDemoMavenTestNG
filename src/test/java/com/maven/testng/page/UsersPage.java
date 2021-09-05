@@ -20,7 +20,9 @@ public class UsersPage extends BackgroundWorker{
 	private static By lblSearchResult = By.name("chkSelectRow[]");//Change variable name later
 	private static By lblNoRecordsFound = By.xpath("//td[text()='No Records Found']");
 	
-	private static String expectedSearchResult;
+	public static By drpDwnEmployeeNameList = By.xpath("//div[@class=\"ac_results\"]");
+	
+//	private static String expectedSearchResult;
 	
 	private static WebDriverWait wait= new WebDriverWait(driver, 20); //Explicit wait object creation
 
@@ -56,6 +58,8 @@ public class UsersPage extends BackgroundWorker{
 	}
 	public void searchByStatus(String status) {
 		driver.findElement(txtSearchUsername).sendKeys(status);
+		Select selectStatus = new Select(driver.findElement(drpDwnStatus));
+		selectStatus.selectByVisibleText(status);
 		driver.findElement(btnsearch).click();
 	}
 	
@@ -67,6 +71,11 @@ public class UsersPage extends BackgroundWorker{
 	public boolean getNoRecordssFoundMessage() {
 		return driver.findElement(lblNoRecordsFound).isDisplayed();
 	}
+	
+//	public boolean elementIsPresent() {
+//		 Boolean isPresent = driver.findElements(drpDwnEmployeeNameList).size() > 0;
+//		 return isPresent;
+//	}
 
 
 }

@@ -9,19 +9,26 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">16,082</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">37,612</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.maven.testng.tests.UserManagementUserSearchTest</td><td><a href="#m0">verifyuserCanSearchAllUsersByUsername</a></td><td rowspan="1">1630833366103</td><td rowspan="1">2530</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.maven.testng.VerifyLoginTest</td><td><a href="#m1">verifyLoginErrorMessage</a></td><td rowspan="1">1630833359860</td><td rowspan="1">1345</td></tr><tr class="passedeven"><td><a href="#m2">verifyLoginWithCorrectCredentials</a></td><td rowspan="1">1630833361208</td><td rowspan="1">4893</td></tr><tr class="passedodd"><td rowspan="1">com.maven.testng.tests.UserManagementUserSearchTest</td><td><a href="#m3">verifyuserCanSearchESSUsersByUsername</a></td><td rowspan="1">1630833368635</td><td rowspan="1">2091</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.maven.testng.tests.UserManagementUserSearchTest</td><td><a href="#m0">verifyuserCanSearchsearchAllUsersByEmployeeName</a></td><td rowspan="1">1630842297752</td><td rowspan="1">21366</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.maven.testng.VerifyLoginTest</td><td><a href="#m1">verifyLoginErrorMessage</a></td><td rowspan="1">1630842286398</td><td rowspan="1">1748</td></tr><tr class="passedeven"><td><a href="#m2">verifyLoginWithCorrectCredentials</a></td><td rowspan="1">1630842288149</td><td rowspan="1">4991</td></tr><tr class="passedodd"><td rowspan="2">com.maven.testng.tests.UserManagementUserSearchTest</td><td><a href="#m3">verifyuserCanSearchAllUsersByUsername</a></td><td rowspan="1">1630842293142</td><td rowspan="1">2634</td></tr><tr class="passedodd"><td><a href="#m4">verifyuserCanSearchESSUsersByUsername</a></td><td rowspan="1">1630842295777</td><td rowspan="1">1974</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.maven.testng.tests.UserManagementUserSearchTest#verifyuserCanSearchAllUsersByUsername</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;chkSelectRow[]&apos;]&quot;}
+<h2>Test</h2><h3 id="m0">com.maven.testng.tests.UserManagementUserSearchTest#verifyuserCanSearchsearchAllUsersByEmployeeName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //ul/li[@class=&apos;ac_even ac_over&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.maven.testng.page.UsersPage.searchByEmployeeName(UsersPage.java:54)
+	at com.maven.testng.function.SearchUser.searchAllUsersByEmployeeName(SearchUser.java:22)
+	at com.maven.testng.tests.UserManagementUserSearchTest.verifyuserCanSearchsearchAllUsersByEmployeeName(UserManagementUserSearchTest.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul/li[@class=&apos;ac_even ac_over&apos;]&quot;}
   (Session info: chrome=93.0.4577.63)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-8DPVRQ3&apos;, ip: &apos;192.168.8.172&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:7731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 15dc876fd85b0266d1da2891f1489d1f
-*** Element info: {Using=name, value=chkSelectRow[]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\PRASAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:8806}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4cbf1db5e58f01d6a607871fc3e716e3
+*** Element info: {Using=xpath, value=//ul/li[@class=&apos;ac_even ac_over&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -29,16 +36,17 @@ Session ID: 15dc876fd85b0266d1da2891f1489d1f
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.maven.testng.page.UsersPage.isSearchResultCheckboxDisplayed(UsersPage.java:63)
-	at com.maven.testng.function.SearchUser.isSearchResultCheckboxDisplayed(SearchUser.java:31)
-	at com.maven.testng.tests.UserManagementUserSearchTest.verifyuserCanSearchAllUsersByUsername(UserManagementUserSearchTest.java:47)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">com.maven.testng.VerifyLoginTest#verifyLoginErrorMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">com.maven.testng.VerifyLoginTest#verifyLoginWithCorrectCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.maven.testng.tests.UserManagementUserSearchTest#verifyuserCanSearchESSUsersByUsername</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.maven.testng.tests.UserManagementUserSearchTest#verifyuserCanSearchAllUsersByUsername</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">No records found</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.maven.testng.tests.UserManagementUserSearchTest#verifyuserCanSearchESSUsersByUsername</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">No records found</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

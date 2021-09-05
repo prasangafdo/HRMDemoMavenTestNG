@@ -1,6 +1,5 @@
 package com.maven.testng.function;
 
-import com.maven.testng.BackgroundWorker;
 import com.maven.testng.page.UsersPage;
 
 public class SearchUser{
@@ -19,7 +18,7 @@ public class SearchUser{
 		
 	}
 	public void searchAllUsersByEmployeeName() {
-		users.searchByEmployeeName("Cecil");
+		users.searchByEmployeeName("Pakada");
 	}
 //	public boolean isSearchResultDisplayed() {
 //		return users.isSearchResultDisplayed();
@@ -30,5 +29,16 @@ public class SearchUser{
 	public boolean isSearchResultCheckboxDisplayed() {
 		return users.isSearchResultCheckboxDisplayed();
 	}
+	public void searchUsersInEnabledStatus() {
+		users.searchByStatus("Enabled");
+	}
+	public void searchUsersInDisabledStatus() {
+		users.searchByStatus("Disabled");
+	}
+	
+//	public boolean isEmployeeDropDownDisplayed() {
+//		return users.elementIsPresent();
+//	}
+	
 	
 }

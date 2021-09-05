@@ -74,26 +74,13 @@ public class UserManagementUserSearchTest extends BackgroundWorker{
 		softAssert.assertAll();
 	}
 	
-	
-	
-	
-//	@Test
-//	public void assertTest() {
-//		SoftAssert softAssert = new SoftAssert();
-//		//softAssert.assertEquals(true, false);
-//		softAssert.assertTrue(false);
-//		Reporter.log("Soft ass failed");
-//		softAssert.assertAll();
-//	}
-	
-	
-	/*
-	 * 		searchUserFunction.searchAdminUsersByUsername();
-		softAssert.assertTrue(searchUserFunction.isSearchResultDisplayed(), "Result is incorrect");
-		searchUserFunction.searchESSUsersByUsername();
-		softAssert.assertTrue(searchUserFunction.isSearchResultDisplayed(), "Result is incorrect");
-		searchUserFunction.searchAllUsersByEmployeeName();
-		softAssert.assertTrue(searchUserFunction.isSearchResultDisplayed(), "Result is incorrect");
-	 */
+	@Test(priority=3)
+	public void verifyuserCanSearchsearchAllUsersByEmployeeName() {
+		SoftAssert softAssert = new SoftAssert();
+		navigateToUserManagement();
+		searchUserFunction.searchAllUsersByEmployeeName();		
+		softAssert.assertTrue(searchUserFunction.isSearchResultCheckboxDisplayed());
+		softAssert.assertAll();
+	}	
 
 }
