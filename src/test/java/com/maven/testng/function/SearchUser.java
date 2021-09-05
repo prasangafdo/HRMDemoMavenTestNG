@@ -7,8 +7,9 @@ public class SearchUser{
 	
 	static UsersPage users = new UsersPage();
 
-	public void searchAllUsersByUsername() {
+	public boolean searchAllUsersByUsername() {
 		users.searchByUsername("Cassidy.Hope"); //Data is hardcoded for now
+		return users.isSearchResultCheckboxDisplayed();
 	}
 	public void searchAdminUsersByUsername() {
 		users.searchAdminUserByUsername("Linda.Anderson");
@@ -19,8 +20,14 @@ public class SearchUser{
 	public void searchAllUsersByEmployeeName() {
 		users.searchByEmployeeName("Cecil");
 	}
-	public boolean isSearchResultDisplayed() {
-		return users.isSearchResultDisplayed();
+//	public boolean isSearchResultDisplayed() {
+//		return users.isSearchResultDisplayed();
+//	}
+	public boolean isNoRecordsFoundMessageDisplayed() {
+		return users.getNoRecordssFoundMessage();
 	}
+//	public boolean isSearchResultCheckboxDisplayed() {
+//		return users.isSearchResultCheckboxDisplayed();
+//	}
 	
 }

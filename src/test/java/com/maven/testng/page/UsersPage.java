@@ -16,8 +16,14 @@ public class UsersPage extends BackgroundWorker{
 	private static By txtEmployeeName = By.name("searchSystemUser[employeeName][empName]");
 	private static By drpDwnStatus = By.id("searchSystemUser_status");
 	private static By drpDwnEmployeeName = By.xpath("//ul/li[@class='ac_even ac_over']"); //This element is a ul element.
-	private static By lblSearchResult = By.xpath("//td/a[text()='Cassidy.Hope']"); //Change this later
+	//private static By lblSearchResult = By.xpath("//td/a[text()='Garry.White']"); //Change this later
+	private static By lblSearchResult = By.name("chkSelectRow[]");//Change variable name later
+	private static By lblNoRecordsFound = By.xpath("//td[text()='No Records Found']");
+	
+	private static String expectedSearchResult;
+	
 	private static WebDriverWait wait= new WebDriverWait(driver, 20); //Explicit wait object creation
+
 	
 
 	public void searchByUsername(String username) {//More parameters will be added later
@@ -52,8 +58,15 @@ public class UsersPage extends BackgroundWorker{
 		driver.findElement(txtSearchUsername).sendKeys(status);
 		driver.findElement(btnsearch).click();
 	}
-	public boolean isSearchResultDisplayed() {
+	
+	public boolean isSearchResultCheckboxDisplayed() {
+		
 		return driver.findElement(lblSearchResult).isDisplayed();
+		//String aaa = driver.findElement(lblSearchResult).getText();
+	}
+	
+	public boolean getNoRecordssFoundMessage() {
+		return driver.findElement(lblNoRecordsFound).isDisplayed();
 	}
 
 
