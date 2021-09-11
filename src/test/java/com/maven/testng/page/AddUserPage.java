@@ -1,6 +1,10 @@
 package com.maven.testng.page;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.maven.testng.BackgroundWorker;
 
@@ -16,5 +20,16 @@ public class AddUserPage extends BackgroundWorker{
 	private static By btnSave = By.id("btnSave");
 	private static By btnCancel = By.id("btnCancel");
 	
+	private static WebDriverWait wait= new WebDriverWait(driver, 10); //Explicit wait object creation
 	
+	public void selectUserRole(String UserRole) {
+		Select selectUserRole = new Select(driver.findElement(drpDwnUserRole));
+		selectUserRole.selectByVisibleText(UserRole);
+	}
+	public void selectEmployeeName(String EmployeeName) {
+		driver.findElement(txtEmployeeName).sendKeys(EmployeeName);
+		WebElement elementlblnEmployeeName; //Explicit wait
+		elementlblnEmployeeName= wait.until(ExpectedConditions.visibilityOfElementLocated(lblUsername));
+		elementlblnEmployeeName.click();
+	}
 }
