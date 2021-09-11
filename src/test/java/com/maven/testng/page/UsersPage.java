@@ -21,6 +21,7 @@ public class UsersPage extends BackgroundWorker{
 	private static By lblNoRecordsFound = By.xpath("//td[text()='No Records Found']");
 	
 	public static By drpDwnEmployeeNameList = By.xpath("//div[@class=\"ac_results\"]");
+	private static By btnAdd = By.id("btnAdd");
 	
 //	private static String expectedSearchResult;
 	
@@ -48,7 +49,6 @@ public class UsersPage extends BackgroundWorker{
 		driver.findElement(btnsearch).click();
 	}
 	public void searchByEmployeeName(String employeeName) {
-	//	driver.findElement(txtSearchUsername).clear();
 		clearAllValues();
 		driver.findElement(txtEmployeeName).sendKeys(employeeName);
 
@@ -77,6 +77,9 @@ public class UsersPage extends BackgroundWorker{
 		driver.findElement(txtEmployeeName).clear();
 		Select selectUserRole = new Select(driver.findElement(drpDwnUserRole));
 		selectUserRole.selectByIndex(0);
+	}
+	public void clickOnAddButton() {
+		driver.findElement(btnAdd).click();
 	}
 	
 //	public boolean elementIsPresent() {

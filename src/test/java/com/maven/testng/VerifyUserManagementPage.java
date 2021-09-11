@@ -56,12 +56,6 @@ public class VerifyUserManagementPage extends BackgroundWorker{
 		//Reporter.log(employeeName);
 //		System.out.println(userData);
 	}
-	
-//	@Test(priority=2, dataProvider="userData", dataProviderClass = DataDriver.class)
-//	public void searchByUsername(String userRole, String employeeName, String username, String status, String password) {
-//		driver.findElement(By.id("searchSystemUser_userName")).sendKeys(username);
-//		driver.findElement(By.id("searchBtn")).click();
-//		
-//	}
+
 
 }
