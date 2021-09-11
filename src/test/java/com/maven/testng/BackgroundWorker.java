@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 /**
@@ -15,15 +16,27 @@ import org.testng.annotations.BeforeTest;
  *
  */
 
-@SuppressWarnings("unused")
+//@SuppressWarnings("unused")
 public class BackgroundWorker {
 	static {
-		System.setProperty("webdriver.chrome.driver", "C:/Users/Prasanga Fernando/Documents/Eclipse/TestNG_PageTitle/chromedriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./webdriver/chromedriver/chromedriver.exe");
 			}
 	
 	 protected static WebDriver driver = new ChromeDriver(); //Changed to protected to access from other packages
 
+		@BeforeTest
+		public void  getURL() {
+			driver.get("https://opensource-demo.orangehrmlive.com/"); //Setting initial URL
+		}
+		
+		@AfterTest
+		public void closeBrowser() {
+			sleep(500);
+			driver.close();
+		}
+	 
 	 public void navigateToUserManagement() {
+		 //	driver.get("https://opensource-demo.orangehrmlive.com/");
 		 	driver.manage().window().maximize();//Maximizing the window
 			driver.findElement(By.id("menu_admin_viewAdminModule")).click();
 		}
@@ -33,9 +46,9 @@ public class BackgroundWorker {
 		
 
 		
-		public void Wait() {
+		public void sleep(int miliSeconds) {
 			try {
-				Thread.sleep(2000);
+				Thread.sleep(miliSeconds);
 				System.out.println("Waiting 2 seconds...");
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
@@ -81,7 +94,7 @@ public class BackgroundWorker {
 			navigateToUserManagement();
 			WebElement element = driver.findElement(By.id("menu_admin_Organization"));
 			Actions hoverOnOrganizations = new Actions(driver);
-			Wait();//Waiting a few seconds to sync up with browser loading speed
+			sleep(1000);//Waiting a few seconds to sync up with browser loading speed
 			hoverOnOrganizations.moveToElement(element).perform();
 		}
 		

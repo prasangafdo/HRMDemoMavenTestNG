@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.maven.testng.VerifyQualificationSkills">
+      <class name="com.maven.testng.tests.UserManagementUserSearchTest">
         <methods>
-          <include name="dd"/>
+          <include name="getURL"/>
+          <include name="verifyuserCanSearchESSUsersByUsername"/>
+          <include name="verifyuserCanSearchAllUsersByUsername"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.maven.testng.VerifyQualificationSkills -->
+      </class> <!-- com.maven.testng.tests.UserManagementUserSearchTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

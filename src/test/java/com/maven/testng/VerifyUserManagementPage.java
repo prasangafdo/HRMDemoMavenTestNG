@@ -32,7 +32,7 @@ public class VerifyUserManagementPage extends BackgroundWorker{
 		ddlUserRole.selectByVisibleText(userRole);
 		
 		driver.findElement(By.id("systemUser_employeeName_empName")).sendKeys(employeeName);
-		Wait();
+		//Wait();
 		driver.findElement(By.xpath("//*/ul/li[@class='ac_even ac_over']")).click();
 			
 		//}
@@ -45,9 +45,9 @@ public class VerifyUserManagementPage extends BackgroundWorker{
 		driver.findElement(By.id("systemUser_password")).sendKeys(password);
 		driver.findElement(By.id("systemUser_confirmPassword")).sendKeys(password);
 		
-		Wait();
+	//	Wait();
 		driver.findElement(By.id("btnSave")).click();
-		Wait();
+	//	Wait();
 		//Verify the url = expected = https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers
 		setActualSavedSuccessMessage();
 		Assert.assertEquals(getActualSavedSuccessMessage(), getExpectedSavedMessage());		
@@ -56,12 +56,6 @@ public class VerifyUserManagementPage extends BackgroundWorker{
 		//Reporter.log(employeeName);
 //		System.out.println(userData);
 	}
-	
-//	@Test(priority=2, dataProvider="userData", dataProviderClass = DataDriver.class)
-//	public void searchByUsername(String userRole, String employeeName, String username, String status, String password) {
-//		driver.findElement(By.id("searchSystemUser_userName")).sendKeys(username);
-//		driver.findElement(By.id("searchBtn")).click();
-//		
-//	}
+
 
 }

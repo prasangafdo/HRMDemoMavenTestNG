@@ -5,15 +5,12 @@
     <classes>
       <class name="com.maven.testng.tests.UserManagementUserSearchTest">
         <methods>
-          <include name="verifyUserManagementSearch"/>
+          <include name="getURL"/>
+          <include name="verifyuserCanSearchUsersByStatus"/>
+          <include name="verifyuserCanSearchAllUsersByEmployeeName"/>
+          <include name="closeBrowser"/>
         </methods>
       </class> <!-- com.maven.testng.tests.UserManagementUserSearchTest -->
-      <class name="com.maven.testng.VerifyUserManagementPage">
-        <methods>
-          <include name="navigate"/>
-          <include name="addUser" invocation-numbers="0 1 2 3"/>
-        </methods>
-      </class> <!-- com.maven.testng.VerifyUserManagementPage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
