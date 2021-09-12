@@ -32,4 +32,17 @@ public class AddUserPage extends BackgroundWorker{
 		elementlblnEmployeeName= wait.until(ExpectedConditions.visibilityOfElementLocated(lblUsername));
 		elementlblnEmployeeName.click();
 	}
+	public void selectStatus(String UserStatus) {
+		Select selectUserStatus = new Select(driver.findElement(drpDwnStatus));
+		selectUserStatus.selectByVisibleText(UserStatus);
+	}
+	public void createUser() {
+		selectUserRole("UserRole");
+		selectEmployeeName("aaa");
+		driver.findElement(txtUsername).sendKeys("");
+		selectStatus("");
+		driver.findElement(txtUsername).sendKeys("");
+		driver.findElement(txtPassword).sendKeys("");
+		driver.findElement(txtConfirmPassword).sendKeys("");
+	}
 }
