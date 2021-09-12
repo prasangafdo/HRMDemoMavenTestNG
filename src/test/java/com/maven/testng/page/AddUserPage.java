@@ -36,13 +36,18 @@ public class AddUserPage extends BackgroundWorker{
 		Select selectUserStatus = new Select(driver.findElement(drpDwnStatus));
 		selectUserStatus.selectByVisibleText(UserStatus);
 	}
-	public void createUser() {
-		selectUserRole("UserRole");
-		selectEmployeeName("aaa");
-		driver.findElement(txtUsername).sendKeys("");
-		selectStatus("");
-		driver.findElement(txtUsername).sendKeys("");
-		driver.findElement(txtPassword).sendKeys("");
-		driver.findElement(txtConfirmPassword).sendKeys("");
+	public void enterUsername(String Username) {
+		driver.findElement(txtUsername).sendKeys(Username);
+	}
+	public void enterPassword(String Password) {
+		driver.findElement(txtPassword).sendKeys(Password);
+		driver.findElement(txtConfirmPassword).sendKeys(Password);
+	}
+	public void createUser(String UserRole, String Username, String EmployeeName, String Status,String Password) {
+		enterUsername(Username);
+		selectUserRole(UserRole);
+		selectEmployeeName(EmployeeName);
+		selectStatus(Status);
+		enterPassword(Password);
 	}
 }
