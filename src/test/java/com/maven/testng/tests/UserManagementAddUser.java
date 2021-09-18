@@ -5,9 +5,11 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.maven.testng.BackgroundWorker;
 import com.maven.testng.DataDriver;
+import com.maven.testng.function.AddUser;
 
-public class UserManagementAddUser {
+public class UserManagementAddUser extends BackgroundWorker{
 
 	/*
 	@Test(priority = 1, dataProvider="userData", dataProviderClass = DataDriver.class)
@@ -19,7 +21,7 @@ public class UserManagementAddUser {
 		
 		driver.findElement(By.id("systemUser_employeeName_empName")).sendKeys(employeeName);
 		//Wait();
-/*		driver.findElement(By.xpath("//*/ul/li[@class='ac_even ac_over']")).click();
+		driver.findElement(By.xpath("//*///ul/li[@class='ac_even ac_over']")).click();
 			
 		//}
 		
@@ -44,5 +46,10 @@ public class UserManagementAddUser {
 	
 }
 */
-		
+	
+	@Test(priority=1)
+	public void testAddNewAdminUser() {
+		navigateToUserManagement();
+		AddUser.createUser("Admin", "Username111", "Alice", "Enabled", "Password123");
+	}
 }
