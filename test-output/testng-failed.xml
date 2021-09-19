@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.maven.testng.tests.UserManagementAddUser">
+      <class name="com.maven.testng.page.LoginPage">
         <methods>
           <include name="getURL"/>
-          <include name="testAddNewAdminUser"/>
+          <include name="verifyLoginWithCorrectCredentials"/>
         </methods>
-      </class> <!-- com.maven.testng.tests.UserManagementAddUser -->
+      </class> <!-- com.maven.testng.page.LoginPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

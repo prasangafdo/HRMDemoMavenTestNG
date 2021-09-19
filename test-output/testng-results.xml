@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-19T12:13:19 IST" name="Default suite" finished-at="2021-09-19T12:13:45 IST" duration-ms="25837">
+  <suite started-at="2021-09-19T13:03:40 IST" name="Default suite" finished-at="2021-09-19T13:04:03 IST" duration-ms="22544">
     <groups>
     </groups>
-    <test started-at="2021-09-19T12:13:19 IST" name="Default test" finished-at="2021-09-19T12:13:45 IST" duration-ms="25837">
-      <class name="com.maven.testng.tests.UserManagementAddUser">
-        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.tests.UserManagementAddUser@68be8808]" started-at="2021-09-19T12:13:19 IST" name="getURL" finished-at="2021-09-19T12:13:30 IST" duration-ms="11241" status="PASS">
+    <test started-at="2021-09-19T13:03:40 IST" name="Default test" finished-at="2021-09-19T13:04:03 IST" duration-ms="22544">
+      <class name="com.maven.testng.page.LoginPage">
+        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.page.LoginPage@56f0cc85]" started-at="2021-09-19T13:03:40 IST" name="getURL" finished-at="2021-09-19T13:03:54 IST" duration-ms="14186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getURL -->
-        <test-method signature="testAddNewAdminUser()[pri:1, instance:com.maven.testng.tests.UserManagementAddUser@68be8808]" started-at="2021-09-19T12:13:31 IST" name="testAddNewAdminUser" finished-at="2021-09-19T12:13:45 IST" duration-ms="14563" status="PASS">
+        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.page.LoginPage@56f0cc85]" started-at="2021-09-19T13:03:54 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-09-19T13:04:03 IST" duration-ms="8334" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddNewAdminUser -->
-      </class> <!-- com.maven.testng.tests.UserManagementAddUser -->
+        </test-method> <!-- verifyLoginWithCorrectCredentials -->
+      </class> <!-- com.maven.testng.page.LoginPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
