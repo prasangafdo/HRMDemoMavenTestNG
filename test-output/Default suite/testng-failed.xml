@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.maven.testng.page.LoginPage">
+      <class name="com.maven.testng.tests.LoginTest">
         <methods>
-          <include name="getURL"/>
-          <include name="verifyLoginWithCorrectCredentials"/>
+          <include name="closes"/>
+          <include name="sss"/>
         </methods>
-      </class> <!-- com.maven.testng.page.LoginPage -->
+      </class> <!-- com.maven.testng.tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

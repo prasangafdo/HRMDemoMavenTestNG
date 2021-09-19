@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-19T13:03:40 IST" name="Default suite" finished-at="2021-09-19T13:04:03 IST" duration-ms="22544">
+  <suite started-at="2021-09-19T18:35:56 IST" name="Default suite" finished-at="2021-09-19T18:36:09 IST" duration-ms="13026">
     <groups>
     </groups>
-    <test started-at="2021-09-19T13:03:40 IST" name="Default test" finished-at="2021-09-19T13:04:03 IST" duration-ms="22544">
-      <class name="com.maven.testng.page.LoginPage">
-        <test-method is-config="true" signature="getURL()[pri:0, instance:com.maven.testng.page.LoginPage@56f0cc85]" started-at="2021-09-19T13:03:40 IST" name="getURL" finished-at="2021-09-19T13:03:54 IST" duration-ms="14186" status="PASS">
+    <test started-at="2021-09-19T18:35:56 IST" name="Default test" finished-at="2021-09-19T18:36:09 IST" duration-ms="13026">
+      <class name="com.maven.testng.tests.LoginTest">
+        <test-method signature="aaa()[pri:0, instance:com.maven.testng.tests.LoginTest@124c278f]" started-at="2021-09-19T18:35:56 IST" name="aaa" finished-at="2021-09-19T18:36:04 IST" duration-ms="8156" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getURL -->
-        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:com.maven.testng.page.LoginPage@56f0cc85]" started-at="2021-09-19T13:03:54 IST" name="verifyLoginWithCorrectCredentials" finished-at="2021-09-19T13:04:03 IST" duration-ms="8334" status="PASS">
+        </test-method> <!-- aaa -->
+        <test-method is-config="true" signature="closes()[pri:0, instance:com.maven.testng.tests.LoginTest@124c278f]" started-at="2021-09-19T18:36:04 IST" name="closes" finished-at="2021-09-19T18:36:04 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginWithCorrectCredentials -->
-      </class> <!-- com.maven.testng.page.LoginPage -->
+        </test-method> <!-- closes -->
+        <test-method signature="sss()[pri:0, instance:com.maven.testng.tests.LoginTest@124c278f]" started-at="2021-09-19T18:36:04 IST" name="sss" finished-at="2021-09-19T18:36:09 IST" duration-ms="4823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sss -->
+        <test-method is-config="true" signature="closes()[pri:0, instance:com.maven.testng.tests.LoginTest@124c278f]" started-at="2021-09-19T18:36:09 IST" name="closes" finished-at="2021-09-19T18:36:09 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closes -->
+      </class> <!-- com.maven.testng.tests.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

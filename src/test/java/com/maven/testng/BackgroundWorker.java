@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 /**
@@ -18,23 +19,44 @@ import org.testng.annotations.BeforeTest;
 
 //@SuppressWarnings("unused")
 public class BackgroundWorker {
+ 
+	public static WebDriver driver;
 	static {
 		System.setProperty("webdriver.chrome.driver", "./webdriver/chromedriver/chromedriver.exe");
-			}
-	
-	 protected static WebDriver driver = new ChromeDriver(); //Changed to protected to access from other packages
-
-		@BeforeTest
-		public void  getURL() {
-			driver.get("https://opensource-demo.orangehrmlive.com/"); //Setting initial URL
-		}
 		
+			}
+//	protected 
+	
+	
+	//protected static WebDriver driver;
+	
+	// protected static final WebDriver driver = new ChromeDriver(); //Changed to protected to access from other packages
+	 
+	public void setWebDriver() {
+		driver = new ChromeDriver();
+		driver.get("https://opensource-demo.orangehrmlive.com/");	
+	}
+//	public WebDriver getWebDriver() {
+//		return driver;
+//	}
+	public void clearSession() {
+		driver.quit();
+		driver = null; 
+	//	driver = new ChromeDriver();
+		//driver.get("https://opensource-demo.orangehrmlive.com/");	
+	}
+	 
+//		@BeforeMethod
+//		public void  getURL() {
+//			driver.get("https://opensource-demo.orangehrmlive.com/"); //Setting initial URL
+//		}
+//		
 //		@AfterTest
 //		public void closeBrowser() {
 //			sleep(500);
 //			driver.close();
 //		}
-	 
+
 	 public void navigateToUserManagement() {
 		 //	driver.get("https://opensource-demo.orangehrmlive.com/");
 		 	driver.manage().window().maximize();//Maximizing the window
@@ -139,7 +161,7 @@ public class BackgroundWorker {
 		String expectedSavedMessage = "Successfully Saved";
 		//Verification points
 		public void setActualSavedSuccessMessage() {
-			actualResult = driver.findElement(By.xpath("//*/div[@class='message success fadable']")).getText(); //Changed from //*/form/div[@class='message success fadable'] due to locating issue un Skills page.
+			actualResult = driver.findElement(By.xpath("//*///div[@class='message success fadable']")).getText(); //Changed from //*/form/div[@class='message success fadable'] due to locating issue un Skills page.
 		//	return actualResult;
 		}
 		

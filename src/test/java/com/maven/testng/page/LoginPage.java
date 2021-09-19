@@ -1,12 +1,11 @@
 package com.maven.testng.page;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import com.maven.testng.BackgroundWorker;
 
@@ -21,8 +20,9 @@ public class LoginPage extends BackgroundWorker{//Make this page POM later
 	//private String Username, Password;
 	private final String expectedURL = "https://opensource-demo.orangehrmlive.com/index.php/dashboard";
 	
-	private static WebDriverWait wait= new WebDriverWait(driver, 10); //Explicit wait object creation
 	
+	
+	private WebDriverWait wait= new WebDriverWait(driver, 10); //Explicit wait object creation
 	//@Test(priority=2)
 //	public void verifyLoginWithCorrectCredentials() {
 	//	SoftAssert softAssert = new SoftAssert();
@@ -39,6 +39,12 @@ public class LoginPage extends BackgroundWorker{//Make this page POM later
 //
 //		softAssert.assertAll();
 //	}
+//	public void loadLoginPage() {
+//		//driver = new ChromeDriver();
+//		//driver.get("https://opensource-demo.orangehrmlive.com/");
+//		setWebDriver();
+//		//getWebDriver();
+//	}
 	public void enterCredentials(String username, String password) {
 		driver.findElement(txtUsername).sendKeys(username);
 		driver.findElement(txtPassword).sendKeys(password);
@@ -47,7 +53,7 @@ public class LoginPage extends BackgroundWorker{//Make this page POM later
 		driver.findElement(btnLogin).click();
 	}
 	public String getInvalidCredentialsMessage() {
-		return null;
+		return driver.findElement(lblInvalidCredentials).getText();
 	}
 	public String getExpectedURL() {
 		return expectedURL;
