@@ -19,6 +19,7 @@ public class AddUserPage extends BackgroundWorker{
 	private static By txtConfirmPassword = By.id("systemUser_confirmPassword");
 	private static By btnSave = By.id("btnSave");
 	private static By btnCancel = By.id("btnCancel");
+	private final By lblSaveSuccessMessage = By.xpath("//div[@class ='message success fadable']");
 	
 	private static WebDriverWait wait= new WebDriverWait(driver, 10); //Explicit wait object creation
 	
@@ -49,5 +50,12 @@ public class AddUserPage extends BackgroundWorker{
 		selectEmployeeName(EmployeeName);
 		selectStatus(Status);
 		enterPassword(Password);
+		driver.findElement(btnSave).click();
+	}
+	public String getSaveSuccessMessage() {
+		WebElement elementlblSaveSuccessMessage; //Explicit wait
+		elementlblSaveSuccessMessage= wait.until(ExpectedConditions.visibilityOfElementLocated(lblSaveSuccessMessage));
+	return	elementlblSaveSuccessMessage.getText();
+	//	return driver.findElement(lblSaveSuccessMessage).getText();
 	}
 }

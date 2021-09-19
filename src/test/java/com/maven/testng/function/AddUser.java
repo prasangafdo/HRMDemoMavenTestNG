@@ -14,5 +14,7 @@ public class AddUser {
 	public static void createUser(String UserRole, String Username, String EmployeeName, String Status,String Password) {
 		addUser.createUser(UserRole,Username, EmployeeName, Status, Password);
 	}
-	
+	public static String getSaveSuccessMessage() {
+		return addUser.getSaveSuccessMessage();
+	}
 }
