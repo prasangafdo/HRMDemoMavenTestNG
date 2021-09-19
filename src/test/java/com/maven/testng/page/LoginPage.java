@@ -18,30 +18,48 @@ public class LoginPage extends BackgroundWorker{//Make this page POM later
 	private final By lblInvalidCredentials = By.id("spanMessage");
 	private final By lblWelcome = By.id("welcome");
 	private final By lnkLogout = By.xpath("//li/a[text()='Logout']");
-	private String Username, Password;
+	//private String Username, Password;
+	private final String expectedURL = "https://opensource-demo.orangehrmlive.com/index.php/dashboard";
 	
 	private static WebDriverWait wait= new WebDriverWait(driver, 10); //Explicit wait object creation
 	
-	@Test(priority=2)
-	public void verifyLoginWithCorrectCredentials() {
-		SoftAssert softAssert = new SoftAssert();
-		Username  = "Admin";
-		Password = "admin123";//Entering correct credentials for a successful login
+	//@Test(priority=2)
+//	public void verifyLoginWithCorrectCredentials() {
+	//	SoftAssert softAssert = new SoftAssert();
+	//	Username  = "Admin";
+	//	Password = "admin123";//Entering correct credentials for a successful login
 
 		// driver.get("https://opensource-demo.orangehrmlive.com/");
-		driver.findElement(txtUsername).sendKeys(Username);
-		driver.findElement(txtPassword).sendKeys(Password);
+		
+//		
+//
+//		
+//		String actual =
+//		softAssert.assertEquals(actual, expected);
+//
+//		softAssert.assertAll();
+//	}
+	public void enterCredentials(String username, String password) {
+		driver.findElement(txtUsername).sendKeys(username);
+		driver.findElement(txtPassword).sendKeys(password);
+	}
+	public void clickOnLoginButton() {
 		driver.findElement(btnLogin).click();
-
-		String expected = "https://opensource-demo.orangehrmlive.com/index.php/dashboard";
-		String actual =driver.getCurrentUrl();
-		softAssert.assertEquals(actual, expected);
+	}
+	public String getInvalidCredentialsMessage() {
+		return null;
+	}
+	public String getExpectedURL() {
+		return expectedURL;
+	}
+	public String getcurrentURL() {
+		return driver.getCurrentUrl();
+	}
+	public void logout() {
 		driver.findElement(lblWelcome).click();
 		WebElement elementlnkLogoute; //Explicit wait
 		elementlnkLogoute= wait.until(ExpectedConditions.visibilityOfElementLocated(lnkLogout));
 		elementlnkLogoute.click();
-		//driver.findElement(By.xpath("//li/a[text()='Logout']")).click(); //Add a separate method for logout later
-		softAssert.assertAll();
 	}
 
 //	@Test(priority=1)
