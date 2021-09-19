@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
 
-      <class name="com.maven.testng.VerifyLoginTest"/> 
+   <!--    <class name="com.maven.testng.VerifyLoginTest"/>   -->
 	 <!--     <class name="com.maven.testng.VerifyUserManagementPage"/>        -->
    <!--   <class name="com.maven.testng.VerifyJobTitlesPage"/>     -->
     <!-- <class name="com.maven.testng.VerifyPayGrades"/> -->  
@@ -19,9 +19,10 @@
        <class name ="com.maven.testng.VerifyQualificationLicenses"/>	
        <class name ="com.maven.testng.VerifyQualificationLanguages"/>
    
- 	  <class name ="com.maven.testng.VerifyQualificationMemberships"/>-->
+ 	  <class name ="com.maven.testng.VerifyQualificationMemberships"/>
  	  
- 	  <class name = "com.maven.testng.tests.UserManagementUserSearchTest"/>
+ 	  <class name = "com.maven.testng.tests.UserManagementSearchUserTest"/>-->
+ 	  <class name="com.maven.testng.tests.UserManagementAddUser"></class>
       
     </classes>
   </test> <!-- Test -->

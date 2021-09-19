@@ -8,8 +8,9 @@ import org.testng.asserts.SoftAssert;
 import com.maven.testng.function.SearchUser;
 
 import com.maven.testng.BackgroundWorker;
+import com.maven.testng.VerifyLoginTest;
 
-public class UserManagemenSearchUserTest extends BackgroundWorker{
+public class UserManagemenSearchUserTest extends VerifyLoginTest{
 	
 	SearchUser searchUserFunction = new SearchUser();
 
@@ -40,9 +41,8 @@ public class UserManagemenSearchUserTest extends BackgroundWorker{
 	@Test(priority=1)
 	public void verifyuserCanSearchAllUsersByUsername() {
 		SoftAssert softAssert = new SoftAssert();
+		verifyLoginWithCorrectCredentials();
 		navigateToUserManagement();
-		//searchUserFunction.searchAllUsersByUsername();
-	//	Reporter.log("verifyuserCanSearch");
 		searchUserFunction.searchAllUsersByUsername();
 		try{
 			softAssert.assertTrue(searchUserFunction.isSearchResultCheckboxDisplayed());
