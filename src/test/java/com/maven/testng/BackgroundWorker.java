@@ -29,11 +29,11 @@ public class BackgroundWorker {
 			driver.get("https://opensource-demo.orangehrmlive.com/"); //Setting initial URL
 		}
 		
-		@AfterTest
-		public void closeBrowser() {
-			sleep(500);
-			driver.close();
-		}
+//		@AfterTest
+//		public void closeBrowser() {
+//			sleep(500);
+//			driver.close();
+//		}
 	 
 	 public void navigateToUserManagement() {
 		 //	driver.get("https://opensource-demo.orangehrmlive.com/");
