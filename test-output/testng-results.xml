@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-20T09:19:09 IST" name="Default suite" finished-at="2021-09-20T09:19:21 IST" duration-ms="12449">
+  <suite started-at="2021-09-20T10:40:22 IST" name="Default suite" finished-at="2021-09-20T10:40:39 IST" duration-ms="17156">
     <groups>
     </groups>
-    <test started-at="2021-09-20T09:19:09 IST" name="Default test" finished-at="2021-09-20T09:19:21 IST" duration-ms="12449">
+    <test started-at="2021-09-20T10:40:22 IST" name="Default test" finished-at="2021-09-20T10:40:39 IST" duration-ms="17156">
       <class name="com.maven.testng.tests.LoginTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.maven.testng.tests.LoginTest@1fe20588]" started-at="2021-09-20T09:19:09 IST" name="beforeMethod" finished-at="2021-09-20T09:19:10 IST" duration-ms="1536" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.maven.testng.tests.LoginTest@6ce139a4]" started-at="2021-09-20T10:40:22 IST" name="beforeMethod" finished-at="2021-09-20T10:40:27 IST" duration-ms="5213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="aaa()[pri:0, instance:com.maven.testng.tests.LoginTest@1fe20588]" started-at="2021-09-20T09:19:10 IST" name="aaa" finished-at="2021-09-20T09:19:15 IST" duration-ms="4749" status="PASS">
+        <test-method signature="verifyLoginAsInvaliduser()[pri:1, instance:com.maven.testng.tests.LoginTest@6ce139a4]" started-at="2021-09-20T10:40:27 IST" name="verifyLoginAsInvaliduser" finished-at="2021-09-20T10:40:28 IST" duration-ms="1076" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aaa -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.maven.testng.tests.LoginTest@1fe20588]" started-at="2021-09-20T09:19:15 IST" name="afterMethod" finished-at="2021-09-20T09:19:16 IST" duration-ms="581" status="PASS">
+        </test-method> <!-- verifyLoginAsInvaliduser -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.maven.testng.tests.LoginTest@6ce139a4]" started-at="2021-09-20T10:40:28 IST" name="afterMethod" finished-at="2021-09-20T10:40:29 IST" duration-ms="609" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.maven.testng.tests.LoginTest@1fe20588]" started-at="2021-09-20T09:19:16 IST" name="beforeMethod" finished-at="2021-09-20T09:19:17 IST" duration-ms="1139" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.maven.testng.tests.LoginTest@6ce139a4]" started-at="2021-09-20T10:40:29 IST" name="beforeMethod" finished-at="2021-09-20T10:40:34 IST" duration-ms="5292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="sss()[pri:0, instance:com.maven.testng.tests.LoginTest@1fe20588]" started-at="2021-09-20T09:19:17 IST" name="sss" finished-at="2021-09-20T09:19:21 IST" duration-ms="3801" status="PASS">
+        <test-method signature="verifyLoginAsValidUser()[pri:2, instance:com.maven.testng.tests.LoginTest@6ce139a4]" started-at="2021-09-20T10:40:34 IST" name="verifyLoginAsValidUser" finished-at="2021-09-20T10:40:39 IST" duration-ms="4310" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sss -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.maven.testng.tests.LoginTest@1fe20588]" started-at="2021-09-20T09:19:21 IST" name="afterMethod" finished-at="2021-09-20T09:19:21 IST" duration-ms="606" status="PASS">
+        </test-method> <!-- verifyLoginAsValidUser -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.maven.testng.tests.LoginTest@6ce139a4]" started-at="2021-09-20T10:40:39 IST" name="afterMethod" finished-at="2021-09-20T10:40:39 IST" duration-ms="617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

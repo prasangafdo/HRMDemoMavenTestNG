@@ -8,8 +8,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.maven.testng.BackgroundWorker;
+import com.maven.testng.util.BrowserManager;
 
-public class LoginPage extends BackgroundWorker{//Make this page POM later
+public class LoginPage extends BrowserManager{//Make this page POM later
 	
 	private final By txtUsername = By.id("txtUsername");
 	private final By txtPassword = By.id("txtPassword");
@@ -48,6 +49,7 @@ public class LoginPage extends BackgroundWorker{//Make this page POM later
 	public void enterCredentials(String username, String password) {
 		driver.findElement(txtUsername).sendKeys(username);
 		driver.findElement(txtPassword).sendKeys(password);
+		
 	}
 	public void clickOnLoginButton() {
 		driver.findElement(btnLogin).click();

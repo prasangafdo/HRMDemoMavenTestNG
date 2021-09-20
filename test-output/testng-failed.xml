@@ -6,7 +6,7 @@
       <class name="com.maven.testng.tests.LoginTest">
         <methods>
           <include name="afterMethod"/>
-          <include name="sss"/>
+          <include name="verifyLoginAsInvaliduser"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.maven.testng.tests.LoginTest -->

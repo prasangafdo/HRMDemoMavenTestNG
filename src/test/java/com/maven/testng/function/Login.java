@@ -7,9 +7,6 @@ public class Login {
 	private static LoginPage login = new LoginPage();
 	
 	
-	public static void loadLoginPage() {
-	//	login.loadLoginPage();
-	}
 	public static void verifyLoginAsValidUser() {
 		login.enterCredentials("Admin", "admin123");
 		login.clickOnLoginButton();
