@@ -3,6 +3,7 @@ package com.maven.testng.tests;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -49,33 +50,29 @@ public class LoginTest extends BackgroundWorkerNew{
 //		driver = new ChromeDriver();
 //	}
 
-
-	
-	//	WebDriver
-	@Test
-	public void aaa() {
-		createSession();		
-		driver.get("https://opensource-demo.orangehrmlive.com/");	
-		//driver.close();
+	@BeforeMethod
+	public void beforeMethod() {
+		createSession();
+	}
+	@AfterMethod
+	public void afterMethod() {
 		endSession();
 	}
+	
+	@Test
+	public void aaa() {
+				
+		driver.get("https://opensource-demo.orangehrmlive.com/");	
+		//driver.close();
 
-@AfterMethod
-public void closes() {
-	
-	
-	//driver.quit();
-}
-	
-//	@SuppressWarnings("null")
+	}
+
+
+
 	@Test
 	public void sss() {
-		//System.setProperty("webdriver.chrome.driver", "./webdriver/chromedriver/chromedriver.exe");
-	//	driver = new ChromeDriver();
-		createSession();
+
 		driver.get("https://google.com/");	
-	//	driver = null;
-	//	driver.quit();
-		endSession();
+
 	}
 }
