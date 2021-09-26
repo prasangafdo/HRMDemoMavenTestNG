@@ -7,28 +7,32 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.maven.testng.function.Landing;
+import com.maven.testng.function.Login;
 import com.maven.testng.function.SearchUser;
 import com.maven.testng.util.BrowserManager;
 import com.maven.testng.BackgroundWorker;
 import com.maven.testng.VerifyLoginTest;
 
-public class UserManagementSearchUserTest extends LoginTest{
+public class UserManagementSearchUserTest{
 	
 //	SearchUser searchUserFunction = new SearchUser();
 
-	@BeforeMethod
+//	@BeforeMethod
 	public void beforeMethod() {
-
+		
 	}
+	public static LoginTest login = new LoginTest();
 	
 	@Test(priority=1)
 	public void verifyuserCanSearchAllUsersByUsername() {
-		verifyLoginAsValidUser();
-		Landing.maximizeBrowser();
-		Landing.navigateToUsersPage();
 		SoftAssert softAssert = new SoftAssert();
-		Landing.navigateToAddUser();
-		
+		login.verifyLoginAsValidUser();
+		Landing.maximizeBrowser();
+		Landing.navigateToAdmin();
+//		Landing.navigateToUsersPage();
+//		
+//		Landing.navigateToAddUser();
+		Login.logout();
 //		searchUserFunction.searchAllUsersByUsername();//Change these functions later
 		try{
 //			softAssert.assertTrue(searchUserFunction.isSearchResultCheckboxDisplayed());

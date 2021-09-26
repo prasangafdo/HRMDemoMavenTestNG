@@ -11,13 +11,12 @@ import com.maven.testng.util.BrowserManager;
 public class LoginTest extends BrowserManager{
 	
 	@Test(priority = 1)
-	public void verifyLoginAsInvaliduser() throws InterruptedException {
+	public void verifyLoginAsInvaliduser() {
 		SoftAssert softAssert = new SoftAssert();
 		createSession();
 		initiateURL();
 		Login.verifyLoginAsInvalidUser();
 		softAssert.assertTrue(Login.isLoginFailedErrorDisplayed());
-		endSession();
 		softAssert.assertAll();
 	}
 	
@@ -31,7 +30,6 @@ public class LoginTest extends BrowserManager{
 	softAssert.assertTrue(Login.isHRMLogoDisplayed());
 //	Login.logout();
 	
-	endSession();
 	softAssert.assertAll();
 	}
 	
@@ -50,7 +48,7 @@ public class LoginTest extends BrowserManager{
 		createSession();
 		initiateURL();
 	}
-	//@AfterMethod
+	@AfterMethod
 	public void afterMethod() {
 		endSession();
 	}

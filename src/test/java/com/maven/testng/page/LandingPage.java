@@ -10,14 +10,18 @@ public class LandingPage extends BrowserManager{
 	
 private By navAdmin = By.id("menu_admin_viewAdminModule");
 private By navUserManagement = By.id("menu_admin_UserManagement");
-private By navUsers = By.xpath("//li/a[text()='Users']");
+private By navUsers = By.xpath("//li/a[text()='Users']/../..");
 
 	
 	
 	public void maximizeBrowser() {
 		driver.manage().window().maximize();//Maximizing the window
 	}
+	public void navigateToAdmin() {
+		driver.findElement(navAdmin).click();
+	}
 	public void navigateToUsersPage() {
+		driver.findElement(navUserManagement).click();
 			WebElement item = driver.findElement(navUserManagement);
 			Actions action = new Actions(driver);
 			action.moveToElement(item).perform();

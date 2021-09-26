@@ -5,11 +5,7 @@
     <classes>
       <class name="com.maven.testng.tests.UserManagementSearchUserTest">
         <methods>
-          <include name="afterMethod"/>
           <include name="verifyuserCanSearchAllUsersByUsername"/>
-          <include name="verifyLoginAsInvaliduser"/>
-          <include name="verifyLoginAsValidUser"/>
-          <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.maven.testng.tests.UserManagementSearchUserTest -->
     </classes>

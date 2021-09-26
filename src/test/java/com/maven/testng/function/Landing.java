@@ -10,6 +10,9 @@ public class Landing {
 	public static void maximizeBrowser() {
 		landing.maximizeBrowser();
 	}
+	public static void navigateToAdmin() {
+		landing.navigateToAdmin();
+	}
 	public static void navigateToUsersPage() {
 		landing.navigateToUsersPage();
 	}
