@@ -12,13 +12,10 @@ public class LoginTest extends BrowserManager{
 	
 	@Test(priority = 1)
 	public static void verifyLoginAsInvaliduser() throws InterruptedException {
-	//	Login.loadLoginPage();
+		SoftAssert softAssert = new SoftAssert();
 	Login.verifyLoginAsInvalidUser();
 	//Add a verification point
-//		Thread.sleep(2000);
-//		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
-//		driver.findElement(By.id("txtPassword")).sendKeys("admin123");
-//		driver.findElement(By.name("Submit")).click();
+
 
 	}
 	
@@ -27,11 +24,11 @@ public class LoginTest extends BrowserManager{
 	SoftAssert softAssert = new SoftAssert();
 
 	Login.verifyLoginAsValidUser();	
-//	softAssert.assertEquals(Login.getCurrentURL(), Login.getExpectedURL());
+	softAssert.assertEquals(Login.getCurrentURL(), Login.getExpectedURL());
 //	Login.logout();
-//	softAssert.assertAll();
-	//driver.close();
 	
+	//driver.close();
+	softAssert.assertAll();
 	}
 	
 	
