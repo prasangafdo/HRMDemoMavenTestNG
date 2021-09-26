@@ -20,6 +20,8 @@ public class LoginPage extends BrowserManager{//Make this page POM later
 	private final By lnkLogout = By.xpath("//li/a[text()='Logout']");
 	//private String Username, Password;
 	private final String expectedURL = "https://opensource-demo.orangehrmlive.com/index.php/dashboard";
+	private final By imgLogo = By.xpath("//a/img[@alt='OrangeHRM']");
+	private final By lblLoginErrorMessage = By.id("spanMessage");
 	
 	
 	
@@ -68,6 +70,13 @@ public class LoginPage extends BrowserManager{//Make this page POM later
 		WebElement elementlnkLogoute; //Explicit wait
 		elementlnkLogoute= wait.until(ExpectedConditions.visibilityOfElementLocated(lnkLogout));
 		elementlnkLogoute.click();
+	}
+	public boolean isHRMLogoDisplayed() {
+		return driver.findElement(imgLogo).isDisplayed();
+	}
+	
+	public boolean isLoginFailedErrorDisplayed() {
+		return driver.findElement(lblLoginErrorMessage).isDisplayed();
 	}
 
 //	@Test(priority=1)

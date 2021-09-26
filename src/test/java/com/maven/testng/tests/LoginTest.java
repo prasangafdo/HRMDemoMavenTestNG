@@ -13,10 +13,9 @@ public class LoginTest extends BrowserManager{
 	@Test(priority = 1)
 	public static void verifyLoginAsInvaliduser() throws InterruptedException {
 		SoftAssert softAssert = new SoftAssert();
-	Login.verifyLoginAsInvalidUser();
-	//Add a verification point
-
-
+		Login.verifyLoginAsInvalidUser();
+		softAssert.assertTrue(Login.isLoginFailedErrorDisplayed());
+		softAssert.assertAll();
 	}
 	
 	@Test(priority = 2)
@@ -24,11 +23,11 @@ public class LoginTest extends BrowserManager{
 	SoftAssert softAssert = new SoftAssert();
 
 	Login.verifyLoginAsValidUser();	
-	softAssert.assertEquals(Login.getCurrentURL(), Login.getExpectedURL());
+	softAssert.assertTrue(Login.isHRMLogoDisplayed());
+	softAssert.assertAll();
 //	Login.logout();
 	
 	//driver.close();
-	softAssert.assertAll();
 	}
 	
 	
@@ -51,19 +50,4 @@ public class LoginTest extends BrowserManager{
 		endSession();
 	}
 	
-//	@Test
-//	public void aaa() {
-//				
-//		driver.get("https://opensource-demo.orangehrmlive.com/");	
-//		//driver.close();
-//
-//	}
-//
-//
-//
-//	@Test
-//	public void sss() {
-//		driver.get("https://google.com/");	
-//
-//	}
 }

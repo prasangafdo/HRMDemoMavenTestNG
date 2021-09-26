@@ -27,5 +27,10 @@ public class Login {
 	public static String getInvalidLoginErrorMessage() {
 		return login.getInvalidCredentialsMessage();
 	}
-	
+	public static boolean isHRMLogoDisplayed() {
+		return login.isHRMLogoDisplayed();
+	}
+	public static boolean isLoginFailedErrorDisplayed() {
+		return login.isLoginFailedErrorDisplayed();
+	}
 }
