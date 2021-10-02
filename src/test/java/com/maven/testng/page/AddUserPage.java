@@ -21,7 +21,7 @@ public class AddUserPage extends BackgroundWorker{
 	private static By btnCancel = By.id("btnCancel");
 	private final By lblSaveSuccessMessage = By.xpath("//div[@class ='message success fadable']");
 	
-	private static WebDriverWait wait= new WebDriverWait(driver, 10); //Explicit wait object creation
+	private WebDriverWait wait= new WebDriverWait(driver, 10); //Explicit wait object creation
 	
 	public void selectUserRole(String UserRole) {
 		Select selectUserRole = new Select(driver.findElement(drpDwnUserRole));

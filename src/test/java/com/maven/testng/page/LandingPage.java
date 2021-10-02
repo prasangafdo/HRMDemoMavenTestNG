@@ -1,73 +1,38 @@
-/**
- * 
- */
-package com.maven.testng;
+package com.maven.testng.page;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 
-/**
- * @author Prasanga Fernando
- *
- */
+import com.maven.testng.util.BrowserManager;
 
-//@SuppressWarnings("unused")
-public class BackgroundWorker {
- 
-	public static WebDriver driver;
-	static {
-		System.setProperty("webdriver.chrome.driver", "./webdriver/chromedriver/chromedriver.exe");
-		
-			}
-//	protected 
+public class LandingPage extends BrowserManager{
+	
+private By navAdmin = By.id("menu_admin_viewAdminModule");
+private By navUserManagement = By.id("menu_admin_UserManagement");
+private By navUsers = By.xpath("//li/a[text()='Users']/../..");
+
 	
 	
-	//protected static WebDriver driver;
-	
-	// protected static final WebDriver driver = new ChromeDriver(); //Changed to protected to access from other packages
-	 
-	public void setWebDriver() {
-		driver = new ChromeDriver();
-		driver.get("https://opensource-demo.orangehrmlive.com/");	
+	public void maximizeBrowser() {
+		driver.manage().window().maximize();//Maximizing the window
 	}
-//	public WebDriver getWebDriver() {
-//		return driver;
-//	}
-	public void clearSession() {
-		driver.quit();
-		driver = null; 
-	//	driver = new ChromeDriver();
-		//driver.get("https://opensource-demo.orangehrmlive.com/");	
+	public void navigateToAdmin() {
+		driver.findElement(navAdmin).click();
 	}
-	 
-//		@BeforeMethod
-//		public void  getURL() {
-//			driver.get("https://opensource-demo.orangehrmlive.com/"); //Setting initial URL
-//		}
-//		
-//		@AfterTest
-//		public void closeBrowser() {
-//			sleep(500);
-//			driver.close();
-//		}
-
-	 public void navigateToUserManagement() {
-		 //	driver.get("https://opensource-demo.orangehrmlive.com/");
-		 	driver.manage().window().maximize();//Maximizing the window
-			driver.findElement(By.id("menu_admin_viewAdminModule")).click();
+	public void navigateToUsersPage() {
+		driver.findElement(navUserManagement).click();
+			WebElement item = driver.findElement(navUserManagement);
+			Actions action = new Actions(driver);
+			action.moveToElement(item).perform();
+			driver.findElement(navUserManagement).click();
 		}
-		public void navigateToAddUser() {
-			driver.findElement(By.id("btnAdd")).click();
-		}
-		
+	public void navigateToAddUser() {
+		driver.findElement(By.id("btnAdd")).click();
+	}
+	
+	/*
 
-		
 		public void sleep(int miliSeconds) {
 			try {
 				Thread.sleep(miliSeconds);
@@ -153,7 +118,7 @@ public class BackgroundWorker {
 			driver.findElement(By.id("menu_admin_membership")).click();
 		}	
 		
-		
+		*/
 		
 		//=====================Verification Messages=============================//
 				

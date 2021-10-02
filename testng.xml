@@ -21,8 +21,10 @@
    
  	  <class name ="com.maven.testng.VerifyQualificationMemberships"/>
  	  
- 	  <class name = "com.maven.testng.tests.UserManagementSearchUserTest"/>-->
- 	  <class name="com.maven.testng.tests.UserManagementAddUser"></class>
+ 	  <class name = "com.maven.testng.tests.UserManagementSearchUserTest"/>
+ 	  <class name="com.maven.testng.tests.UserManagementAddUser"></class>-->
+ 	  
+ 	  <class name ="com.maven.testng.tests.LoginTest"></class>
       
     </classes>
   </test> <!-- Test -->

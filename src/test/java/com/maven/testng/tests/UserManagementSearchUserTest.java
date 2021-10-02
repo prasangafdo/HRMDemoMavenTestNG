@@ -2,53 +2,43 @@ package com.maven.testng.tests;
 
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.maven.testng.function.Landing;
+import com.maven.testng.function.Login;
 import com.maven.testng.function.SearchUser;
-
+import com.maven.testng.util.BrowserManager;
 import com.maven.testng.BackgroundWorker;
 import com.maven.testng.VerifyLoginTest;
 
-public class UserManagemenSearchUserTest extends VerifyLoginTest{
+public class UserManagementSearchUserTest{
 	
-	SearchUser searchUserFunction = new SearchUser();
+//	SearchUser searchUserFunction = new SearchUser();
 
-	
-/*	@Test(priority=1)
-	public void verifyuserCanSearchAllUsersByUsername() {
-		SoftAssert softAssert = new SoftAssert();
-		navigateToUserManagement();
-		searchUserFunction.searchAllUsersByUsername();
-		Reporter.log("verifyuserCanSearch");
-	//	softAssert.assertTrue(searchUserFunction.isSearchResultDisplayed());
-		try {
-			softAssert.assertEquals(searchUserFunction.isSearchResultDisplayed(), true);
-		}
-		catch(Exception e) {
-			Reporter.log(e.toString());
-			softAssert.assertFalse((searchUserFunction.isNoRecordsFoundMessageDisplayed()));//Using assert false to handle exceptions and soft assertion
-		}
+//	@BeforeMethod
+	public void beforeMethod() {
 		
-	//	softAssert.assertTrue(false);
-		//searchUserFunction.searchAdminUsersByUsername();
-		//searchUserFunction.searchESSUsersByUsername();
-		Reporter.log("verifyuserCanSearchAllUsersByUsername");
-		softAssert.assertAll();
 	}
+	public static LoginTest login = new LoginTest();
 	
-*/
 	@Test(priority=1)
 	public void verifyuserCanSearchAllUsersByUsername() {
 		SoftAssert softAssert = new SoftAssert();
-		verifyLoginWithCorrectCredentials();
-		navigateToUserManagement();
-		searchUserFunction.searchAllUsersByUsername();
+		login.verifyLoginAsValidUser();
+		Landing.maximizeBrowser();
+		Landing.navigateToAdmin();
+//		Landing.navigateToUsersPage();
+//		
+//		Landing.navigateToAddUser();
+		Login.logout();
+//		searchUserFunction.searchAllUsersByUsername();//Change these functions later
 		try{
-			softAssert.assertTrue(searchUserFunction.isSearchResultCheckboxDisplayed());
+//			softAssert.assertTrue(searchUserFunction.isSearchResultCheckboxDisplayed());
 		}
 		catch(Exception e) {
-			softAssert.assertTrue(searchUserFunction.isNoRecordsFoundMessageDisplayed());
+//			softAssert.assertTrue(searchUserFunction.isNoRecordsFoundMessageDisplayed());
 			Reporter.log("No records found");
 		}
 		
@@ -58,7 +48,7 @@ public class UserManagemenSearchUserTest extends VerifyLoginTest{
 	}
 	
 	
-	@Test(priority=2)
+/*	@Test(priority=2)
 	public void verifyuserCanSearchESSUsersByUsername() {
 		SoftAssert softAssert = new SoftAssert();
 		navigateToUserManagement();
@@ -94,5 +84,5 @@ public class UserManagemenSearchUserTest extends VerifyLoginTest{
 		Reporter.log("UsersByStatus");
 		softAssert.assertAll();
 	}	
-
+*/
 }
