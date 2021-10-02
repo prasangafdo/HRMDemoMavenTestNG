@@ -24,6 +24,7 @@ public class VerifyLoginTest extends BackgroundWorker{
 
 	@Test(priority=2)
 	public void verifyLoginWithCorrectCredentials() {
+		
 		Username  = "Admin";
 		Password = "admin123";//Entering correct credentials for a successful login
 

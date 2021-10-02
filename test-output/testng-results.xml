@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[No records found]]>
+    </line>
   </reporter-output>
-  <suite started-at="2021-09-26T18:03:26 IST" name="Default suite" finished-at="2021-09-26T18:03:42 IST" duration-ms="16278">
+  <suite started-at="2021-10-02T13:57:46 IST" name="Default suite" finished-at="2021-10-02T13:58:01 IST" duration-ms="15261">
     <groups>
     </groups>
-    <test started-at="2021-09-26T18:03:26 IST" name="Default test" finished-at="2021-09-26T18:03:42 IST" duration-ms="16278">
+    <test started-at="2021-10-02T13:57:46 IST" name="Default test" finished-at="2021-10-02T13:58:01 IST" duration-ms="15261">
       <class name="com.maven.testng.tests.UserManagementSearchUserTest">
-        <test-method signature="verifyuserCanSearchAllUsersByUsername()[pri:1, instance:com.maven.testng.tests.UserManagementSearchUserTest@11a9e7c8]" started-at="2021-09-26T18:03:26 IST" name="verifyuserCanSearchAllUsersByUsername" finished-at="2021-09-26T18:03:42 IST" duration-ms="16247" status="PASS">
+        <test-method signature="verifyuserCanSearchAnyUsersByUsername()[pri:1, instance:com.maven.testng.tests.UserManagementSearchUserTest@11a9e7c8]" started-at="2021-10-02T13:57:46 IST" name="verifyuserCanSearchAnyUsersByUsername" finished-at="2021-10-02T13:58:01 IST" duration-ms="15235" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[No records found]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- verifyuserCanSearchAllUsersByUsername -->
+        </test-method> <!-- verifyuserCanSearchAnyUsersByUsername -->
       </class> <!-- com.maven.testng.tests.UserManagementSearchUserTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

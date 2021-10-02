@@ -24,7 +24,7 @@ public class UserManagementSearchUserTest{
 	public static LoginTest login = new LoginTest();
 	
 	@Test(priority=1)
-	public void verifyuserCanSearchAllUsersByUsername() {
+	public void verifyuserCanSearchAnyUsersByUsername() {
 		SoftAssert softAssert = new SoftAssert();
 		login.verifyLoginAsValidUser();
 		Landing.maximizeBrowser();
@@ -32,17 +32,18 @@ public class UserManagementSearchUserTest{
 //		Landing.navigateToUsersPage();
 //		
 //		Landing.navigateToAddUser();
-		Login.logout();
-//		searchUserFunction.searchAllUsersByUsername();//Change these functions later
+		//Search user here
+		
+		SearchUser.searchAllUsersByUsername();//Change these functions later
 		try{
-//			softAssert.assertTrue(searchUserFunction.isSearchResultCheckboxDisplayed());
+			softAssert.assertTrue(SearchUser.isSearchResultCheckboxDisplayed());
 		}
 		catch(Exception e) {
-//			softAssert.assertTrue(searchUserFunction.isNoRecordsFoundMessageDisplayed());
+			softAssert.assertTrue(SearchUser.isNoRecordsFoundMessageDisplayed());
 			Reporter.log("No records found");
 		}
-		
-	//	Reporter.log("verifyuserCanSearchaaaaaaaaaaaaaaa");
+
+		Login.logout();
 		softAssert.assertAll();
 		
 	}

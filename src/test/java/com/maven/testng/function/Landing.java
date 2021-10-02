@@ -1,6 +1,5 @@
 package com.maven.testng.function;
 
-import org.openqa.selenium.By;
 
 import com.maven.testng.page.LandingPage;
 

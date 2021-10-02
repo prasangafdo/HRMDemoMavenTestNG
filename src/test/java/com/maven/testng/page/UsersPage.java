@@ -7,8 +7,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.maven.testng.BackgroundWorker;
+import com.maven.testng.util.BrowserManager;
 
-public class UsersPage extends BackgroundWorker{
+public class UsersPage extends BrowserManager{
 	
 	private static By txtSearchUsername = By.id("searchSystemUser_userName"); //Search text field
 	private static By btnsearch = By.id("searchBtn"); //Search button
