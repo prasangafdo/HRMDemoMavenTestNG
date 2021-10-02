@@ -5,7 +5,7 @@
     <classes>
       <class name="com.maven.testng.tests.UserManagementSearchUserTest">
         <methods>
-          <include name="verifyuserCanSearchAnyUsersByUsername"/>
+          <include name="verifyuserCanSearchAllUsersByEmployeeName"/>
         </methods>
       </class> <!-- com.maven.testng.tests.UserManagementSearchUserTest -->
     </classes>
