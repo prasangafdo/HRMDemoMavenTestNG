@@ -4,36 +4,36 @@ import com.maven.testng.page.UsersPage;
 
 public class SearchUser{
 	
-	static UsersPage users = new UsersPage();
+	 static UsersPage users = new UsersPage();
 
 	//Search user
-	public void searchAllUsersByUsername() {
+	public static void searchAllUsersByUsername() {
 		users.searchByUsername("Cassidy.Hopea"); //Data is hardcoded for now
 		//return users.isSearchResultCheckboxDisplayed();
 	}
-	public void searchAdminUsersByUsername() {
+	public static void searchAdminUsersByUsername() {
 		users.searchAdminUserByUsername("Test Alice 0001");	//Linda.Anderson
 	}
-	public void searchESSUsersByUsername() {
+	public static void searchESSUsersByUsername() {
 		users.searchESSUserByUsername("maricamp"); //Garry.White
 		
 	}
-	public void searchAllUsersByEmployeeName() {
+	public static void searchAllUsersByEmployeeName() {
 		users.searchByEmployeeName("Alice");
 	}
 //	public boolean isSearchResultDisplayed() {
 //		return users.isSearchResultDisplayed();
 //	}
-	public boolean isNoRecordsFoundMessageDisplayed() {
+	public static boolean isNoRecordsFoundMessageDisplayed() {
 		return users.getNoRecordssFoundMessage();
 	}
-	public boolean isSearchResultCheckboxDisplayed() {
+	public static boolean isSearchResultCheckboxDisplayed() {
 		return users.isSearchResultCheckboxDisplayed();
 	}
-	public void searchUsersInEnabledStatus() {
+	public static void searchUsersInEnabledStatus() {
 		users.searchByStatus("Enabled");
 	}
-	public void searchUsersInDisabledStatus() {
+	public static void searchUsersInDisabledStatus() {
 		users.searchByStatus("Disabled");
 	}
 
