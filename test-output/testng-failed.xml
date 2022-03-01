@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.maven.testng.tests.UserManagementSearchUserTest">
+      <class name="com.maven.testng.tests.LoginTest">
         <methods>
-          <include name="verifyuserCanSearchAllUsersByEmployeeName"/>
+          <include name="verifyLoginAsInvaliduser"/>
+          <include name="verifyLoginAsValidUser"/>
         </methods>
-      </class> <!-- com.maven.testng.tests.UserManagementSearchUserTest -->
+      </class> <!-- com.maven.testng.tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
