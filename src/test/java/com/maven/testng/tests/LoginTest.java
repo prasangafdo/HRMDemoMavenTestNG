@@ -50,9 +50,9 @@ public class LoginTest extends BrowserManager{
 		createSession();
 		initiateURL();
 	}
-//	@AfterMethod
-//	public void afterMethod() {
-//		endSession();
-//	}
+	@AfterMethod
+	public void afterMethod() {
+		endSession();
+	}
 	
 }
